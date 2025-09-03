@@ -1,0 +1,9 @@
+Evaluation Metrics:
+BLEU: 0.0728
+ROUGE-L: 0.2734
+METEOR: 0.3951
+ChrF: 0.1904
+Computing SIDE scores for each instance...
+
+ Average SIDE score across all instances: 0.3342
+ Updated CSV saved to: /home/saima/projects/prompt-project/codet5+/scripts/training_and_inference/inference_output/Base-SIDE2_benchmark_inference_results-test.csv

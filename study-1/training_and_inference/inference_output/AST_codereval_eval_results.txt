@@ -1,0 +1,5 @@
+Evaluation Metrics:
+BLEU: 0.1022
+ROUGE-L: 0.3188
+METEOR: 0.4474
+ChrF: 0.2463

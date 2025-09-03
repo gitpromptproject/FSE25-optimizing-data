@@ -1,0 +1,9 @@
+Evaluation Metrics:
+BLEU: 0.0864
+ROUGE-L: 0.2800
+METEOR: 0.4020
+ChrF: 0.1922
+Computing SIDE scores for each instance...
+
+ Average SIDE score across all instances: 0.3594
+ Updated CSV saved to: /home/saima/projects/prompt-project/codet5+/scripts/training_and_inference/inference_output/java-without-SIDE/base-java-noside_codereval_inference_results-test.csv

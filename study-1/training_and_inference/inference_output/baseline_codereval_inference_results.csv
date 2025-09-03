@@ -1,0 +1,837 @@
+target,raw_predictions,correctly_predicted
+<s>Trim each element in the given string array and return the resulting array.,"<s>Returns the list of all the elements in the given array.
+
+@param array The array to get the elements from.
+@return The list of all the elements in the given array.",0
+<s>Check whether the length of the given two byte arrays is the same.,"<s>Returns true if the given object is a valid object.
+
+@param object The object to check.
+@return True if the object is a valid object.",0
+<s>Pop an abstract type from the output frame stack and return its value.,"<s>Returns the current user's email address.
+
+@return The current user's email address.",0
+<s>Convert the given Boolean array to primitives.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+"<s>If the message does not exist in the dict messages, or it exists but the timestamp (seconds) difference is bigger than 10, put the message and timestamp into messages and return true, otherwise return false.",<s>Returns true if the given object is a valid object.,0
+"<s>Return the string representation of the given object, return an empty string if the object is null.","<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+"<s>Decode octets to characters with UTF-8, append them to the given StringBuilder, and return the index to the next unchecked character.","<s>Returns the value of the specified field.
+
+@param field The field to retrieve.
+@return The value of the specified field.",0
+"<s>Init a currentFrame with the given offset, numLocal and numStack, return 3 finally.","<s>Returns the number of elements in the array.
+
+@param array
+@return",0
+"<s>Enlarge the byte vector data, by increasing it by the given size.","<s>Returns the current user's email address.
+
+@return The current user's email address.",0
+<s>Delete the given file if it exists,"<s>Delete the specified file from the cache.
+
+@param fileName The file to delete.
+@return The file that was deleted.",0
+"<s>Compute the hash code of the whole array, by accumulating the multiplication of each element hash code and the MULTIPLIER.","<s>Returns the hash code of the given object.
+
+@param object The object to hash.
+@return The hash code of the given object.",0
+<s>Perform a right node rotation on the AVL tree.,"<s>Returns the current time in milliseconds since epoch.
+
+@return The current time in milliseconds since epoch.",0
+<s>Add all the jar files in the given dir to the classpath.,"<s>Adds the given file to the classpath.
+
+@param file
+The file to add.
+@throws IllegalArgumentException
+If the file is not a valid file.",0
+"<s>Format the buffered string with the pattern converter, and return the result.","<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+"<s>Compute and return the length of the request content header, return the content length if NumberFormatException happens.","<s>Returns the value of the field.
+
+@return the value of the field",0
+"<s>Return the index of the last directory separator character, under Unix or Windows.","<s>Returns the name of the file that was created.
+
+@return The name of the file that was created.",0
+<s>Parse the header part starting from the given end position and return the index of the enter sequence.,"<s>Returns the number of bytes in the file.
+
+@param file The file to read.
+@return The number of bytes in the file.",0
+"<s>Find the last index of the searchStr in str, and return INDEX_NOT_FOUND if str is empty.","<s>Returns the number of bytes that were written to the file.
+
+@return The number of bytes that were written to the file.",0
+<s>Write the given byte array b into the output stream that this class represents.,"<s>Sets the value of the value property.
+
+@param value
+the new value of the value property",0
+<s>Return the id by concatenating the point and the entity id with id connector.,"<s>Returns the name of the file that was created.
+
+@return The name of the file that was created.",0
+<s>Convert a Boolean to a boolean handling null by returning false.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value for.
+@return The value of the specified field.",0
+<s>Compute and return an identity automorphism for the given graph.,"<s>Returns a new instance of the class that is a subclass of the given class.
+
+@param <V> the type of the class
+@param <E> the type of the class
+@return the new instance of the class",0
+<s>Delete the file or the whole directory when exiting.,"<s>Returns the value of the field.
+
+@return the value of the field",0
+"<s>Add a log record message to be displayed in the LogTable, with the SwingUtilities.","<s>Add a new record to the database.
+
+@param record The record to add.
+@return The record that was added.",0
+<s>Construct a complete bipartite graph from partitions A and B.,"<s>Returns the list of all the nodes in the tree.
+
+@param target The tree to search for nodes in.
+@param result The list of nodes to search for.",0
+"<s>Searches for a byte of the specified value in the buffer, starting at the specified position.","<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+"<s>Use ProtobufOutput and the LinkedBuffer to write the message into the given OutputStream out, and return the message size.","<s>Write a message to the stream.
+
+@param message The message to write.
+@param stream The stream to write to.
+@return The number of bytes written.",0
+<s>Return the string built by this string builder.,"<s>Returns the name of the resource.
+
+@return The name of the resource.",0
+<s>Write the message in the event into a temp file.,"<s>Returns the value of the field.
+
+@param field The field to get the value of.
+@return The value of the field.",0
+<s>Add a new type entry of the given value into the type table of this symbol table.,"<s>Add a new entry to the database.
+
+@param value The entry to add.
+@return The index of the entry.",0
+<s>Resolve and return the arguments for the genericType using the type variable information for the targetType.,"<s>Returns the list of all the elements in the given list.
+
+@param list
+@return",0
+<s>Accept the data into the buffer if its id does not exist in the buffer.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Insert this bucket in the data structure before the given bucket.,"<s>Returns the current user's profile.
+
+@return The current user's profile.",0
+<s>Check the available space of this InputStream according to the index.,"<s>Returns the number of elements in the array.
+
+@return the number of elements in the array",0
+<s>Return mappings with fields that do not exist in the input mappings.,"<s>Returns the list of all the fields that are present in the
+request.
+
+@param request The request to get the fields from.
+@return The list of fields that are present in the request.",0
+<s>Add the given target channels to the consumeTargets.,"<s>Add a new item to the list.
+
+@param item The item to add.
+@return The item that was added.",0
+"<s>Create the ""lf5"" directory in the Documents and Settings directory on Windows machines, or the user.home variable points on all other platforms.","<s>Creates a new instance of the class.
+
+@param name The name of the class.
+@param parent The parent class.",0
+<s>Read a signed long value.,"<s>Returns the value of the specified property.
+
+@param propertyName
+The name of the property to retrieve.
+@return The value of the specified property.",0
+<s>Return true if the contents of the internal array bytes and the provided array data match.,"<s>Returns true if the given object is a valid object.
+
+@param obj The object to check.
+@return True if the object is a valid object.",0
+<s>Return an EMPTY_BYTE_OBJECT_ARRAY array for a null or empty input array.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Send a message to each of the connections in telnet-friendly output.,"<s>Send a message to all registered listeners.
+
+@param message The message to send.
+@param listener The listener to send the message to.",0
+<s>Return an EMPTY_BOOLEAN_OBJECT_ARRAY array for a null or empty input array.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Place a LoggingEvent in the buffer buf.,"<s>Returns the value of the property.
+
+@return The value of the property.",0
+<s>Split time ranges to insure the start time and end time is small than FETCH_DATA_DURATION.,"<s>Returns the list of all the files in the directory.
+
+@param directory The directory to search.
+@return The list of files in the directory.",0
+"<s>Convert an array of object Bytes to primitives, return null for a null input array.","<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Follow the dayStep to reformat the time bucket with TIME_BUCKET_FORMATTER.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Compute the size of the utf8 string beginning at the specified index with the specified length.,"<s>Returns the number of bytes in the file.
+
+@param file The file to read.
+@return The number of bytes in the file.",0
+"<s>Convert an array to list, return empty list for null array.","<s>Returns the list of all the available resources.
+
+@return The list of all the available resources.",0
+<s>Remove a value from the values if the map keys contains the val.,"<s>Removes the specified element from the list.
+
+@param element The element to remove.
+@return True if the element was removed, false otherwise.",0
+"<s>Return true if the given string starts with the specified case-insensitive prefix, false otherwise.","<s>Returns true if the given string is a valid URL.
+
+@param str The string to check.
+@return True if the string is a valid URL.",0
+<s>Compute all vertices by iterating over the edges of this graph.,"<s>Returns the list of all the nodes that are currently in the tree.
+
+@return The list of all the nodes that are currently in the tree.",0
+<s>Reverse the given String as per.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Get a substring from the specified String avoiding exceptions.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value for.
+@return The value of the specified field.",0
+"<s>Put an array of bytes into this byte vector, enlarge the byte vector automatically if necessary.","<s>Sets the value of the value property.
+
+@param value
+The value to set.
+@return The current value of the value property.",0
+<s>Wrap an HttpServletRequest with the Builder.,"<s>Returns the current state of the system.
+
+@return The current state of the system.",0
+<s>Write the utf8-encoded bytes from the string into the LinkedBuffer.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Remove this edge from both doubly linked lists of the tree edges.,"<s>Removes all the elements from the tree.
+
+@see #removeAll()",0
+"<s>Find the value corresponding to key in props, then perform variable substitution on the found value.","<s>Returns the value of the specified field.
+
+@param field The field to retrieve.
+@return The value of the specified field.",0
+"<s>Append the detail of an int array to the buffer, starting with arrayStart and ending with arrayEnd, and separating with arraySeparator.","<s>Returns the list of all the items in the list.
+
+@param list The list to get the items from.
+@return The list of all the items in the list.",0
+<s>Return the servlet session id.,"<s>Returns the value of the field.
+
+@return The value of the field.",0
+<s>Check whether a character string is a dight.,"<s>Returns true if the given string is a valid URL.
+
+@param url The string to check.
+@return True if the string is a valid URL.",0
+<s>Check whether a character is a parameter separator.,<s>Returns true if the given object is a valid object.,0
+<s>Determines whether a character string ends with a specified suffix.,"<s>Returns true if the given string is a valid URL.
+
+@param str The string to check.
+@return True if the string is a valid URL.",0
+<s>Decode the raw path.,"<s>Returns the list of all the files in the directory.
+
+@param directory The directory to search.
+@return The list of files in the directory.",0
+"<s>If array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY.","<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Check whether there is a thrown.,"<s>Returns true if the given object is a valid object.
+
+@param object The object to check.
+@return True if the object is valid.",0
+<s>Return the value at the top of the stack.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Add the value to the original value of the key.,"<s>Adds a new entry to the cache.
+
+@param key The key of the entry to add.
+@param value The value of the entry to add.",0
+"<s>If the stack is not empty, the last element of the stack is returned.","<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Check if the named logger exists.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Check whether the specified converter exists in converters.,"<s>Returns the value of the specified field.
+
+@param field The field to retrieve.
+@return The value of the specified field.",0
+<s>Read raw varint.,"<s>Returns the number of items in the list.
+
+@return The number of items in the list.",0
+"<s>If the double type array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY.","<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Pop the various value according to the first character of the descriptor.,"<s>Returns the value of the specified property.
+
+@param propertyName The name of the property.
+@return The value of the specified property.",0
+<s>Write bytes of length len from a byte array.,"<s>Returns the number of bytes in the file.
+
+@param file The file to read.
+@return The number of bytes in the file.",0
+<s>Swap values at indexes i and j in arr.,"<s>Swap the elements in the array.
+
+@param arr
+@return",0
+<s>Determine whether the actual response is a Partial Content,<s>Returns true if the given object is a valid object.,0
+<s>Check whether the array of the double type is empty.,"<unk>
+@param name
+@return",0
+<s>Check whether lastwrite is - 1.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Add an edge whose start point is sourceVertex and end point is targetVertex to touchingVerticesToEdgeMap.,"<s>Add a new entry to the list of entries in the list.
+
+@param entry The entry to add.
+@return The list of entries added.",0
+<s>Creates an array of the file type based on all file names in java.class.path and returns the array.,"<s>Returns the list of files that are currently in the system.
+
+@return The list of files that are currently in the system.",0
+<s>Copy the source string and transfer each character to lowercase.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+<s>Divide a box into two equal boxes on the x axis.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Convert the original data array to a longer array.,"<s>Returns the current user's email address.
+
+@return The current user's email address.",0
+<s>Check whether appender elements exist in appenderList.,<s>Returns true if the given object is a valid object.,0
+<s>Compares two values.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value for.
+@return The value of the specified field.",0
+"<s>If the key whose value is val does not exist in the map, add (val, val) to the map and return true.","<s>Sets the value of the value property.
+
+@param value
+the new value of the value property
+@return the current value of the value property",0
+<s>Check whether all fields exist in properties.,"<s>Returns true if the given field is present in the model.
+
+@param field The field to check.
+@return True if the field is present in the model.",0
+<s>Converts a name of the string type to a character array and converts the first letter to an uppercase letter.,"<s>Returns the name of the resource.
+
+@return The name of the resource.",0
+<s>Write the content into the LinkedBuffer.,"<s>Returns the number of bytes in the file.
+
+@param file The file to read.
+@return The number of bytes in the file.",0
+<s>Check whether the parameter bool is not true.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value for.
+@return The value of the specified field.",0
+<s>Convert a value in a vs array to a string.,"<s>Returns the string representation of the current state of the
+object.
+
+@return the string representation of the current state of the object",0
+<s>Create a string supplier which returns unique integer strings starting from the given start.,"<s>Returns a new instance of the class that is a subclass of the given class.
+
+@param clazz The class to be derived from.
+@return A new instance of the class that is a subclass of the given class.",0
+<s>Formats LoggingEvent as a fixed-format string.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+"<s>If the length of the array is 0, return EMPTY_DOUBLE_ARRAY.","<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Add abstractType to the initializations variable.,"<s>Add a new entry to the database.
+
+@param entry The entry to add.
+@return The entry that was added.",0
+<s>Add the elements indexed from start to end in currentFrame to Frame.,"<s>Returns the list of all the available resources.
+
+@return The list of all the available resources.",0
+<s>Read from the buffer.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+<s>Write the byte array b to the buffer based on the encoding.,"<s>Write a string to the stream.
+
+@param b
+@throws IOException",0
+<s>Converts the content in JSONWriter to a string.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+"<s>If the length of the value string is 0, the default type is returned.","<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Check whether str contains elements in searchStrArray.,"<s>Returns true if the given string is a valid URL.
+
+@param str The string to check.
+@return True if the string is a valid URL.",0
+<s>Returns the element at the location specified by desiredCapacity in primeCapacities.,"<s>Returns the next prime number in the range of the range of the
+numbers in the array.
+
+@param  range  The range of the numbers to be returned.
+@return  The next prime number in the range of the range of the
+numbers in the array.",0
+<s>Obtains the character value of ch.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value for.
+@return The value of the specified field.",0
+<s>Returns the first element in candidates that matches the source.,"<s>Returns the first element of the list.
+
+@param list
+@return",0
+<s>Trim the end space of the str.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+<s>Initializes a directory.,"<s>Sets the value of the value property.
+
+@param value
+the new value of the value property",0
+<s>Read string from a buffer.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Obtains the number corresponding to the character c.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+"<s>Put the ""content"" from the jsonObject to the content.","<s>Build the content of the message.
+
+@param jsonObject The message to build the content of.
+@return The content of the message.",0
+<s>Remove the mapping from atmosphereHandlers.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Copy bytes from LinkedBuffer and return.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+<s>Unescapes Java that found in the String.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Translate a MIME standard charset name into the Java equivalent.,"<s>Returns the value of the property.
+
+@return The value of the property.",0
+<s>Check whether an obj variable is of the String type.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value for.
+@return The value of the specified field.",0
+<s>Returns the previous ListNode.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Read a short value from classFileBuffer,"<s>Returns the value of the specified property.
+
+@param propertyName The name of the property to retrieve.
+@return The value of the specified property.",0
+<s>Copy the given array and add a default value at the end.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Calculate the floor of the logarithmic value of the given value in base 2.,"<unk>
+@param name
+@return",0
+<s>Return the intersection between two sets.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+"<s>If collection is null, convert collection to EMPTY_STRING_ARRAY.","<s>Returns the list of all the available resources.
+
+@return The list of all the available resources.",0
+<s>Check whether a character string is all consist of zero.,"<s>Returns true if the given string is a valid URL.
+
+@param string The string to check.
+@return True if the string is a valid URL.",0
+"<s>Filter and return null for the null and abort message in BroadcastAction, return the action message otherwise.","<s>Returns the value of the property.
+
+@return The value of the property.",0
+<s>Convert process properties to the JsonObject.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+<s>Remove any inactive nodes from the Category tree and return the number of removed nodes.,"<s>Remove all the nodes from the tree.
+
+@return The number of nodes removed.",0
+<s>Return the label by the given bytecode offset if it has been created.,"<s>Returns the value of the specified property.
+
+@param propertyName The name of the property.
+@return The value of the specified property.",0
+<s>Check whether a string is true or false after ignore cases and trim the whitespaces at both ends.,"<s>Returns true if the given string is a valid URL.
+
+@param string The string to check.
+@return True if the string is a valid URL.",0
+<s>Trim the leading whitespaces in a string.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+<s>Read a CONSTANT_Utf8 constant pool entry in the classFileBuffer.,"<s>Returns the value of the specified field.
+
+@param field The field to retrieve.
+@return The value of the specified field.",0
+<s>Convert a hexadecimal number to binary and return its character type.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Convert object to string if the object is not null.,"<s>Returns the name of the file that was created.
+
+@return The name of the file that was created.",0
+<s>Calculate the factorial of the given number.,"<s>Returns the value of the property.
+
+@param propertyName The name of the property.
+@return The value of the property.",0
+<s>Find a circulator to the node that satisfies the Interface predicate.,"<s>Returns the list of all the elements in the tree.
+
+@param  tree  The tree to be parsed.
+@return  The list of all the elements in the tree.",0
+<s>Add an event as the last event in the buffer.,"<s>Returns the current state of the session.
+
+@return The current state of the session.",0
+<s>Compare two numbers.,"<unk>
+@param name
+@return",0
+<s>Convert an enumeration to a string array.,"<s>Returns the list of all the files in the directory.
+
+@param directory The directory to search for files.
+@return The list of files in the directory.",0
+<s>Add a byte array into the byte vector.,"<s>Sets the value of the value property.
+
+@param value
+The value to set.
+@return The current value of the value property.",0
+<s>Return an unmodifiable list that contains all methods in the BeanMap.,"<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+<s>Compute a hash code according to the type.,"<s>Returns the hash code of the current hash.
+
+@return The hash code of the current hash.",0
+<s>Delete characters that exists in the intersection between two character strings of the first character string and return the first character string that is modified.,"<s>Delete all the files from the directory.
+
+@param directory The directory to delete.
+@return The deleted files.",0
+"<s>If the match between the url and the pattern occurs, return the match result.","<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Convert an ASCII encoded character to hex.,"<s>Returns the number of bytes that were read from the stream.
+
+@param stream The stream to read from.
+@return The number of bytes read from the stream.",0
+<s>Add files in the stack in reverse order.,"<s>Returns the list of all the files in the directory.
+
+@param directory The directory to search for files.
+@return The list of files in the directory.",0
+<s>Check whether the key contains null.,"<s>Returns the value of the field.
+
+@return The value of the field.",0
+<s>Read the next buffer in the buffer.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Suspend the AtmosphereResource based on its transport value.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Return the sum of the weights entering a vertex.,"<s>Returns the number of elements in the array.
+
+@param array
+@return",0
+<s>Compare two events by their timeStamp.,"<s>Returns true if the given object is a valid object.
+
+@param obj The object to check.
+@return True if the object is valid.",0
+<s>Remove the appender by the given name from the list of appenders.,"<s>Remove the specified appender from the list of registered appender.
+
+@param appender The appender to remove.
+@throws NullPointerException If the appender is null.
+@throws IllegalArgumentException If the appender is empty.
+@throws IllegalArgumentException If the appender is not registered.
+@throws IllegalArgumentException If the appender is not registered.
+@throws IllegalArgumentException If the appender is not registered.
+@throws IllegalArgumentException If the appender is not registered.
+@throws IllegalArgumentException If the appender is not registered.
+@throws IllegalArgumentException If the appender is not registered.
+@throws IllegalArgumentException If the appender is not registered.
+@throws IllegalArgumentException If the appender is",0
+<s>Call the doAppend method on all attached appenders.,"<s>Returns the number of elements in the array.
+
+@param array
+@return",0
+<s>Convert the given Integer array to primitives.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Register the value in REGISTRY if the value is not null.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Return the number of non-zero entries of a row.,"<unk>
+@param name
+@return",0
+<s>Check whether the element exists in the collection.,"<s>Returns true if the given object is a valid object.
+
+@param object The object to check.
+@return True if the object is a valid object.",0
+<s>Check whether the character is ASCII 7 bit control.,"<unk>
+@param name
+@return",0
+<s>Check whether a map contains a mapping for the specified key.,"<s>Returns true if the given key is present in the map.
+
+@param key the key to check
+@return true if the key is present in the map",0
+<s>Convert an array of primitive booleans to objects.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Copy bytes to a byte array.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Convert a set representation to a graph path.,"<s>Returns the path to the file that contains the data.
+
+@param file The file to read.
+@return The path to the file that contains the data.",0
+<s>Convert an array of primitive shorts to objects.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Add constant information generated by its name and type to the constant pool and return the index of the constant.,"<s>Adds a new constant to the constant pool.
+
+@param name The name of the constant.
+@param descriptor The descriptor of the constant.
+@return The index of the newly added constant.",0
+<s>Unescape a dot identifier string.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Concatenate two string arrays into one.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Move all vertices from the minimum label bucket to the bucket with label 0 and clear the minimum label bucket.,"<s>Returns the list of all the nodes that are currently in the tree.
+
+@param tree The tree to search for nodes.
+@return The list of all the nodes that are currently in the tree.",0
+<s>Append a string to a string array.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Return the frequencies that the substring appears in the string.,"<s>Returns the number of times the given object was created.
+
+@param obj The object to check.
+@return The number of times the object was created.",0
+<s>Check whether there is at least one instance of the implementation class in the lists.,<s>Returns true if the given object is a valid object.,0
+<s>Append a byte array to a buffer.,"<s>Returns the value of the specified field.
+
+@param fieldName The name of the field to retrieve.
+@return The value of the specified field.",0
+<s>Check whether there are unvisited vertices.,"<s>Returns true if the given node is a child of this node.
+
+@param node The node to check.
+@return True if the node is a child of this node.",0
+<s>Pop the given number of elements from the stack.,"<s>Returns the list of all the available resources.
+
+@return The list of all the available resources.",0
+<s>Check whether the existed buckets are the same as the buckets.,"<s>Returns true if the given data is compatible with this
+instance.
+
+@param data The data to check.
+@return True if the data is compatible with this instance.",0
+<s>Find class by the given class name.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Get next vertext from a graph.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Add the number of lines.,"<s>Sets the value of the value property.
+
+@param value
+the new value of the value property",0
+<s>Remove the doubly linked list node that call the function.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Change the elements whose values are oldName to newName in column.,"<s>Sets the value of the field.
+
+@param value The value to set.
+@return The current value of the field.",0
+"<s>Remove the doubly circular linked list node.If success return true,otherwise return false.","<s>Remove the specified element from the list.
+
+@param element The element to remove.
+@return True if the element was removed.",0
+"<s>Return a list whose nodes are sequences, and the sequences' lower bound are all minSequence, and the length increases sequentially with SEQUENCE_RANGE_BATCH_SIZE but the upper bound is maxSequence.","<s>Returns the list of all the items in the list.
+
+@return The list of all the items in the list.",0
+"<s>If dataBytes is equal to null, return false, otherwise return true.","<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Return the path without the extension.,"<s>Returns the name of the file that was created.
+
+@return The name of the file that was created.",0
+<s>Return a string which is consist of the values of elements in the given array.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Parses out a token until any of the given terminators is encountered and then return the token.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+"<s>Trim all the characters which are equal to the given character and appear at the beginning of the given string,and return the trimmed string.","<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+<s>Return an array of Integer objects which are converted from an array of primitive ints.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Return an array of Double objects which are converted from an array of primitive doubles.,"<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+<s>Return a pair of the list of suffix sum and the sum of all elements of bounds.,"<s>Returns the number of elements in the array.
+
+@param array
+@return",0
+<s>Reverse the order of the given elements in the specified range.,"<s>Returns the list of all the files in the directory.
+
+@param directory The directory to search for files.
+@return The list of files in the directory.",0
+<s>Move the nodes of the given doubly linked list to a new list sequentially.,"<s>Returns the list of all the items in the list.
+
+@param list The list to get the items from.
+@return The list of all the items in the list.",0
+"<s>Return true if the given string has the specified prefix with optional cases which can be ignored, or both string and prefix are null.Otherwise return false.","<s>Returns true if the given string is a valid URL.
+
+@param str The string to check.
+@return True if the string is a valid URL.",0
+<s>Return the Character object converted from the given character.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value for.
+@return The value of the specified field.",0
+<s>Return true if the character is ASCII alphabetic upper case.Otherwise return false.,<s>Returns true if the given object is a valid object.,0
+<s>Return a decision based on the message generated by the event and whether the given string is matched.,"<s>Returns the number of bytes that were read from the stream.
+
+@return The number of bytes that were read from the stream.",0
+"<s>Return true if the given name is a member variable of this template,otherwise return false.",<s>Returns true if the given object is a valid object.,0
+<s>Put all of the both readable and writable methods from the given map to this map.,"<s>Returns the list of all the items in the list.
+
+@param list The list to get the items from.
+@return The list of all the items in the list.",0
+<s>Return the given string's length.,"<s>Returns the number of bytes that were written to the file.
+
+@return The number of bytes that were written to the file.",0
+"<s>Return true if the given character is a hex digit, otherwise return false.",<s>Returns true if the given object is a valid object.,0
+"<s>Decoding a string follow the Base64 regular to an array,and return a string constructed from the array according to UTF_8.","<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+"<s>Return true if the length of array1 is the same as the length of array2 or both them are null, otherwise return false.","<s>Returns true if the given object is a valid object.
+
+@param object The object to check.
+@return True if the object is a valid object.",0
+<s>Return a Meteor object based on the HttpServletRequest r.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+"<s>Split the given string toSplit at the first occurrence of the given delimiter,and return two substrings that don't include the delimiter.","<s>Returns the list of all the items in the list.
+
+@param list
+@return",0
+"<s>Select an edge which isn't a circle in the graph,compute the list of the minimal separators in the neighborhood of the edge and put the pair of list and edge into the return list.","<s>Returns the list of all the elements in the tree.
+
+@return the list of all the elements in the tree",0
+<s>Return a clone of the given array.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+<s>Put the given array of files into a stack in reverse order.,"<s>Returns the list of all the files in the directory.
+
+@param directory The directory to search for files.
+@return The list of files in the directory.",0
+<s>Select the specified row in the given JTable and scroll the given JScrollPane to the row.,"<s>Sets the value of the value property.
+
+@param value
+The value to set.
+@throws IllegalArgumentException
+If the value is null or empty.",0
+<s>Divide an int into four bytes and put the bytes into a byte vector called data in big endian order.,"<s>Sets the value of the value property.
+
+@param value
+the new value of the value property
+@return the current value of the value property",0
+"<s>Given two arrays with the given length count,return true if the array a is equal to array b,otherwise return false.","<s>Returns true if the given object is a valid object.
+
+@param object The object to check.
+@return True if the object is a valid object.",0
+"<s>The given name can be split into several substrings by ""."", and abbreviate the name in the buf by deleting the first count substrings.","<s>Returns the list of all the items in the list.
+
+@param list The list to get the items from.
+@return The list of all the items in the list.",0
+"<s>Resolve the class of the first bound for the typeVariable recursively, return Unknown.class if it can't be resolved.","<s>Returns the value of the specified field.
+
+@param field The field to get the value of.
+@return The value of the specified field.",0
+"<s>Return true if the subgraph of the given graph induced by the given vertices is a clique, otherwise return false.",<s>Returns true if the given node is a leaf node.,0
+"<s>The type of key has several lower bounds conducted by different function, this function will return a list of the maximum lower bound of each key in the given list.","<s>Returns the list of all the elements in the given list.
+
+@param list
+@return",0
+<s>Pop different value of type based on the first character of the given descriptor.,"<s>Returns the value of the specified property.
+
+@param propertyName The name of the property.
+@return The value of the specified property.",0
+"<s>Return true if the given character is a ASCII seven bit character, otherwise return false.","<s>Returns the value of the field.
+
+@return The value of the field.",0
+"<s>The type of key has several upper bounds conducted by different function, this function will return a list of the minimum upper bound of each key in the given list.","<s>Returns the list of all the elements in the given list.
+
+@param list
+@return",0
+"<s>Encoding the given string by changing '{' and '}' to the specified character for each,return the string after encoding.","<s>Returns the list of all the available resources.
+
+@return The list of available resources.",0
+"<s>Using TOLERANCE_DOUBLE_COMPARATOR to compare two points for equality, return true the point p1 is equal to another point p2, otherwise return false.",<s>Returns true if the given object is a valid object.,0
+<s>Adding an instance of AtmosphereResourceEventListener e into a list and return the AtmosphereResource object which call the function.,"<unk>
+@param name
+@return",0
+"<s>Combine the substring before FOLDER_SEPARATOR of the given path with the given relative path to construct a new full file path, and return the full file path.","<s>Returns the path of the file that was created.
+
+@param file The file to be created.
+@return The path of the file that was created.",0
+<s>Return the first index of the searchStr in the given string.,"<s>Returns the number of bytes that were read from the stream.
+
+@return The number of bytes that were read from the stream.",0
+"<s>Return a new array of strings converted from the elements which are not null of the given array, if the size of the array is zero, it will throw an exception.","<s>Returns the list of all the elements in the given array.
+
+@param array The array to get the elements from.
+@return The list of all the elements in the given array.",0
+"<s>Return the last index of the extension separator in the given filename, it will return -1 if the filename doesn't have the separator or there is a directory separator after it.","<s>Returns the number of bytes in the file.
+
+@return The number of bytes in the file.",0
+"<s>Return true if the timestamp minus the lastUpdateTimestamp is greater than expiredThreshold, otherwise return false.","<unk>
+@param name
+@return",0
+<s>Return the edge connecting the previously returned node with the current node.,"<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+"<s>Return true if starting at the given index, the given string matches the given substring.","<s>Returns true if the given string is a valid URL.
+
+@param url The string to check.
+@return True if the string is a valid URL.",0
+"<s>Handling a logging event by using layout.format(), and if layout.ignoresThrowable() is true, it will continue to send the StrRep of the event.","<s>Adds a new entry to the database.
+
+@param entry The entry to add.",0
+<s>Return the String object that contains the given character.,"<s>Returns the value of the specified field.
+
+@param field The field to get the value for.
+@return The value of the specified field.",0
+"<s>Check if the field should be packed,if so,read the field and update the internal state.","<s>Returns the current state of the user.
+
+@return The current state of the user.",0
+"<s>Return a field tag, and if reach the EOF the tag will be zero.","<s>Returns the current value of the field.
+
+@return The current value of the field.",0
+<s>Put two bytes into a byte vector called data.,"<s>Sets the value of the value property.
+
+@param value
+the new value of the value property
+@return the current value of the value property",0
+"<s>Return the string that contains the content range from offset to limit (when limit is zero,the upper bound will be count-1) and count.","<s>Returns the current state of the device.
+
+@return The current state of the device.",0
+"<s>Load the thread snapshots from the given file in the specified time range, and return the list of those thread snapshots.","<s>Returns the list of all the threads in the specified directory.
+
+@param directory The directory to search for threads in.
+@return The list of threads in the specified directory.",0

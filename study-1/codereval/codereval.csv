@@ -1,0 +1,2340 @@
+id,code,original,human,original_okay,count
+6367676d1a6d9265ec018229,"public static String[] trimArrayElements(String[] array){
+  if (Objects.isEmpty(array)) {
+    return new String[0];
+  }
+  String[] result=new String[array.length];
+  for (int i=0; i < array.length; i++) {
+    String element=array[i];
+    result[i]=(element != null ? element.trim() : null);
+  }
+  return result;
+}
+","Trim the elements of the given String array, calling String.trim() on each of them.",Trim each element in the given string array and return the resulting array.,yes,yes
+6367670b1a6d9265ec017a00,"public static boolean isSameLength(final byte[] array1,final byte[] array2){
+  if (array1 == null && array2 != null && array2.length > 0 || array2 == null && array1 != null && array1.length > 0 || array1 != null && array2 != null && array1.length != array2.length) {
+    return false;
+  }
+  return true;
+}
+","Checks whether two arrays are the same length, treating null arrays as length 0.",Check whether the length of the given two byte arrays is the same.,yes,yes
+636766a91a6d9265ec0175c2,"private int pop(){
+  if (outputStackTop > 0) {
+    return outputStack[--outputStackTop];
+  }
+ else {
+    return STACK_KIND | -(--outputStackStart);
+  }
+}
+",Pops an abstract type from the output frame stack and returns its value.,Pop an abstract type from the output frame stack and return its value.,yes,yes
+636767081a6d9265ec017989,"public static boolean[] toPrimitive(final Boolean[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_BOOLEAN_ARRAY;
+  }
+  final boolean[] result=new boolean[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=array[i].booleanValue();
+  }
+  return result;
+}
+",Converts an array of object Booleans to primitives. ,Convert the given Boolean array to primitives. ,yes,yes
+6367672d1a6d9265ec017c73,"public boolean shouldPrintMessage(int timestamp,String message){
+  if (messages.containsKey(message)) {
+    if (timestamp - messages.get(message) >= 10) {
+      messages.put(message,timestamp);
+      return true;
+    }
+ else {
+      return false;
+    }
+  }
+ else {
+    messages.put(message,timestamp);
+    return true;
+  }
+}
+","Returns true if the message should be printed in the given timestamp, otherwise returns false. ","If the message does not exist in the dict messages, or it exists but the timestamp (seconds) difference is bigger than 10, put the message and timestamp into messages and return true, otherwise return false.",yes,yes
+636766f81a6d9265ec01775c,"public static String toString(Object obj){
+  return obj == null ? """" : obj.toString();
+}
+","Gets the toString of an Object returning an empty string ("""") if null input. ","Return the string representation of the given object, return an empty string if the object is null.",yes,yes
+6367667f1a6d9265ec017457,"private static int decodeOctets(int i,ByteBuffer bb,StringBuilder sb){
+  if (bb.limit() == 1 && (bb.get(0) & 0xFF) < 0x80) {
+    sb.append((char)bb.get(0));
+    return i + 2;
+  }
+ else {
+    CharBuffer cb=UTF_8_CHARSET.decode(bb);
+    sb.append(cb);
+    return i + bb.limit() * 3 - 1;
+  }
+}
+",Decodes octets to characters using the UTF-8 decoding and appends the characters to a StringBuffer.,"Decode octets to characters with UTF-8, append them to the given StringBuilder, and return the index to the next unchecked character.",yes,yes
+636766aa1a6d9265ec0175ce,"int visitFrameStart(final int offset,final int numLocal,final int numStack){
+  int frameLength=3 + numLocal + numStack;
+  if (currentFrame == null || currentFrame.length < frameLength) {
+    currentFrame=new int[frameLength];
+  }
+  currentFrame[0]=offset;
+  currentFrame[1]=numLocal;
+  currentFrame[2]=numStack;
+  return 3;
+}
+","Starts the visit of a new stack map frame, stored in currentFrame.","Init a currentFrame with the given offset, numLocal and numStack, return 3 finally.",yes,yes
+636767191a6d9265ec017c0f,"private void enlarge(final int size){
+  int doubleCapacity=2 * data.length;
+  int minimalCapacity=length + size;
+  byte[] newData=new byte[doubleCapacity > minimalCapacity ? doubleCapacity : minimalCapacity];
+  System.arraycopy(data,0,newData,0,length);
+  data=newData;
+}
+",Enlarges this byte vector so that it can receive 'size' more bytes.,"Enlarge the byte vector data, by increasing it by the given size.",yes,yes
+636767821a6d9265ec0183a0,"protected static void deleteFile(String fileName){
+  File file=new File(fileName);
+  if (file.exists()) {
+    file.delete();
+  }
+}
+",Delete's the specified file if it exists.,Delete the given file if it exists,yes,yes
+636767691a6d9265ec0181aa,"public static int nullSafeHashCode(long[] array){
+  if (array == null) {
+    return 0;
+  }
+  int hash=INITIAL_HASH;
+  int arraySize=array.length;
+  for (int i=0; i < arraySize; i++) {
+    hash=MULTIPLIER * hash + hashCode(array[i]);
+  }
+  return hash;
+}
+",Return a hash code based on the contents of the specified array. ,"Compute the hash code of the whole array, by accumulating the multiplication of each element hash code and the MULTIPLIER.",yes,yes
+636767441a6d9265ec017cc1,"private TreeNode<T> rotateRight(TreeNode<T> node){
+  TreeNode<T> left=node.left;
+  left.parent=null;
+  node.setLeftChild(left.right);
+  left.setRightChild(node);
+  node.updateHeightAndSubtreeSize();
+  left.updateHeightAndSubtreeSize();
+  return left;
+}
+",Performs a right node rotation.,Perform a right node rotation on the AVL tree.,yes,yes
+6367667f1a6d9265ec01745c,"@SuppressWarnings(""unchecked"") public static void addToClassPath(Vector<URL> cpV,String dir){
+  try {
+    String cpComp[]=getFilesByExt(dir,"".jar"");
+    if (cpComp != null) {
+      int jarCount=cpComp.length;
+      for (int i=0; i < jarCount; i++) {
+        URL url=getURL(dir,cpComp[i]);
+        if (url != null)         cpV.addElement(url);
+      }
+    }
+  }
+ catch (  Exception ex) {
+    logger.debug(""failed to add urls to classpath"",ex);
+  }
+}
+","Add all the jar files in a dir to the classpath, represented as a Vector of URLs.",Add all the jar files in the given dir to the classpath. ,yes,yes
+6367677e1a6d9265ec01830f,"public String format(LoggingEvent event){
+  if (sbuf.capacity() > MAX_CAPACITY) {
+    sbuf=new StringBuffer(BUF_SIZE);
+  }
+ else {
+    sbuf.setLength(0);
+  }
+  PatternConverter c=head;
+  while (c != null) {
+    c.format(sbuf,event);
+    c=c.next;
+  }
+  return sbuf.toString();
+}
+",Produces a formatted string as specified by the conversion pattern.,"Format the buffered string with the pattern converter, and return the result.",yes,yes
+636767031a6d9265ec0178dd,"public long contentLength(){
+  long size;
+  try {
+    size=Long.parseLong(request.getHeader(FileUpload.CONTENT_LENGTH));
+  }
+ catch (  NumberFormatException e) {
+    size=request.getContentLength();
+  }
+  return size;
+}
+",Retrieve the content length of the request.,"Compute and return the length of the request content header, return the content length if NumberFormatException happens.",yes,yes
+636766f11a6d9265ec017658,"public static int indexOfLastSeparator(String filename){
+  if (filename == null) {
+    return -1;
+  }
+  int lastUnixPos=filename.lastIndexOf(UNIX_SEPARATOR);
+  int lastWindowsPos=filename.lastIndexOf(WINDOWS_SEPARATOR);
+  return Math.max(lastUnixPos,lastWindowsPos);
+}
+",Returns the index of the last directory separator character. ,"Return the index of the last directory separator character, under Unix or Windows.",yes,no
+636767121a6d9265ec017b0a,"private int parseEndOfLine(String headerPart,int end){
+  int index=end;
+  for (; ; ) {
+    int offset=headerPart.indexOf('\r',index);
+    if (offset == -1 || offset + 1 >= headerPart.length()) {
+      throw new IllegalStateException(""Expected headers to be terminated by an empty line."");
+    }
+    if (headerPart.charAt(offset + 1) == '\n') {
+      return offset;
+    }
+    index=offset + 1;
+  }
+}
+",Skips bytes until the end of the current line.,Parse the header part starting from the given end position and return the index of the enter sequence.,yes,yes
+636766f61a6d9265ec017701,"public static int lastIndexOf(String str,String searchStr){
+  if (StringUtils.isEmpty(str)) {
+    return StringUtils.INDEX_NOT_FOUND;
+  }
+  return str.lastIndexOf(searchStr);
+}
+","Finds the last index within a String, handling null. ","Find the last index of the searchStr in str, and return INDEX_NOT_FOUND if str is empty.",yes,yes
+6367670b1a6d9265ec0179fe,"@Override public void write(byte b[]) throws IOException {
+  checkThreshold(b.length);
+  getStream().write(b);
+  written+=b.length;
+}
+",Writes b.length bytes from the specified byte array to this output stream.,Write the given byte array b into the output stream that this class represents.,yes,yes
+636767df1a6d9265ec01873c,"public String id(String entityId){
+  if (entityId == null) {
+    return String.valueOf(point);
+  }
+ else {
+    return point + Const.ID_CONNECTOR + entityId;
+  }
+}
+",Return the row id,Return the id by concatenating the point and the entity id with id connector.,yes,yes
+636766f91a6d9265ec01777f,"public static boolean toBoolean(Boolean bool){
+  if (bool == null) {
+    return false;
+  }
+  return bool.booleanValue() ? true : false;
+}
+",Converts a Boolean to a boolean handling null by returning false. ,Convert a Boolean to a boolean handling null by returning false.,yes,yes
+6367675f1a6d9265ec0180d3,"public static <V,E>IsomorphicGraphMapping<V,E> identity(Graph<V,E> graph){
+  Map<V,V> fMap=CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size());
+  Map<V,V> bMap=CollectionUtil.newHashMapWithExpectedSize(graph.vertexSet().size());
+  for (  V v : graph.vertexSet()) {
+    fMap.put(v,v);
+    bMap.put(v,v);
+  }
+  return new IsomorphicGraphMapping<>(fMap,bMap,graph,graph);
+}
+",Computes an identity automorphism (i.e. a self-mapping of a graph in which each vertex also maps to itself).,Compute and return an identity automorphism for the given graph.,yes,yes
+636766fe1a6d9265ec017833,"public static void forceDeleteOnExit(File file) throws IOException {
+  if (file.isDirectory()) {
+    deleteDirectoryOnExit(file);
+  }
+ else {
+    file.deleteOnExit();
+  }
+}
+",Schedules a file to be deleted when JVM exits. ,Delete the file or the whole directory when exiting.,yes,no
+636767791a6d9265ec018257,"public void addMessage(final LogRecord lr){
+  if (_isDisposed == true) {
+    return;
+  }
+  SwingUtilities.invokeLater(new Runnable(){
+    public void run(){
+      _categoryExplorerTree.getExplorerModel().addLogRecord(lr);
+      _table.getFilteredLogTableModel().addLogRecord(lr);
+      updateStatusLabel();
+    }
+  }
+);
+}
+",Add a log record message to be displayed in the LogTable. ,"Add a log record message to be displayed in the LogTable, with the SwingUtilities.",yes,yes
+636767641a6d9265ec01817d,"@Override public void generateGraph(Graph<V,E> target,Map<String,V> resultMap){
+  for (int i=0; i < sizeA; i++) {
+    partitionA.add(target.addVertex());
+  }
+  for (int i=0; i < sizeB; i++) {
+    partitionB.add(target.addVertex());
+  }
+  for (  V u : partitionA) {
+    for (    V v : partitionB) {
+      target.addEdge(u,v);
+    }
+  }
+}
+",Construct a complete bipartite graph.,Construct a complete bipartite graph from partitions A and B.,yes,yes
+636766ff1a6d9265ec017851,"protected int findByte(byte value,int pos){
+  for (int i=pos; i < tail; i++) {
+    if (buffer[i] == value) {
+      return i;
+    }
+  }
+  return -1;
+}
+","Searches for a byte of specified value in the buffer, starting at the specified position.","Searches for a byte of the specified value in the buffer, starting at the specified position.",yes,yes
+636767a41a6d9265ec018582,"public static <T>int writeDelimitedTo(OutputStream out,T message,Schema<T> schema,LinkedBuffer buffer) throws IOException {
+  if (buffer.start != buffer.offset)   throw new IllegalArgumentException(""Buffer previously used and had not been reset."");
+  final ProtobufOutput output=new ProtobufOutput(buffer);
+  schema.writeTo(output,message);
+  final int size=output.getSize();
+  ProtobufOutput.writeRawVarInt32Bytes(out,size);
+  final int msgSize=LinkedBuffer.writeTo(out,buffer);
+  assert size == msgSize;
+  return size;
+}
+","Serializes the message, prefixed with its length, into an OutputStream.","Use ProtobufOutput and the LinkedBuffer to write the message into the given OutputStream out, and return the message size.",yes,yes
+636767001a6d9265ec01787e,"public String toString(){
+  if (this.getObject() == null) {
+    return this.getStyle().getNullText();
+  }
+  Class<?> clazz=this.getObject().getClass();
+  this.appendFieldsIn(clazz);
+  while (clazz.getSuperclass() != null && clazz != this.getUpToClass()) {
+    clazz=clazz.getSuperclass();
+    this.appendFieldsIn(clazz);
+  }
+  return super.toString();
+}
+",Gets the String built by this builder.,Return the string built by this string builder.,yes,yes
+636767781a6d9265ec01823d,"protected void subAppend(LoggingEvent event){
+  try {
+    File tmp=File.createTempFile(prefix,suffix,dir);
+    Writer out=new BufferedWriter(new FileWriter(tmp));
+    out.write(event.message);
+    out.close();
+  }
+ catch (  Exception e) {
+    errorHandler.error(""Error during creation of temporary File!"",e,1);
+  }
+}
+",This method does actual writing,Write the message in the event into a temp file.,yes,yes
+636766ef1a6d9265ec01761a,"int addType(final String value){
+  int hashCode=hash(Symbol.TYPE_TAG,value);
+  Entry entry=get(hashCode);
+  while (entry != null) {
+    if (entry.tag == Symbol.TYPE_TAG && entry.hashCode == hashCode && entry.value.equals(value)) {
+      return entry.index;
+    }
+    entry=entry.next;
+  }
+  return addTypeInternal(new Entry(typeCount,Symbol.TYPE_TAG,value,hashCode));
+}
+",Adds a type in the type table of this symbol table. ,Add a new type entry of the given value into the type table of this symbol table. ,yes,yes
+636766821a6d9265ec0174b6,"public static Class<?>[] resolveArguments(Type genericType,Class<?> targetType){
+  Class<?>[] result=null;
+  if (genericType instanceof ParameterizedType) {
+    ParameterizedType paramType=(ParameterizedType)genericType;
+    Type[] arguments=paramType.getActualTypeArguments();
+    result=new Class[arguments.length];
+    for (int i=0; i < arguments.length; i++)     result[i]=resolveClass(arguments[i],targetType);
+  }
+ else   if (genericType instanceof TypeVariable) {
+    result=new Class[1];
+    result[0]=resolveClass(genericType,targetType);
+  }
+  return result;
+}
+",Resolves the arguments for the genericType using the type variable information for targetType. ,Resolve and return the arguments for the genericType using the type variable information for the targetType. ,yes,yes
+636767e11a6d9265ec018781,"@Override public void accept(final METRICS data){
+  final String id=data.id();
+  final METRICS existed=buffer.get(id);
+  if (existed == null) {
+    buffer.put(id,data);
+  }
+ else {
+    final boolean isAbandoned=!existed.combine(data);
+    if (isAbandoned) {
+      buffer.remove(id);
+    }
+  }
+}
+",Accept the data into the cache and merge with the existing value. ,Accept the data into the buffer if its id does not exist in the buffer. ,yes,yes
+636767531a6d9265ec017efb,"void insertBefore(Bucket bucket){
+  this.next=bucket;
+  if (bucket != null) {
+    this.prev=bucket.prev;
+    if (bucket.prev != null) {
+      bucket.prev.next=this;
+    }
+    bucket.prev=this;
+  }
+ else {
+    this.prev=null;
+  }
+}
+",Inserts this bucket in the data structure before the bucket.,Insert this bucket in the data structure before the given bucket.,yes,yes
+636766f11a6d9265ec017641,"@Override public int available() throws IOException {
+  return this.index < this.length ? this.length - this.index : this.length >= 0 && this.reader.ready() ? 1 : 0;
+}
+",@see InputStream#available(),Check the available space of this InputStream according to the index.,no,yes
+636767de1a6d9265ec018706,"public Mappings diffStructure(String tableName,Mappings mappings){
+  if (!structures.containsKey(tableName)) {
+    return new Mappings();
+  }
+  Map<String,Object> properties=mappings.getProperties();
+  Map<String,Object> diffProperties=structures.get(tableName).diffFields(new Fields(mappings));
+  return Mappings.builder().type(ElasticSearchClient.TYPE).properties(diffProperties).build();
+}
+",Returns mappings with fields that not exist in the input mappings. ,Return mappings with fields that do not exist in the input mappings. ,yes,yes
+636767dd1a6d9265ec0186e5,"public void addNewTarget(Channels channels,IConsumer consumer){
+  Group group=new Group(channels,consumer);
+  ArrayList<Group> newList=new ArrayList<Group>();
+  for (  Group target : consumeTargets) {
+    newList.add(target);
+  }
+  newList.add(group);
+  consumeTargets=newList;
+  size+=channels.size();
+}
+",Add a new target channels.,Add the given target channels to the consumeTargets.,yes,yes
+636767871a6d9265ec01846d,"public static void createConfigurationDirectory(){
+  String home=System.getProperty(""user.home"");
+  String sep=System.getProperty(""file.separator"");
+  File f=new File(home + sep + ""lf5"");
+  if (!f.exists()) {
+    try {
+      f.mkdir();
+    }
+ catch (    SecurityException e) {
+      e.printStackTrace();
+    }
+  }
+}
+",Creates the directory where the MRU file list will be written. ,"Create the ""lf5"" directory in the Documents and Settings directory on Windows machines, or the user.home variable points on all other platforms.",yes,yes
+636766f81a6d9265ec01775b,"public long readLong(final int offset){
+  long l1=readInt(offset);
+  long l0=readInt(offset + 4) & 0xFFFFFFFFL;
+  return (l1 << 32) | l0;
+}
+",Reads a signed long value in this ClassReader.,Read a signed long value.,yes,yes
+636767a51a6d9265ec01859d,"public boolean equals(final byte[] data,int offset,final int len){
+  final byte[] bytes=this.bytes;
+  if (len != bytes.length)   return false;
+  for (int i=0; i < len; ) {
+    if (bytes[i++] != data[offset++]) {
+      return false;
+    }
+  }
+  return true;
+}
+",Returns true if the contents of the internal array and the provided array match.,Return true if the contents of the internal array bytes and the provided array data match.,yes,yes
+6367670b1a6d9265ec0179ff,"public static Byte[] nullToEmpty(final Byte[] array){
+  if (array == null || array.length == 0) {
+    return ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY;
+  }
+  return array;
+}
+",Defensive programming technique to change a null reference to an empty one. ,Return an EMPTY_BYTE_OBJECT_ARRAY array for a null or empty input array.,yes,yes
+6367677f1a6d9265ec018347,"public synchronized void send(final String message){
+  Iterator ce=connections.iterator();
+  for (Iterator e=writers.iterator(); e.hasNext(); ) {
+    ce.next();
+    PrintWriter writer=(PrintWriter)e.next();
+    writer.print(message);
+    if (writer.checkError()) {
+      ce.remove();
+      e.remove();
+    }
+  }
+}
+",Sends a message to each of the clients in telnet-friendly output.,Send a message to each of the connections in telnet-friendly output.,yes,yes
+6367670a1a6d9265ec0179e8,"public static Boolean[] nullToEmpty(final Boolean[] array){
+  if (array == null || array.length == 0) {
+    return ArrayUtils.EMPTY_BOOLEAN_OBJECT_ARRAY;
+  }
+  return array;
+}
+",Defensive programming technique to change a null reference to an empty one. ,Return an EMPTY_BOOLEAN_OBJECT_ARRAY array for a null or empty input array.,yes,yes
+6367677f1a6d9265ec01834b,"public void put(LoggingEvent o){
+  if (numElements != maxSize) {
+    buf[next]=o;
+    if (++next == maxSize) {
+      next=0;
+    }
+    numElements++;
+  }
+}
+",Place a LoggingEvent in the buffer.,Place a  LoggingEvent in the buffer buf.,yes,yes
+636767df1a6d9265ec018744,"protected List<TimeRange> buildTimeRanges(long start,long end){
+  if (start >= end) {
+    return null;
+  }
+  end+=1;
+  final List<TimeRange> timeRanges=new ArrayList<>();
+  do {
+    long batchEnd=Math.min(start + FETCH_DATA_DURATION,end);
+    timeRanges.add(new TimeRange(start,batchEnd));
+    start=batchEnd;
+  }
+ while (start < end);
+  return timeRanges;
+}
+",Split time ranges to insure the start time and end time is small then FETCH_DATA_DURATION.,Split time ranges to insure the start time and end time is small than FETCH_DATA_DURATION.,yes,yes
+636767031a6d9265ec0178e6,"public static byte[] toPrimitive(final Byte[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_BYTE_ARRAY;
+  }
+  final byte[] result=new byte[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=array[i].byteValue();
+  }
+  return result;
+}
+",Converts an array of object Bytes to primitives. ,"Convert an array of object Bytes to primitives, return null for a null input array.",yes,yes
+636767dc1a6d9265ec0186be,"static long compressTimeBucket(long timeBucket,int dayStep){
+  if (dayStep > 1) {
+    DateTime time=TIME_BUCKET_FORMATTER.parseDateTime("""" + timeBucket);
+    int days=Days.daysBetween(DAY_ONE,time).getDays();
+    int groupBucketOffset=days % dayStep;
+    return Long.parseLong(time.minusDays(groupBucketOffset).toString(TIME_BUCKET_FORMATTER));
+  }
+ else {
+    return timeBucket;
+  }
+}
+",Follow the dayStep to re-format the time bucket literal long value. ,Follow the dayStep to reformat the time bucket with TIME_BUCKET_FORMATTER. ,yes,yes
+636767a41a6d9265ec01856c,"public static int computeUTF8Size(final CharSequence str,final int index,final int len){
+  int size=len;
+  for (int i=index; i < len; i++) {
+    final char c=str.charAt(i);
+    if (c < 0x0080)     continue;
+    if (c < 0x0800)     size++;
+ else     size+=2;
+  }
+  return size;
+}
+",Computes the size of the utf8 string beginning at the specified code index with the specified code length.,Compute the size of the utf8 string beginning at the specified  index  with the specified length.,yes,yes
+636766f01a6d9265ec017639,"public static <T>List<T> asList(T[] a){
+  if (a == null)   return Collections.emptyList();
+  return Arrays.asList(a);
+}
+",Array to List. ,"Convert an array to list, return empty list for null array.",yes,yes
+6367672d1a6d9265ec017c74,"public boolean remove(int val){
+  if (map.containsKey(val)) {
+    map.remove(val);
+    values.remove(values.indexOf(val));
+    return true;
+  }
+  return false;
+}
+",Removes a value from the set. ,Remove a value from the values if the map keys contains the val. ,yes,yes
+6367676b1a6d9265ec0181df,"public static boolean startsWithIgnoreCase(String str,String prefix){
+  if (str == null || prefix == null) {
+    return false;
+  }
+  if (str.startsWith(prefix)) {
+    return true;
+  }
+  if (str.length() < prefix.length()) {
+    return false;
+  }
+  String lcStr=str.substring(0,prefix.length()).toLowerCase();
+  String lcPrefix=prefix.toLowerCase();
+  return lcStr.equals(lcPrefix);
+}
+","Returns true if the given string starts with the specified case-insensitive prefix, false otherwise.","Return true if the given string starts with the specified case-insensitive prefix, false otherwise.",yes,yes
+6367674b1a6d9265ec017dc0,"private Set<V> initVisibleVertices(){
+  Set<V> visibleVertex=new HashSet<>();
+  for (  E e : graph.edgeSet()) {
+    V s=graph.getEdgeSource(e);
+    V t=graph.getEdgeTarget(e);
+    if (!s.equals(t)) {
+      visibleVertex.add(s);
+      visibleVertex.add(t);
+    }
+  }
+  return visibleVertex;
+}
+",Compute all vertices that have positive degree by iterating over the edges on purpose. ,Compute all vertices by iterating over the edges of this graph.,yes,yes
+636767001a6d9265ec017873,"public static String reverse(final String str){
+  if (str == null) {
+    return null;
+  }
+  return new StringBuilder(str).reverse().toString();
+}
+",Reverses a String as per StringBuilder.reverse(). ,Reverse the given String as per.,yes,yes
+636766ff1a6d9265ec01783b,"public static String sub(String str,int start,int end){
+  return StringUtils.substring(str,start,end);
+}
+",Gets a substring from the specified String avoiding exceptions.,Get a substring from the specified String avoiding exceptions.,yes,yes
+6367671a1a6d9265ec017c15,"public ByteVector putByteArray(final byte[] byteArrayValue,final int byteOffset,final int byteLength){
+  if (length + byteLength > data.length) {
+    enlarge(byteLength);
+  }
+  if (byteArrayValue != null) {
+    System.arraycopy(byteArrayValue,byteOffset,data,length,byteLength);
+  }
+  length+=byteLength;
+  return this;
+}
+",Puts an array of bytes into this byte vector. ,"Put an array of bytes into this byte vector, enlarge the byte vector automatically if necessary.",yes,yes
+636766821a6d9265ec0174d2,"public static AtmosphereRequest wrap(HttpServletRequest request){
+  if (AtmosphereRequestImpl.class.isAssignableFrom(request.getClass())) {
+    return (AtmosphereRequestImpl)request;
+  }
+  Builder b=new Builder();
+  Enumeration<String> e=request.getAttributeNames();
+  String s;
+  while (e.hasMoreElements()) {
+    s=e.nextElement();
+    b.localAttributes.put(s,attributeWithoutException(request,s));
+  }
+  return b.request(request).build();
+}
+",Wrap an HttpServletRequest.,Wrap an HttpServletRequest with the Builder.,yes,yes
+636767ab1a6d9265ec01867b,"public static LinkedBuffer writeUTF8(final CharSequence str,final WriteSession session,final LinkedBuffer lb){
+  final int len=str.length();
+  if (len == 0)   return lb;
+  return lb.offset + len > lb.buffer.length ? writeUTF8(str,0,len,lb.buffer,lb.offset,lb.buffer.length,session,lb) : writeUTF8(str,0,len,session,lb);
+}
+",Writes the utf8-encoded bytes from the string into the LinkedBuffer.,Write the utf8-encoded bytes from the string into the LinkedBuffer.,yes,yes
+6367675c1a6d9265ec01805b,"public void removeFromTreeEdgeList(){
+  for (int dir=0; dir < 2; dir++) {
+    if (prev[dir] != null) {
+      prev[dir].next[dir]=next[dir];
+    }
+ else {
+      head[1 - dir].first[dir]=next[dir];
+    }
+    if (next[dir] != null) {
+      next[dir].prev[dir]=prev[dir];
+    }
+  }
+  head[0]=head[1]=null;
+}
+",Removes this edge from both doubly linked lists of tree edges.,Remove this edge from both doubly linked lists of the tree edges.,yes,yes
+636767791a6d9265ec01826d,"public static String findAndSubst(String key,Properties props){
+  String value=props.getProperty(key);
+  if (value == null)   return null;
+  try {
+    return substVars(value,props);
+  }
+ catch (  IllegalArgumentException e) {
+    LogLog.error(""Bad option value ["" + value + ""]."",e);
+    return value;
+  }
+}
+",Find the value corresponding to key in props. ,"Find the value corresponding to key in props, then perform variable substitution on the found value. ",yes,yes
+636767001a6d9265ec01787f,"protected void appendDetail(StringBuffer buffer,String fieldName,int[] array){
+  buffer.append(arrayStart);
+  for (int i=0; i < array.length; i++) {
+    if (i > 0) {
+      buffer.append(arraySeparator);
+    }
+    appendDetail(buffer,fieldName,array[i]);
+  }
+  buffer.append(arrayEnd);
+}
+",Append to the toString the detail of an int array.,"Append the detail of an int array to the buffer, starting with arrayStart and ending with arrayEnd, and separating with arraySeparator.",yes,yes
+636766fe1a6d9265ec017834,"public static String sessionId(){
+  HttpSession httpSession=servletSession();
+  if (httpSession == null) {
+    return null;
+  }
+  return httpSession.getId();
+}
+",Session ID.,Return the servlet session id.,no,yes
+636766ff1a6d9265ec01784b,"public static boolean isDigits(String str){
+  if ((str == null) || (str.length() == 0)) {
+    return false;
+  }
+  for (int i=0; i < str.length(); i++) {
+    if (!Character.isDigit(str.charAt(i))) {
+      return false;
+    }
+  }
+  return true;
+}
+",Checks whether the String contains only digit characters. ,Check whether a character string is a dight. ,yes,yes
+636766fc1a6d9265ec0177da,"private static boolean isParameterSeparator(final char c){
+  if (Character.isWhitespace(c)) {
+    return true;
+  }
+  for (  char separator : PARAMETER_SEPARATORS) {
+    if (c == separator) {
+      return true;
+    }
+  }
+  return false;
+}
+","Determine whether a parameter name ends at the current position, that is, whether the given character qualifies as a separator.",Check whether a character is a parameter separator. ,yes,yes
+6367670c1a6d9265ec017a35,"private static boolean endsWith(final String str,final String suffix,final boolean ignoreCase){
+  if (str == null || suffix == null) {
+    return str == null && suffix == null;
+  }
+  if (suffix.length() > str.length()) {
+    return false;
+  }
+  int strOffset=str.length() - suffix.length();
+  return str.regionMatches(ignoreCase,strOffset,suffix,0,suffix.length());
+}
+",Check if a String ends with a specified suffix (optionally case insensitive).,Determines whether a character string ends with a specified suffix.,yes,yes
+6367667f1a6d9265ec01745d,"public static List<PathSegmentImpl> decodePath(URI u,boolean decode){
+  String rawPath=u.getRawPath();
+  if (rawPath != null && rawPath.length() > 0 && rawPath.charAt(0) == '/') {
+    rawPath=rawPath.substring(1);
+  }
+  return decodePath(rawPath,decode);
+}
+",Decode the path component of a URI as path segments.,Decode the raw path.,yes,yes
+636766f11a6d9265ec017651,"public static Character[] nullToEmpty(final Character[] array){
+  if (array == null || array.length == 0) {
+    return ArrayUtils.EMPTY_CHARACTER_OBJECT_ARRAY;
+  }
+  return array;
+}
+",Defensive programming technique to change a null reference to an empty one. ,"If array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY. ",yes,yes
+636767821a6d9265ec0183ab,"public boolean hasThrown(){
+  Throwable thrown=getThrown();
+  if (thrown == null) {
+    return false;
+  }
+  String thrownString=thrown.toString();
+  return thrownString != null && thrownString.trim().length() != 0;
+}
+",Return true if getThrown().toString() is a non-empty string.,Check whether there is a thrown.,yes,yes
+636767831a6d9265ec0183c9,"public static String peek(){
+  Stack stack=getCurrentStack();
+  if (stack != null && !stack.isEmpty())   return ((DiagnosticContext)stack.peek()).message;
+ else   return """";
+}
+",Looks at the last diagnostic context at the top of this NDC without removing it. ,Return the value at the top of the stack.,yes,yes
+636767de1a6d9265ec01871c,"public void valueAccumulation(String key,Long value){
+  Long element=data.get(key);
+  if (element == null) {
+    element=value;
+  }
+ else {
+    element+=value;
+  }
+  data.put(key,element);
+}
+",Accumulate the value with existing value in the same given key.,Add the value to the original value of the key.,yes,yes
+636766811a6d9265ec017496,"public InputStream next() throws IOException {
+  if (stack.isEmpty()) {
+    current=null;
+    return null;
+  }
+ else {
+    current=stack.removeLast();
+    return current;
+  }
+}
+",Return the next java.io.File object or null if no more files are available.,"If the stack is not empty, the last element of the stack is returned. ",yes,yes
+6367677e1a6d9265ec01832e,"public Logger exists(String name){
+  Object o=ht.get(new CategoryKey(name));
+  if (o instanceof Logger) {
+    return (Logger)o;
+  }
+ else {
+    return null;
+  }
+}
+",Check if the named logger exists in the hierarchy. ,Check if the named logger exists. ,yes,yes
+6367670a1a6d9265ec0179e7,"public Converter lookup(final Class<?> clazz){
+  Converter conv=(Converter)this.converters.get(clazz);
+  if (conv != null) {
+    return conv;
+  }
+  for (  Object regType : this.converters.keySet()) {
+    if (((Class<?>)regType).isAssignableFrom(clazz)) {
+      return (Converter)this.converters.get(regType);
+    }
+  }
+  return null;
+}
+","Look up and return any registered Converter for the specified destination class; if there is no registered Converter, return null.",Check whether the specified converter exists in converters. ,yes,yes
+636767a41a6d9265ec018572,"public long readRawVarint64() throws IOException {
+  int shift=0;
+  long result=0;
+  while (shift < 64) {
+    final byte b=readRawByte();
+    result|=(long)(b & 0x7F) << shift;
+    if ((b & 0x80) == 0) {
+      return result;
+    }
+    shift+=7;
+  }
+  throw ProtobufException.malformedVarint();
+}
+",Read a raw Varint from the stream.,Read raw varint.,yes,yes
+636767021a6d9265ec0178bb,"public static Double[] nullToEmpty(final Double[] array){
+  if (array == null || array.length == 0) {
+    return ArrayUtils.EMPTY_DOUBLE_OBJECT_ARRAY;
+  }
+  return array;
+}
+",Defensive programming technique to change a null reference to an empty one. ,"If the double type array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY. ",yes,yes
+636767021a6d9265ec0178b2,"private void pop(final String descriptor){
+  char firstDescriptorChar=descriptor.charAt(0);
+  if (firstDescriptorChar == '(') {
+    pop((Type.getArgumentsAndReturnSizes(descriptor) >> 2) - 1);
+  }
+ else   if (firstDescriptorChar == 'J' || firstDescriptorChar == 'D') {
+    pop(2);
+  }
+ else {
+    pop(1);
+  }
+}
+",Pops as many abstract types from the output frame stack as described by the given descriptor.,Pop the various value according to the first character of the descriptor.,yes,yes
+636766f91a6d9265ec01776e,"@Override public void write(final byte b[],final int off,final int len) throws IOException {
+  if (off < 0 || off > b.length || len < 0 || off + len > b.length || off + len < 0) {
+    throw new IndexOutOfBoundsException();
+  }
+ else   if (len == 0) {
+    return;
+  }
+  if (this.count + len > this.buf.length) {
+    this.encodePendingBytes(false);
+  }
+  System.arraycopy(b,off,this.buf,this.count,len);
+  this.count+=len;
+}
+",Writes len bytes from the specified byte array starting at offset off to this byte array output stream.,Write bytes of length len from a byte array.,yes,yes
+636767551a6d9265ec017f3f,"public static final <V>void swap(V[] arr,int i,int j){
+  V tmp=arr[j];
+  arr[j]=arr[i];
+  arr[i]=tmp;
+}
+",Swaps the two elements at the specified indices in the given array.,Swap values at indexes i and j in arr.,yes,yes
+636766ae1a6d9265ec0175dc,"public Boolean isPartialContentResponse(){
+  Integer limit=drc.getLimit() == null ? 0 : drc.getLimit();
+  Long count=drc.getCount() == null ? 0 : drc.getCount();
+  return !((limit + 1) >= count);
+}
+",Check if the actual response is a Partial Content (HTTP 206 code),Determine whether the actual response is a Partial Content,yes,yes
+636766f01a6d9265ec01762e,"public static boolean isEmpty(final double[] array){
+  return array == null || array.length == 0;
+}
+",Checks if an array of primitive doubles is empty or null.,Check whether the array of the double type is empty.,yes,yes
+6367667e1a6d9265ec01743a,"public long lastWriteTimeStampInMilliseconds(){
+  return lastWrite == -1 ? System.currentTimeMillis() : lastWrite;
+}
+","The last time, in milliseconds, a write operation occurred.",Check whether lastwrite is - 1. ,yes,yes
+636767601a6d9265ec0180fd,"protected void addToIndex(V sourceVertex,V targetVertex,E e){
+  Pair<V,V> vertexPair=new Pair<>(sourceVertex,targetVertex);
+  Set<E> edgeSet=touchingVerticesToEdgeMap.get(vertexPair);
+  if (edgeSet != null)   edgeSet.add(e);
+ else {
+    edgeSet=edgeSetFactory.createEdgeSet(sourceVertex);
+    edgeSet.add(e);
+    touchingVerticesToEdgeMap.put(vertexPair,edgeSet);
+  }
+}
+",Add an edge to the index.,Add an edge whose start point is sourceVertex and end point is targetVertex to touchingVerticesToEdgeMap.,yes,yes
+636766821a6d9265ec0174c9,"private static File[] classPath(){
+  final String[] fileNames=System.getProperty(""java.class.path"").split(File.pathSeparator);
+  final File[] files=new File[fileNames.length];
+  for (int i=0; i < files.length; ++i) {
+    files[i]=new File(fileNames[i]);
+  }
+  return files;
+}
+",Returns the class path of the current JVM instance as an array of File objects.,Creates an array of the file type based on all file names in java.class.path and returns the array.,yes,yes
+636767041a6d9265ec0178f8,"private static String[] copyStrings(final String[] src){
+  String[] dst=new String[src.length];
+  for (int i=0; i < src.length; ++i) {
+    dst[i]=src[i].toLowerCase();
+  }
+  return dst;
+}
+","This method creates a copy of the provided array, and ensures that all the strings in the newly created array contain only lower-case letters. ",Copy the source string and transfer each character to lowercase.,yes,yes
+636767521a6d9265ec017ecc,"public static Pair<Box2D,Box2D> splitAlongXAxis(Box2D box){
+  double newWidth=box.getWidth() / 2d;
+  double height=box.getHeight();
+  return Pair.of(Box2D.of(box.getMinX(),box.getMinY(),newWidth,height),Box2D.of(box.getMinX() + newWidth,box.getMinY(),newWidth,height));
+}
+",Split a box along the x axis into two equal boxes.,Divide a box into two equal boxes on the x axis.,yes,yes
+636766a91a6d9265ec0175c1,"private void enlarge(final int size){
+  int doubleCapacity=2 * data.length;
+  int minimalCapacity=length + size;
+  byte[] newData=new byte[doubleCapacity > minimalCapacity ? doubleCapacity : minimalCapacity];
+  System.arraycopy(data,0,newData,0,length);
+  data=newData;
+}
+",Enlarges this byte vector so that it can receive 'size' more bytes.,Convert the original data array to a longer array.,yes,yes
+636767781a6d9265ec018238,"public boolean isAttached(Appender appender){
+  if (appenderList == null || appender == null)   return false;
+  int size=appenderList.size();
+  Appender a;
+  for (int i=0; i < size; i++) {
+    a=(Appender)appenderList.elementAt(i);
+    if (a == appender)     return true;
+  }
+  return false;
+}
+","Returns true if the specified appender is in the list of attached appenders, false otherwise.",Check whether appender elements exist in appenderList. ,yes,yes
+6367674a1a6d9265ec017dab,"@Override public int compare(Double o1,Double o2){
+  if (Math.abs(o1 - o2) < epsilon) {
+    return 0;
+  }
+ else {
+    return Double.compare(o1,o2);
+  }
+}
+",Compares two floating point values. ,Compares two values. ,yes,yes
+6367672d1a6d9265ec017c78,"public boolean insert(int val){
+  if (!map.containsKey(val)) {
+    map.put(val,val);
+    values.add(val);
+    return true;
+  }
+ else {
+    return false;
+  }
+}
+",Inserts a value to the set. ,"If the key whose value is val does not exist in the map, add (val, val) to the map and return true. ",yes,yes
+636767dc1a6d9265ec0186c6,"private boolean containsAllFields(Fields fields){
+  if (this.properties.size() < fields.properties.size()) {
+    return false;
+  }
+  boolean isContains=fields.properties.entrySet().stream().allMatch(item -> Objects.equals(properties.get(item.getKey()),item.getValue()));
+  if (!isContains) {
+    return false;
+  }
+  return fields.source.getExcludes().containsAll(this.source.getExcludes());
+}
+",Returns ture when the input fields have already been stored in the properties.,Check whether all fields exist in properties.,yes,yes
+636766821a6d9265ec0174bf,"public static String capitalize(String name){
+  if (name == null || name.length() == 0) {
+    return name;
+  }
+  char chars[]=name.toCharArray();
+  chars[0]=Character.toUpperCase(chars[0]);
+  return new String(chars);
+}
+",Reverse of Introspector.decapitalize,Converts a name of the string type to a character array and converts the first letter to an uppercase letter.,no,yes
+636767aa1a6d9265ec01865a,"public static int writeTo(final DataOutput out,LinkedBuffer node) throws IOException {
+  int contentSize=0, len;
+  do {
+    if ((len=node.offset - node.start) > 0) {
+      out.write(node.buffer,node.start,len);
+      contentSize+=len;
+    }
+  }
+ while ((node=node.next) != null);
+  return contentSize;
+}
+",Writes the contents of the LinkedBuffer into the DataOutput.,Write the content into the LinkedBuffer.,yes,yes
+636766f21a6d9265ec017677,"public static boolean isNotTrue(Boolean bool){
+  return !isTrue(bool);
+}
+","Checks if a Boolean value is not true, handling null by returning true. ",Check whether the parameter bool is not true.,yes,yes
+6367674f1a6d9265ec017e74,"public String toString(){
+  StringBuilder s=new StringBuilder();
+  for (int j=i; j < n; j++)   s.append(vs[j]).append("" "");
+  return s.toString();
+}
+",Returns a textual representation of the queue.,Convert a value in a vs array to a string.,yes,yes
+6367675c1a6d9265ec018058,"@SuppressWarnings(""unchecked"") public static Supplier<String> createStringSupplier(int start){
+  int[] container=new int[]{start};
+  return (Supplier<String> & Serializable)() -> String.valueOf(container[0]++);
+}
+",Create a string supplier which returns unique strings. ,Create a string supplier which returns unique integer strings starting from the given start.,yes,yes
+6367677b1a6d9265ec0182bd,"public String format(final LoggingEvent event){
+  StringBuffer buf=new StringBuffer();
+  for (PatternConverter c=head; c != null; c=c.next) {
+    c.format(buf,event);
+  }
+  return buf.toString();
+}
+",Formats a logging event to a writer.,Formats LoggingEvent as a fixed-format string.,yes,yes
+636766ff1a6d9265ec017842,"public static double[] toPrimitive(final Double[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_DOUBLE_ARRAY;
+  }
+  final double[] result=new double[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=array[i].doubleValue();
+  }
+  return result;
+}
+",Converts an array of object Doubles to primitives. ,"If the length of the array is 0, return EMPTY_DOUBLE_ARRAY. ",yes,yes
+636766fa1a6d9265ec0177a9,"private void addInitializedType(final int abstractType){
+  if (initializations == null) {
+    initializations=new int[2];
+  }
+  int initializationsLength=initializations.length;
+  if (initializationCount >= initializationsLength) {
+    int[] newInitializations=new int[Math.max(initializationCount + 1,2 * initializationsLength)];
+    System.arraycopy(initializations,0,newInitializations,0,initializationsLength);
+    initializations=newInitializations;
+  }
+  initializations[initializationCount++]=abstractType;
+}
+",Adds an abstract type to the list of types on which a constructor is invoked in the basic block.,Add abstractType to the initializations variable.,yes,yes
+6367670a1a6d9265ec0179dc,"private void putAbstractTypes(final int start,final int end){
+  for (int i=start; i < end; ++i) {
+    Frame.putAbstractType(symbolTable,currentFrame[i],stackMapTableEntries);
+  }
+}
+","Puts some abstract types of currentFrame in stackMapTableEntries, using the JVMS verification_type_info format used in StackMapTable attributes.",Add the elements indexed from start to end in currentFrame to Frame.,yes,yes
+636766801a6d9265ec017482,"public void readFrom(final InputStream in) throws IOException {
+  pointer=0;
+  size=0;
+  int n;
+  do {
+    n=in.read(buffer,size,buffer.length - size);
+    if (n > 0) {
+      size+=n;
+    }
+    resizeIfNeeded();
+  }
+ while (n >= 0);
+}
+",Clear and fill the buffer of this ClassFileBuffer with the supplied byte stream. ,Read from the buffer.,yes,yes
+6367670a1a6d9265ec0179d8,"@Override public void write(final byte[] b) throws IOException {
+  if (this.encoding == null) {
+    this.writer.write(new String(b));
+  }
+ else {
+    this.writer.write(new String(b,this.encoding));
+  }
+}
+",@see OutputStream#write(byte[]),Write the byte array b to the buffer based on the encoding.,no,yes
+636766a81a6d9265ec01757b,"@SuppressWarnings(""unchecked"") public String toString(JSONWriter.Feature... features){
+  try (JSONWriter writer=JSONWriter.of(features)){
+    if ((writer.context.features & NONE_DIRECT_FEATURES) == 0) {
+      writer.write(this);
+    }
+ else {
+      writer.setRootObject(this);
+      if (arrayWriter == null) {
+        arrayWriter=writer.getObjectWriter(JSONArray.class,JSONArray.class);
+      }
+      arrayWriter.write(writer,this,null,null,0);
+    }
+    return writer.toString();
+  }
+ }
+",Serialize to JSON String.,Converts the content in JSONWriter to a string.,yes,yes
+636767021a6d9265ec0178bf,"@Override protected Object convertToType(final Class<?> type,final Object value) throws Exception {
+  String string=value.toString();
+  if (string.length() == 0) {
+    return BeanUtils.getDefaultValue(type);
+  }
+ else {
+    return string.charAt(0);
+  }
+}
+",Convert the input object into a java.lang.Character.,"If the length of the value string is 0, the default type is returned. ",yes,yes
+6367670b1a6d9265ec017a0f,"public static boolean containsAnyIgnoreCase(String str,List<String> searchStrArray){
+  if (StringUtils.isEmpty(str) || searchStrArray == null || searchStrArray.isEmpty()) {
+    return false;
+  }
+  for (  String item : searchStrArray) {
+    if (containsIgnoreCase(str,item)) {
+      return true;
+    }
+  }
+  return false;
+}
+",Case in-sensitive Checks if the String contains any character in the given set of string.,Check whether str contains elements in searchStrArray. ,yes,yes
+636766a81a6d9265ec01758e,"public static int nextPrime(int desiredCapacity){
+  if (desiredCapacity >= largestPrime) {
+    return largestPrime;
+  }
+  int i=Arrays.binarySearch(primeCapacities,desiredCapacity);
+  if (i < 0) {
+    i=-i - 1;
+  }
+  return primeCapacities[i];
+}
+",Returns a prime number which is >= desiredCapacity and very close to desiredCapacity (within 11% if desiredCapacity >= 1000).,Returns the element at the location specified by desiredCapacity in primeCapacities.,yes,yes
+6367670a1a6d9265ec0179cf,"public static char toChar(final Character ch,final char defaultValue){
+  if (ch == null) {
+    return defaultValue;
+  }
+  return ch.charValue();
+}
+",Converts the Character to a char handling null. ,Obtains the character value of ch. ,yes,yes
+6367676b1a6d9265ec0181e2,"public static Object findFirstMatch(Collection source,Collection candidates){
+  if (isEmpty(source) || isEmpty(candidates)) {
+    return null;
+  }
+  for (  Object candidate : candidates) {
+    if (source.contains(candidate)) {
+      return candidate;
+    }
+  }
+  return null;
+}
+",Return the first element in 'candidates' that is contained in 'source'. ,Returns the first element in candidates that matches the source.,yes,yes
+6367676b1a6d9265ec0181ee,"public static String trimTrailingWhitespace(String str){
+  if (!hasLength(str)) {
+    return str;
+  }
+  StringBuilder sb=new StringBuilder(str);
+  while (sb.length() > 0 && Character.isWhitespace(sb.charAt(sb.length() - 1))) {
+    sb.deleteCharAt(sb.length() - 1);
+  }
+  return sb.toString();
+}
+",Trim trailing whitespace from the given String.,Trim the end space of the str.,yes,yes
+636767dc1a6d9265ec0186cb,"public void init(){
+  File dist=new File(analyzeResultDist);
+  if (!dist.exists()) {
+    dist.mkdirs();
+    return;
+  }
+  if (dist.isFile()) {
+    throw new IllegalArgumentException(analyzeResultDist + "" must be a directory"");
+  }
+}
+","initialize config, such as check dist path",Initializes a directory.,yes,yes
+636767a31a6d9265ec018552,"@Override public String readString() throws IOException {
+  final int size=readRawVarint32();
+  if (size <= (bufferSize - bufferPos) && size > 0) {
+    final String result=STRING.deser(buffer,bufferPos,size);
+    bufferPos+=size;
+    return result;
+  }
+ else {
+    return STRING.deser(readRawBytes(size));
+  }
+}
+",Read a string field value from the stream.,Read string from a buffer.,yes,yes
+636767a61a6d9265ec0185b7,"private static int digitValue(final char c){
+  if ('0' <= c && c <= '9') {
+    return c - '0';
+  }
+ else   if ('a' <= c && c <= 'z') {
+    return c - 'a' + 10;
+  }
+ else {
+    return c - 'A' + 10;
+  }
+}
+",Interpret a character as a digit (in any base up to 36) and return the numeric value. ,Obtains the number corresponding to the character c.,yes,yes
+636767e01a6d9265ec018755,"private Map<String,Object> buildContent(JsonObject jsonObject){
+  Map<String,Object> content=new HashMap<>();
+  content.put(""msg_type"",jsonObject.get(""msg_type"").getAsString());
+  if (jsonObject.get(""ats"") != null) {
+    String ats=jsonObject.get(""ats"").getAsString();
+    String text=jsonObject.get(""content"").getAsJsonObject().get(""text"").getAsString();
+    List<String> collect=Arrays.stream(ats.split("","")).map(String::trim).collect(Collectors.toList());
+    for (    String userId : collect) {
+      text+=""<at user_id=\"""" + userId + ""\""></at>"";
+    }
+    jsonObject.get(""content"").getAsJsonObject().addProperty(""text"",text);
+  }
+  content.put(""content"",jsonObject.get(""content"").getAsJsonObject());
+  return content;
+}
+","build content,if it has ats someone set the ats.","Put the ""content"" from the  jsonObject to the content.",yes,yes
+6367667f1a6d9265ec017458,"public AtmosphereFramework removeAtmosphereHandler(String mapping){
+  if (mapping.endsWith(""/"")) {
+    mapping+=mappingRegex;
+  }
+  atmosphereHandlers.remove(mapping);
+  return this;
+}
+",Remove an AtmosphereHandler.,Remove the mapping from atmosphereHandlers.,yes,yes
+636767a21a6d9265ec018517,"public final byte[] toByteArray(){
+  LinkedBuffer node=head;
+  int offset=0, len;
+  final byte[] buf=new byte[size];
+  do {
+    if ((len=node.offset - node.start) > 0) {
+      System.arraycopy(node.buffer,node.start,buf,offset,len);
+      offset+=len;
+    }
+  }
+ while ((node=node.next) != null);
+  return buf;
+}
+",Returns a single byte array containg all the contents written to the buffer(s).,Copy bytes from LinkedBuffer and return.,yes,yes
+6367667d1a6d9265ec017401,"public static String unescapeJava(String str) throws Exception {
+  if (str == null) {
+    return null;
+  }
+  StringWriter writer=new StringWriter(str.length());
+  unescapeJava(writer,str);
+  return writer.toString();
+}
+",Unescapes any Java literals found in the String. ,Unescapes Java that found in the String.,yes,yes
+636766f01a6d9265ec01763e,"private static String javaCharset(String charset){
+  if (charset == null) {
+    return null;
+  }
+  String mappedCharset=MIME2JAVA.get(charset.toLowerCase(Locale.ENGLISH));
+  if (mappedCharset == null) {
+    return charset;
+  }
+  return mappedCharset;
+}
+",Translate a MIME standard character set name into the Java equivalent.,Translate a MIME standard charset name into the Java equivalent.,yes,yes
+6367676a1a6d9265ec0181bf,"public static Object quoteIfString(Object obj){
+  return (obj instanceof String ? quote((String)obj) : obj);
+}
+",Turn the given Object into a String with single quotes if it is a String; keeping the Object as-is else.,Check whether an obj variable is of the String type.,yes,yes
+636767501a6d9265ec017e86,"@Override public ListNode<E> previousNode(){
+  checkForComodification();
+  if (!hasPrevious()) {
+    throw new NoSuchElementException();
+  }
+  last=next=next.prev;
+  nextIndex--;
+  return last;
+}
+",{@inheritDoc},Returns the previous ListNode.,no,yes
+636766f21a6d9265ec017667,"public short readShort(final int offset){
+  byte[] classBuffer=classFileBuffer;
+  return (short)(((classBuffer[offset] & 0xFF) << 8) | (classBuffer[offset + 1] & 0xFF));
+}
+",Reads a signed short value in this ClassReader.,Read a short value from classFileBuffer,yes,yes
+636767031a6d9265ec0178ef,"private static Object copyArrayGrow1(final Object array,final Class<?> newArrayComponentType){
+  if (array != null) {
+    int arrayLength=Array.getLength(array);
+    Object newArray=Array.newInstance(array.getClass().getComponentType(),arrayLength + 1);
+    System.arraycopy(array,0,newArray,0,arrayLength);
+    return newArray;
+  }
+  return Array.newInstance(newArrayComponentType,1);
+}
+",Returns a copy of the given array of size 1 greater than the argument. ,Copy the given array and add a default value at the end.,yes,yes
+636767431a6d9265ec017c8d,"private int computeBinaryLog(int n){
+  assert n >= 0;
+  int result=0;
+  while (n > 0) {
+    n>>=1;
+    ++result;
+  }
+  return result;
+}
+",Computes floor($\log_2 (n)$) $+ 1$.,Calculate the floor of the logarithmic value of the given value in base 2.,no,yes
+636767611a6d9265ec018116,"private Set<V> intersection(Set<V> set1,Set<V> set2){
+  Set<V> a;
+  Set<V> b;
+  if (set1.size() <= set2.size()) {
+    a=set1;
+    b=set2;
+  }
+ else {
+    a=set2;
+    b=set1;
+  }
+  return a.stream().filter(b::contains).collect(Collectors.toSet());
+}
+",Efficient way to compute the intersection between two sets.,Return the intersection between two sets.,yes,yes
+636766f71a6d9265ec017730,"static String[] toNoNullStringArray(Collection<?> collection){
+  if (collection == null) {
+    return ArrayUtils.EMPTY_STRING_ARRAY;
+  }
+  return toNoNullStringArray(collection.toArray());
+}
+",Converts the given Collection into an array of Strings. ,"If collection is null, convert collection to EMPTY_STRING_ARRAY. ",yes,yes
+636767081a6d9265ec0179a2,"private static boolean isAllZeros(String s){
+  if (s == null) {
+    return true;
+  }
+  for (int i=s.length() - 1; i >= 0; i--) {
+    if (s.charAt(i) != '0') {
+      return false;
+    }
+  }
+  return s.length() > 0;
+}
+",Utility method for createNumber(String).,Check whether a character string is all consist of zero.,yes,yes
+636766821a6d9265ec0174b3,"protected Object filter(Object msg){
+  BroadcastAction a=bc.filter(msg);
+  if (a.action() == BroadcastAction.ACTION.ABORT || msg == null)   return null;
+ else   return a.message();
+}
+",Invoke the BroadcastFilter.,"Filter and return null for the null and abort message in BroadcastAction, return the action message otherwise.",yes,yes
+636767e01a6d9265ec018764,"private JsonObject convertProperties(List<KeyStringValuePair> properties){
+  final JsonObject result=new JsonObject();
+  for (  KeyStringValuePair kv : properties) {
+    result.addProperty(kv.getKey(),kv.getValue());
+  }
+  return result;
+}
+",Convert process properties to source data.,Convert process properties to the JsonObject.,yes,yes
+6367677e1a6d9265ec018314,"protected int removeUnusedNodes(){
+  int count=0;
+  CategoryNode root=_categoryModel.getRootCategoryNode();
+  Enumeration enumeration=root.depthFirstEnumeration();
+  while (enumeration.hasMoreElements()) {
+    CategoryNode node=(CategoryNode)enumeration.nextElement();
+    if (node.isLeaf() && node.getNumberOfContainedRecords() == 0 && node.getParent() != null) {
+      _categoryModel.removeNodeFromParent(node);
+      count++;
+    }
+  }
+  return count;
+}
+",Removes any inactive nodes from the Category tree.,Remove any inactive nodes from the Category tree and return the number of removed nodes.,yes,yes
+636766ff1a6d9265ec017853,"protected Label readLabel(final int bytecodeOffset,final Label[] labels){
+  if (labels[bytecodeOffset] == null) {
+    labels[bytecodeOffset]=new Label();
+  }
+  return labels[bytecodeOffset];
+}
+",Returns the label corresponding to the given bytecode offset. ,Return the label by the given bytecode offset if it has been created. ,yes,yes
+6367677d1a6d9265ec0182fd,"public static boolean toBoolean(String value,boolean dEfault){
+  if (value == null)   return dEfault;
+  String trimmedVal=value.trim();
+  if (""true"".equalsIgnoreCase(trimmedVal))   return true;
+  if (""false"".equalsIgnoreCase(trimmedVal))   return false;
+  return dEfault;
+}
+","If value is ""true"", then true is returned. ",Check whether a string is true or false after ignore cases and trim the whitespaces at both ends. ,yes,yes
+6367676a1a6d9265ec0181cd,"public static String trimLeadingWhitespace(String str){
+  if (!hasLength(str)) {
+    return str;
+  }
+  StringBuilder sb=new StringBuilder(str);
+  while (sb.length() > 0 && Character.isWhitespace(sb.charAt(0))) {
+    sb.deleteCharAt(0);
+  }
+  return sb.toString();
+}
+",Trim leading whitespace from the given String.,Trim the leading whitespaces in a string.,yes,no
+636766fe1a6d9265ec01782a,"final String readUtf(final int constantPoolEntryIndex,final char[] charBuffer){
+  String value=constantUtf8Values[constantPoolEntryIndex];
+  if (value != null) {
+    return value;
+  }
+  int cpInfoOffset=cpInfoOffsets[constantPoolEntryIndex];
+  return constantUtf8Values[constantPoolEntryIndex]=readUtf(cpInfoOffset + 2,readUnsignedShort(cpInfoOffset),charBuffer);
+}
+",Reads a CONSTANT_Utf8 constant pool entry in classFileBuffer.,Read a CONSTANT_Utf8 constant pool entry in the classFileBuffer.,yes,yes
+636766851a6d9265ec01751b,"private static char decodeHexNibble(final char c){
+  if ('0' <= c && c <= '9') {
+    return (char)(c - '0');
+  }
+ else   if ('a' <= c && c <= 'f') {
+    return (char)(c - 'a' + 10);
+  }
+ else   if ('A' <= c && c <= 'F') {
+    return (char)(c - 'A' + 10);
+  }
+ else {
+    return Character.MAX_VALUE;
+  }
+}
+",Helper to decode half of a hexadecimal number from a string.,Convert a hexadecimal number to binary and return its character type.,yes,yes
+636766f21a6d9265ec01767d,"public static String toString(Object object){
+  return (object == null) ? null : object.toString();
+}
+","Object to String ,when null object then null else return toString();",Convert object to string  if the object is not null. ,yes,yes
+636767581a6d9265ec017fc4,"public static long factorial(int n){
+  long multi=1;
+  for (int i=1; i <= n; i++) {
+    multi=multi * i;
+  }
+  return multi;
+}
+",Calculate the factorial of $n$.,Calculate the factorial of the given number.,yes,yes
+636767511a6d9265ec017eb6,"private OuterFaceCirculator selectOnOuterFace(Predicate<Node> predicate,Node start,Node stop,int dir){
+  OuterFaceCirculator circulator=start.iterator(dir);
+  Node current=circulator.next();
+  while (current != stop && !predicate.test(current)) {
+    current=circulator.next();
+  }
+  return circulator;
+}
+","Either finds and returns a circulator to the node on the boundary of the component, which satisfies the predicate or returns a circulator to the stop node.",Find a circulator to the node that satisfies the Interface predicate.,yes,yes
+636767841a6d9265ec0183e8,"public void add(LoggingEvent event){
+  ea[last]=event;
+  if (++last == maxSize)   last=0;
+  if (numElems < maxSize)   numElems++;
+ else   if (++first == maxSize)   first=0;
+}
+",Add an event as the last event in the buffer.,Add an event as the last event in the buffer.,yes,yes
+636767a41a6d9265ec01857e,"private static int compareSigned(long a,long b){
+  return (a < b) ? -1 : ((a > b) ? 1 : 0);
+}
+",Compares the two specified code long values.,Compare two numbers.,yes,yes
+636767691a6d9265ec0181ae,"public static String[] toStringArray(Enumeration<String> enumeration){
+  if (enumeration == null) {
+    return null;
+  }
+  List<String> list=java.util.Collections.list(enumeration);
+  return list.toArray(new String[list.size()]);
+}
+",Copy the given Enumeration into a String array. ,Convert an enumeration to a string array.,yes,yes
+636766a91a6d9265ec0175ae,"public ByteVector putByteArray(final byte[] byteArrayValue,final int byteOffset,final int byteLength){
+  if (length + byteLength > data.length) {
+    enlarge(byteLength);
+  }
+  if (byteArrayValue != null) {
+    System.arraycopy(byteArrayValue,byteOffset,data,length,byteLength);
+  }
+  length+=byteLength;
+  return this;
+}
+",Puts an array of bytes into this byte vector. ,Add a byte array into the byte vector.,yes,yes
+636766f11a6d9265ec01764f,"public Collection<Object> values(){
+  ArrayList<Object> answer=new ArrayList<>(readMethods.size());
+  for (Iterator<Object> iter=valueIterator(); iter.hasNext(); ) {
+    answer.add(iter.next());
+  }
+  return Collections.unmodifiableList(answer);
+}
+",Returns the values for the BeanMap.,Return an unmodifiable list that contains all methods in the BeanMap.,yes,yes
+636766f81a6d9265ec017758,"@Override public int hashCode(){
+  int hashCode=13 * (sort == INTERNAL ? OBJECT : sort);
+  if (sort >= ARRAY) {
+    for (int i=valueBegin, end=valueEnd; i < end; i++) {
+      hashCode=17 * (hashCode + valueBuffer.charAt(i));
+    }
+  }
+  return hashCode;
+}
+",Returns a hash code value for this type.,Compute a hash code according to the type.,yes,yes
+6367676c1a6d9265ec01820b,"public static String deleteAny(String inString,String charsToDelete){
+  if (!hasLength(inString) || !hasLength(charsToDelete)) {
+    return inString;
+  }
+  StringBuilder sb=new StringBuilder();
+  for (int i=0; i < inString.length(); i++) {
+    char c=inString.charAt(i);
+    if (charsToDelete.indexOf(c) == -1) {
+      sb.append(c);
+    }
+  }
+  return sb.toString();
+}
+",Delete any character in a given String.,Delete characters that exists in the intersection between two character strings of the first character string and return the first character string that is modified.,yes,no
+636766861a6d9265ec01755a,"public final MatchResult match(CharSequence uri){
+  if (uri == null || uri.length() == 0)   return (regexPattern == null) ? EMPTY_STRING_MATCH_RESULT : null;
+ else   if (regexPattern == null)   return null;
+  Matcher m=regexPattern.matcher(uri);
+  if (!m.matches())   return null;
+  return (groupIndexes.length > 0) ? new GroupIndexMatchResult(m) : m;
+}
+",Match a URI against the pattern.,"If the match between the url and the pattern occurs, return the match result. ",yes,yes
+636766f91a6d9265ec01777d,"public static byte convertHexDigit(byte b){
+  if ((b >= '0') && (b <= '9'))   return (byte)(b - '0');
+  if ((b >= 'a') && (b <= 'f'))   return (byte)(b - 'a' + 10);
+  if ((b >= 'A') && (b <= 'F'))   return (byte)(b - 'A' + 10);
+  throw new IllegalArgumentException(""!hex:"" + Integer.toHexString(0xff & b));
+}
+",@param b An ASCII encoded character 0-9 a-f A-F.,Convert an ASCII encoded character to hex.,no,yes
+636766801a6d9265ec017477,"private void addReverse(final InputStream[] files){
+  for (int i=files.length - 1; i >= 0; --i) {
+    stack.add(files[i]);
+  }
+}
+",Add the specified files in reverse order.,Add files in the stack in reverse order.,yes,yes
+636767de1a6d9265ec01871e,"private void check(String modelName) throws IllegalStateException {
+  for (int i=0; i < keys.size(); i++) {
+    final ModelColumn modelColumn=keys.get(i);
+    if (modelColumn == null) {
+      throw new IllegalStateException(""Sharding key index="" + i + "" is missing in ""+ modelName);
+    }
+  }
+}
+",@param modelName model name of the entity,Check whether the key contains null.,no,yes
+636766f81a6d9265ec01774b,"public byte readByte() throws IOException {
+  if (head == tail) {
+    head=0;
+    tail=input.read(buffer,head,bufSize);
+    if (tail == -1) {
+      throw new IOException(""No more data is available"");
+    }
+  }
+  return buffer[head++];
+}
+","Reads a byte from the buffer, and refills it as necessary.",Read the next buffer in the buffer.,yes,yes
+636766851a6d9265ec017515,"@Override public Action inspect(AtmosphereResource r){
+switch (r.transport()) {
+case JSONP:
+case AJAX:
+case LONG_POLLING:
+    r.resumeOnBroadcast(true);
+  break;
+default :
+break;
+}
+return Action.CONTINUE;
+}
+",Automatically suspend the AtmosphereResource based or AtmosphereResource.TRANSPORT value.,Suspend the AtmosphereResource based on its transport value.,yes,yes
+636767611a6d9265ec018106,"public double vertexWeight(Set<V> v){
+  double wsum=0.0;
+  for (  DefaultWeightedEdge e : workingGraph.edgesOf(v)) {
+    wsum+=workingGraph.getEdgeWeight(e);
+  }
+  return wsum;
+}
+",Compute the sum of the weights entering a vertex.,Return the sum of the weights entering a vertex.,yes,yes
+636767841a6d9265ec0183f2,"public int compare(Object aObj1,Object aObj2){
+  if ((aObj1 == null) && (aObj2 == null)) {
+    return 0;
+  }
+ else   if (aObj1 == null) {
+    return -1;
+  }
+ else   if (aObj2 == null) {
+    return 1;
+  }
+  final EventDetails le1=(EventDetails)aObj1;
+  final EventDetails le2=(EventDetails)aObj2;
+  if (le1.getTimeStamp() < le2.getTimeStamp()) {
+    return 1;
+  }
+  return -1;
+}
+",@see Comparator,Compare two events by their timeStamp.,no,yes
+636767861a6d9265ec01844c,"public void removeAppender(String name){
+  if (name == null || appenderList == null)   return;
+  int size=appenderList.size();
+  for (int i=0; i < size; i++) {
+    if (name.equals(((Appender)appenderList.elementAt(i)).getName())) {
+      appenderList.removeElementAt(i);
+      break;
+    }
+  }
+}
+",Remove the appender with the name passed as parameter form the list of appenders.,Remove the appender by the given name from the list of appenders.,yes,yes
+636767781a6d9265ec018242,"public int appendLoopOnAppenders(LoggingEvent event){
+  int size=0;
+  Appender appender;
+  if (appenderList != null) {
+    size=appenderList.size();
+    for (int i=0; i < size; i++) {
+      appender=(Appender)appenderList.elementAt(i);
+      appender.doAppend(event);
+    }
+  }
+  return size;
+}
+",Call the doAppend method on all attached appenders.,Call the doAppend method on all attached appenders.,yes,yes
+6367670c1a6d9265ec017a2a,"public static int[] toPrimitive(final Integer[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_INT_ARRAY;
+  }
+  final int[] result=new int[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=array[i].intValue();
+  }
+  return result;
+}
+",Converts an array of object Integers to primitives. ,Convert the given Integer array to primitives. ,yes,yes
+636767041a6d9265ec017911,"static void register(Object value){
+  if (value != null) {
+    Map m=getRegistry();
+    if (m == null) {
+      m=new WeakHashMap();
+      REGISTRY.set(m);
+    }
+    m.put(value,null);
+  }
+}
+",Registers the given object. ,Register the value in REGISTRY if the value is not null.,yes,yes
+636767511a6d9265ec017eb0,"public int nonZeros(int row){
+  assert row >= 0 && row < rowOffsets.length;
+  return rowOffsets[row + 1] - rowOffsets[row];
+}
+",Get the number of non-zero entries of a row.,Return the number of non-zero entries of a row.,yes,yes
+6367676c1a6d9265ec018223,"public static boolean containsInstance(Collection collection,Object element){
+  if (collection != null) {
+    for (    Object candidate : collection) {
+      if (candidate == element) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+",Check whether the given Collection contains the given element instance. ,Check whether the element exists in the collection.,yes,yes
+636766fa1a6d9265ec01779d,"public static boolean isAsciiControl(final char ch){
+  return ch < 32 || ch == 127;
+}
+",Checks whether the character is ASCII 7 bit control. ,Check whether the character is ASCII 7 bit control.,yes,yes
+6367670b1a6d9265ec0179f2,"@Override public boolean containsKey(final Object key){
+  if (this.fast) {
+    return this.map.containsKey(key);
+  }
+ else {
+synchronized (this.map) {
+      return this.map.containsKey(key);
+    }
+  }
+}
+",Return true if this map contains a mapping for the specified key.,Check whether a map contains a mapping for the specified key.,yes,yes
+636766fa1a6d9265ec017796,"public static Boolean[] toObject(final boolean[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_BOOLEAN_OBJECT_ARRAY;
+  }
+  final Boolean[] result=new Boolean[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=array[i] ? Boolean.TRUE : Boolean.FALSE;
+  }
+  return result;
+}
+",Converts an array of primitive booleans to objects. ,Convert an array of primitive booleans to objects.,yes,yes
+636767aa1a6d9265ec01864a,"public byte[] toByteArray(){
+  final int size=bytes.length;
+  final byte[] copy=new byte[size];
+  System.arraycopy(bytes,0,copy,0,size);
+  return copy;
+}
+",Copies bytes to a byte[].,Copy bytes to a byte array.,yes,yes
+636767561a6d9265ec017f7c,"protected GraphPath<V,E> edgeSetToTour(Set<E> tour,Graph<V,E> graph){
+  List<V> vertices=new ArrayList<>(tour.size() + 1);
+  MaskSubgraph<V,E> tourGraph=new MaskSubgraph<>(graph,v -> false,e -> !tour.contains(e));
+  new DepthFirstIterator<>(tourGraph).forEachRemaining(vertices::add);
+  return vertexListToTour(vertices,graph);
+}
+",Transform from a Set representation to a graph path.,Convert a set representation to a graph path.,yes,yes
+6367670a1a6d9265ec0179f1,"public static Short[] toObject(final short[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_SHORT_OBJECT_ARRAY;
+  }
+  final Short[] result=new Short[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=new Short(array[i]);
+  }
+  return result;
+}
+",Converts an array of primitive shorts to objects. ,Convert an array of primitive shorts to objects.,yes,yes
+636766fe1a6d9265ec017823,"int addConstantNameAndType(final String name,final String descriptor){
+  final int tag=Symbol.CONSTANT_NAME_AND_TYPE_TAG;
+  int hashCode=hash(tag,name,descriptor);
+  Entry entry=get(hashCode);
+  while (entry != null) {
+    if (entry.tag == tag && entry.hashCode == hashCode && entry.name.equals(name) && entry.value.equals(descriptor)) {
+      return entry.index;
+    }
+    entry=entry.next;
+  }
+  constantPool.put122(tag,addConstantUtf8(name),addConstantUtf8(descriptor));
+  return put(new Entry(constantPoolCount++,tag,name,descriptor,hashCode)).index;
+}
+",Adds a CONSTANT_NameAndType_info to the constant pool of this symbol table. ,Add constant information generated by its name and type to the constant pool and return the index of the constant.,yes,yes
+636767461a6d9265ec017d17,"private String unescapeId(String input){
+  final char quote='""';
+  if (input.charAt(0) != quote || input.charAt(input.length() - 1) != quote) {
+    return input;
+  }
+  String noQuotes=input.subSequence(1,input.length() - 1).toString();
+  String unescaped=unescapeId.translate(noQuotes);
+  return unescaped;
+}
+",Unescape a string DOT identifier.,Unescape a dot identifier string.,yes,yes
+6367676c1a6d9265ec018204,"public static String[] concatenateStringArrays(String[] array1,String[] array2){
+  if (Objects.isEmpty(array1)) {
+    return array2;
+  }
+  if (Objects.isEmpty(array2)) {
+    return array1;
+  }
+  String[] newArr=new String[array1.length + array2.length];
+  System.arraycopy(array1,0,newArr,0,array1.length);
+  System.arraycopy(array2,0,newArr,array1.length,array2.length);
+  return newArr;
+}
+","Concatenate the given String arrays into one, with overlapping array elements included twice. ",Concatenate two string arrays into one.,yes,yes
+636767641a6d9265ec018190,"private void reload(List<Set<Integer>> bucketsByLabel,List<Integer> labels,int minLabel){
+  if (minLabel != 0 && minLabel < bucketsByLabel.size()) {
+    Set<Integer> bucket=bucketsByLabel.get(minLabel);
+    for (    Integer vertex : bucket) {
+      labels.set(vertex,0);
+      bucketsByLabel.get(0).add(vertex);
+    }
+    bucket.clear();
+  }
+}
+",Moves all vertices from the bucket with label minLabel to the bucket with label 0.,Move all vertices from the minimum label bucket to the bucket with label 0 and clear the minimum label bucket.,yes,yes
+6367676a1a6d9265ec0181d4,"public static String[] addStringToArray(String[] array,String str){
+  if (Objects.isEmpty(array)) {
+    return new String[]{str};
+  }
+  String[] newArr=new String[array.length + 1];
+  System.arraycopy(array,0,newArr,0,array.length);
+  newArr[array.length]=str;
+  return newArr;
+}
+","Append the given String to the given String array, returning a new array consisting of the input array contents plus the given String.",Append a string to a string array.,yes,yes
+6367676b1a6d9265ec0181dd,"public static int countOccurrencesOf(String str,String sub){
+  if (str == null || sub == null || str.length() == 0 || sub.length() == 0) {
+    return 0;
+  }
+  int count=0;
+  int pos=0;
+  int idx;
+  while ((idx=str.indexOf(sub,pos)) != -1) {
+    ++count;
+    pos=idx + sub.length();
+  }
+  return count;
+}
+",Returns the number of occurrences the substring sub appears in string str.,Return the frequencies that the substring appears in the string.,yes,no
+636766811a6d9265ec017499,"private boolean checkDuplicate(final List<AtmosphereInterceptor> interceptorList,Class<? extends AtmosphereInterceptor> c){
+  for (  final AtmosphereInterceptor i : interceptorList) {
+    if (i.getClass().equals(c)) {
+      return true;
+    }
+  }
+  return false;
+}
+",Checks in the specified list if there is at least one instance of the given AtmosphereInterceptor interceptor implementation class.,Check whether there is at least one instance of the implementation class in the lists. ,yes,yes
+636766fe1a6d9265ec017821,"protected void appendDetail(StringBuffer buffer,String fieldName,byte[] array){
+  buffer.append(arrayStart);
+  for (int i=0; i < array.length; i++) {
+    if (i > 0) {
+      buffer.append(arraySeparator);
+    }
+    appendDetail(buffer,fieldName,array[i]);
+  }
+  buffer.append(arrayEnd);
+}
+",Append to the toString the detail of a byte array.,Append a byte array to a buffer.,yes,yes
+636767561a6d9265ec017f63,"@Override public boolean hasNext(){
+  if (current != null) {
+    return true;
+  }
+  current=advance();
+  if (current != null && nListeners != 0) {
+    fireVertexTraversed(createVertexTraversalEvent(current));
+  }
+  return current != null;
+}
+",Checks whether there exist unvisited vertices.,Check whether there are unvisited vertices. ,yes,yes
+636766a81a6d9265ec017586,"private void pop(final int elements){
+  if (outputStackTop >= elements) {
+    outputStackTop-=elements;
+  }
+ else {
+    outputStackStart-=elements - outputStackTop;
+    outputStackTop=0;
+  }
+}
+",Pops the given number of abstract types from the output frame stack.,Pop the given number of elements from the stack.,yes,yes
+636767e11a6d9265ec018795,"public boolean isCompatible(DataTable dataset){
+  final List<String> sortedKeys=dataset.sortedKeys(new HeatMap.KeyComparator(true));
+  long[] existedBuckets=new long[sortedKeys.size()];
+  for (int i=0; i < sortedKeys.size(); i++) {
+    String key=sortedKeys.get(i);
+    if (key.equals(Bucket.INFINITE_NEGATIVE)) {
+      existedBuckets[i]=Long.MIN_VALUE;
+    }
+ else {
+      if (key.contains("":"")) {
+        key=StringUtils.substringAfterLast(key,"":"");
+      }
+      existedBuckets[i]=Long.parseLong(key);
+    }
+  }
+  return Arrays.equals(buckets,existedBuckets);
+}
+",Return true if the bucket is same.,Check whether the existed buckets are the same as the buckets.,yes,yes
+636767791a6d9265ec018263,"private Class findClass(final String className) throws ClassNotFoundException {
+  try {
+    return Thread.currentThread().getContextClassLoader().loadClass(className);
+  }
+ catch (  ClassNotFoundException e) {
+    try {
+      return Class.forName(className);
+    }
+ catch (    ClassNotFoundException e1) {
+      return getClass().getClassLoader().loadClass(className);
+    }
+  }
+}
+",Find class given class name.,Find class by the given class name.,yes,yes
+636767611a6d9265ec018112,"@Override protected V provideNextVertex(){
+  V v=super.provideNextVertex();
+  for (int i=path.size() - 1; i >= 0; --i) {
+    if (graph.containsEdge(path.get(i),v)) {
+      break;
+    }
+    path.remove(i);
+  }
+  path.add(v);
+  return v;
+}
+",{@inheritDoc},Get next vertext from a graph.,no,yes
+636767131a6d9265ec017b23,"final void addLineNumber(final int lineNumber){
+  if (this.lineNumber == 0) {
+    this.lineNumber=(short)lineNumber;
+  }
+ else {
+    if (otherLineNumbers == null) {
+      otherLineNumbers=new int[LINE_NUMBERS_CAPACITY_INCREMENT];
+    }
+    int otherLineNumberIndex=++otherLineNumbers[0];
+    if (otherLineNumberIndex >= otherLineNumbers.length) {
+      int[] newLineNumbers=new int[otherLineNumbers.length + LINE_NUMBERS_CAPACITY_INCREMENT];
+      System.arraycopy(otherLineNumbers,0,newLineNumbers,0,otherLineNumbers.length);
+      otherLineNumbers=newLineNumbers;
+    }
+    otherLineNumbers[otherLineNumberIndex]=lineNumber;
+  }
+}
+",Adds a source line number corresponding to this label.,Add the number of lines.,yes,yes
+6367675a1a6d9265ec018010,"void removeSelf(){
+  if (next != null) {
+    next.prev=prev;
+  }
+  if (prev != null) {
+    prev.next=next;
+  }
+}
+",Removes this bucket from the data structure.,Remove the doubly linked list node that call the function.,yes,yes
+636767dd1a6d9265ec0186f3,"public void overrideName(String oldName,String newName){
+  for (int i=0; i < columns.length; i++) {
+    if (columns[i].equals(oldName)) {
+      columns[i]=newName;
+    }
+  }
+}
+","Keep the same name replacement as ColumnName.overrideName(String,String).",Change the elements whose values are oldName to newName in column.,yes,yes
+636767631a6d9265ec018171,"private boolean unlink(ListNodeImpl<E> node){
+  ListNodeImpl<E> prev=node.prev;
+  ListNodeImpl<E> next=node.next;
+  if (removeListNode(node)) {
+    if (size == 0) {
+      head=null;
+    }
+ else {
+      link(prev,next);
+      if (head == node) {
+        head=next;
+      }
+    }
+    return true;
+  }
+  return false;
+}
+",Remove the non null node from the list.,"Remove the doubly circular linked list node.If success return true,otherwise return false.",yes,yes
+636767de1a6d9265ec018726,"public List<SequenceRange> buildSequenceRanges(){
+  ArrayList<SequenceRange> ranges=new ArrayList<>();
+  do {
+    int batchMax=Math.min(minSequence + SEQUENCE_RANGE_BATCH_SIZE,maxSequence);
+    ranges.add(new SequenceRange(minSequence,batchMax));
+    minSequence=batchMax;
+  }
+ while (minSequence < maxSequence);
+  return ranges;
+}
+",build current profiles segment snapshot search sequence ranges.,"Return a list whose nodes are sequences, and the sequences' lower bound are all minSequence, and the length increases sequentially with SEQUENCE_RANGE_BATCH_SIZE but the upper bound is maxSequence.",yes,yes
+6367667c1a6d9265ec0173f7,"public boolean hasBytes(){
+  return dataBytes != null;
+}
+",True is the body is a byte array.,"If dataBytes is equal to null, return false, otherwise return true.",yes,yes
+6367676c1a6d9265ec018220,"public static String stripFilenameExtension(String path){
+  if (path == null) {
+    return null;
+  }
+  int extIndex=path.lastIndexOf(EXTENSION_SEPARATOR);
+  if (extIndex == -1) {
+    return path;
+  }
+  int folderIndex=path.lastIndexOf(FOLDER_SEPARATOR);
+  if (folderIndex > extIndex) {
+    return path;
+  }
+  return path.substring(0,extIndex);
+}
+","Strip the filename extension from the given path, e.g. ""mypath/myfile.txt"" -> ""mypath/myfile"".",Return the path without the extension.,yes,no
+636766fe1a6d9265ec017838,"public static char[] toPrimitive(final Character[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_CHAR_ARRAY;
+  }
+  final char[] result=new char[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=array[i].charValue();
+  }
+  return result;
+}
+",Converts an array of object Characters to primitives. ,Return a string which is consist of the values of elements in the given array.,yes,yes
+636766fa1a6d9265ec01779c,"private String parseToken(final char[] terminators){
+  char ch;
+  i1=pos;
+  i2=pos;
+  while (hasChar()) {
+    ch=chars[pos];
+    if (isOneOf(ch,terminators)) {
+      break;
+    }
+    i2++;
+    pos++;
+  }
+  return getToken(false);
+}
+",Parses out a token until any of the given terminators is encountered.,Parses out a token until any of the given terminators is encountered and then return the token.,yes,yes
+636767691a6d9265ec0181a7,"public static String trimLeadingCharacter(String str,char leadingCharacter){
+  if (!hasLength(str)) {
+    return str;
+  }
+  StringBuilder sb=new StringBuilder(str);
+  while (sb.length() > 0 && sb.charAt(0) == leadingCharacter) {
+    sb.deleteCharAt(0);
+  }
+  return sb.toString();
+}
+",Trim all occurrences of the supplied leading character from the given String.,"Trim all the characters which are equal to the given character and appear at the beginning of the given string,and return the trimmed string.",yes,no
+636767041a6d9265ec01790f,"public static Integer[] toObject(final int[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY;
+  }
+  final Integer[] result=new Integer[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=new Integer(array[i]);
+  }
+  return result;
+}
+",Converts an array of primitive ints to objects.,Return an array of Integer objects which are converted from an array of primitive ints.,yes,yes
+636766fa1a6d9265ec0177a4,"public static Double[] toObject(final double[] array){
+  if (array == null) {
+    return null;
+  }
+ else   if (array.length == 0) {
+    return ArrayUtils.EMPTY_DOUBLE_OBJECT_ARRAY;
+  }
+  final Double[] result=new Double[array.length];
+  for (int i=0; i < array.length; i++) {
+    result[i]=new Double(array[i]);
+  }
+  return result;
+}
+",Converts an array of primitive doubles to objects. ,Return an array of Double objects which are converted from an array of primitive doubles.,yes,yes
+636767461a6d9265ec017d0e,"private Pair<List<Integer>,Long> computeSuffixSum(List<Integer> bounds){
+  List<Integer> suffixSum=new ArrayList<>(Collections.nCopies(bounds.size(),0));
+  long sum=0;
+  for (int i=bounds.size() - 1; i >= 0; i--) {
+    suffixSum.set(i,(int)Math.min(Integer.MAX_VALUE,sum));
+    sum+=bounds.get(i);
+  }
+  return Pair.of(suffixSum,sum);
+}
+",Computes a suffix sum of the bounds.,Return a pair of the list of suffix sum and the sum of all elements of bounds.,yes,yes
+636767491a6d9265ec017d90,"public static final <V>void reverse(V[] arr,int from,int to){
+  for (int i=from, j=to; i < j; ++i, --j) {
+    swap(arr,i,j);
+  }
+}
+",Reverses the order of the elements in the specified range within the given array.,Reverse the order of the given elements in the specified range.,yes,yes
+6367674a1a6d9265ec017da9,"private void moveAllListNodes(DoublyLinkedList<E> list){
+  for (ListNodeIteratorImpl it=list.new ListNodeIteratorImpl(0); it.hasNext(); ) {
+    ListNodeImpl<E> node=it.nextNode();
+    assert node.list == list;
+    node.list=this;
+  }
+  size+=list.size;
+  list.size=0;
+  modCount++;
+  list.modCount++;
+}
+",Atomically moves all ListNodes from the given list to this list as if each node was removed with the removeListNode(ListNodeImpl) method from the given list and subsequently added to this list by the addListNode(ListNodeImpl) method.,Move the nodes of the given doubly linked list to a new list sequentially.,yes,yes
+636767151a6d9265ec017b6b,"private static boolean startsWith(final String str,final String prefix,final boolean ignoreCase){
+  if (str == null || prefix == null) {
+    return str == null && prefix == null;
+  }
+  if (prefix.length() > str.length()) {
+    return false;
+  }
+  return str.regionMatches(ignoreCase,0,prefix,0,prefix.length());
+}
+",Check if a String starts with a specified prefix (optionally case insensitive).,"Return true if the given string has the specified prefix with optional cases which can be ignored, or both string and prefix are null.Otherwise return false.",yes,yes
+636766fe1a6d9265ec01781c,"public static Character toCharacterObject(final char ch){
+  if (ch < CharUtils.CHAR_ARRAY.length) {
+    return CharUtils.CHAR_ARRAY[ch];
+  }
+  return new Character(ch);
+}
+",Converts the character to a Character. ,Return the Character object converted from the given character.,yes,yes
+636766fb1a6d9265ec0177c1,"public static boolean isAsciiAlphaUpper(final char ch){
+  return ch >= 'A' && ch <= 'Z';
+}
+",Checks whether the character is ASCII 7 bit alphabetic upper case. ,Return true if the character is ASCII alphabetic upper case.Otherwise return false.,yes,yes
+636767781a6d9265ec018250,"public int decide(LoggingEvent event){
+  String msg=event.getRenderedMessage();
+  if (msg == null || stringToMatch == null)   return Filter.NEUTRAL;
+  if (msg.indexOf(stringToMatch) == -1) {
+    return Filter.NEUTRAL;
+  }
+ else {
+    if (acceptOnMatch) {
+      return Filter.ACCEPT;
+    }
+ else {
+      return Filter.DENY;
+    }
+  }
+}
+",Returns Filter.NEUTRAL if there is no string match.,Return a decision based on the message generated by the event and whether the given string is matched.,yes,yes
+636766861a6d9265ec017553,"public final boolean isTemplateVariablePresent(String name){
+  for (  String s : templateVariables) {
+    if (s.equals(name))     return true;
+  }
+  return false;
+}
+",Ascertain if a template variable is a member of this template.,"Return true if the given name is a member variable of this template,otherwise return false.",yes,yes
+636767071a6d9265ec017962,"public void putAllWriteable(BeanMap map){
+  Iterator<String> readableKeys=map.readMethods.keySet().iterator();
+  while (readableKeys.hasNext()) {
+    String key=readableKeys.next();
+    if (getWriteMethod(key) != null) {
+      this.put(key,map.get(key));
+    }
+  }
+}
+",Puts all of the writable properties from the given BeanMap into this BeanMap. ,Put all of the both readable and writable methods from the given map to this map.,yes,yes
+6367670a1a6d9265ec0179d9,"public static int length(final String str){
+  return str == null ? 0 : str.length();
+}
+",Gets a String's length or 0 if the String is null.,Return the given string's length.,yes,yes
+636767ab1a6d9265ec018676,"private static boolean isHex(final char c){
+  return ('0' <= c && c <= '9') || ('a' <= c && c <= 'f') || ('A' <= c && c <= 'F');
+}
+",Is this a hex digit?,"Return true if the given character is a hex digit, otherwise return false.",no,yes
+636766f81a6d9265ec017748,"public static String base64Decode(final String s){
+  byte[] b=Base64.base64DecodeToArray(s);
+  if (b == null) {
+    return null;
+  }
+  if (b.length == 0) {
+    return """";
+  }
+  return new String(b,StandardCharsets.UTF_8);
+}
+",Decoding a string to a string follow the Base64 regular.,"Decoding a string follow the Base64 regular to an array,and return a string  constructed from the array according to UTF_8.",yes,yes
+636766f11a6d9265ec017663,"public static boolean isSameLength(final double[] array1,final double[] array2){
+  if (array1 == null && array2 != null && array2.length > 0 || array2 == null && array1 != null && array1.length > 0 || array1 != null && array2 != null && array1.length != array2.length) {
+    return false;
+  }
+  return true;
+}
+","Checks whether two arrays are the same length, treating null arrays as length 0.","Return true if the length of array1 is the same as the length of array2 or both them are null, otherwise return false.",yes,yes
+6367667d1a6d9265ec0173ff,"public static Meteor lookup(HttpServletRequest r){
+  Object o=r.getAttribute(METEOR);
+  return o == null ? null : Meteor.class.isAssignableFrom(o.getClass()) ? (Meteor)o : null;
+}
+",Retrieve an instance of Meteor based on the HttpServletRequest.,Return a Meteor object based on the HttpServletRequest r.,yes,yes
+636767691a6d9265ec0181a6,"public static String[] split(String toSplit,String delimiter){
+  if (!hasLength(toSplit) || !hasLength(delimiter)) {
+    return null;
+  }
+  int offset=toSplit.indexOf(delimiter);
+  if (offset < 0) {
+    return null;
+  }
+  String beforeDelimiter=toSplit.substring(0,offset);
+  String afterDelimiter=toSplit.substring(offset + delimiter.length());
+  return new String[]{beforeDelimiter,afterDelimiter};
+}
+",Split a String at the first occurrence of the delimiter. ,"Split the given string toSplit at the first occurrence of the given delimiter,and return two substrings that don't include the delimiter.",yes,no
+636767601a6d9265ec0180e2,"private List<Pair<List<Pair<Integer,Integer>>,E>> computeGlobalSeparatorList(){
+  List<Pair<List<Pair<Integer,Integer>>,E>> globalSeparatorList=new ArrayList<>();
+  for (  E edge : graph.edgeSet()) {
+    V source=graph.getEdgeSource(edge);
+    V target=graph.getEdgeTarget(edge);
+    if (source != target) {
+      List<Set<V>> edgeSeparators=findSeparators(graph,edge);
+      globalSeparatorList.addAll(reformatSeparatorList(edgeSeparators,edge));
+    }
+  }
+  return globalSeparatorList;
+}
+",Computes the global separator list of the graph.,"Select an edge which isn't a circle in the graph,compute the list of the minimal separators in the neighborhood of the edge and put the pair of list and edge into the return list.",yes,yes
+636766f31a6d9265ec01768f,"public static char[] clone(final char[] array){
+  if (array == null) {
+    return null;
+  }
+  return array.clone();
+}
+",Clones an array returning a typecast result and handling null. ,Return a clone of the given array.,yes,yes
+636766831a6d9265ec0174eb,"private void addReverse(final File[] files){
+  if (files == null)   return;
+  for (int i=files.length - 1; i >= 0; --i) {
+    stack.add(files[i]);
+  }
+}
+",Add the specified files in reverse order.,Put the given array of files into a stack in reverse order.,yes,yes
+636767841a6d9265ec0183ff,"public static void selectRow(int row,JTable table,JScrollPane pane){
+  if (table == null || pane == null) {
+    return;
+  }
+  if (contains(row,table.getModel()) == false) {
+    return;
+  }
+  moveAdjustable(row * table.getRowHeight(),pane.getVerticalScrollBar());
+  selectRow(row,table.getSelectionModel());
+  repaintLater(table);
+}
+",Selects a the specified row in the specified JTable and scrolls the specified JScrollpane to the newly selected row. ,Select the specified row in the given JTable and scroll the given JScrollPane to the row.,yes,yes
+636766a81a6d9265ec017596,"public ByteVector putInt(final int intValue){
+  int currentLength=length;
+  if (currentLength + 4 > data.length) {
+    enlarge(4);
+  }
+  byte[] currentData=data;
+  currentData[currentLength++]=(byte)(intValue >>> 24);
+  currentData[currentLength++]=(byte)(intValue >>> 16);
+  currentData[currentLength++]=(byte)(intValue >>> 8);
+  currentData[currentLength++]=(byte)intValue;
+  length=currentLength;
+  return this;
+}
+",Puts an int into this byte vector. ,Divide an int into four bytes and put the bytes into a byte vector called data in big endian order.,yes,yes
+636766fd1a6d9265ec017814,"public static boolean arrayequals(byte[] a,byte[] b,int count){
+  for (int i=0; i < count; i++) {
+    if (a[i] != b[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+",Compares count first bytes in the arrays a and b.,"Given two arrays with the given length count,return true if the array a is equal to array b,otherwise return false.",yes,yes
+636767861a6d9265ec018440,"public void abbreviate(final int nameStart,final StringBuffer buf){
+  int i=count;
+  for (int pos=buf.indexOf(""."",nameStart); pos != -1; pos=buf.indexOf(""."",pos + 1)) {
+    if (--i == 0) {
+      buf.delete(nameStart,pos + 1);
+      break;
+    }
+  }
+}
+",Abbreviate name.,"The given name can be split into several substrings by ""."", and abbreviate the name in the buf by deleting the first count substrings.",yes,yes
+6367667d1a6d9265ec01741d,"public static Type resolveBound(TypeVariable<?> typeVariable){
+  Type[] bounds=typeVariable.getBounds();
+  if (bounds.length == 0)   return Unknown.class;
+  Type bound=bounds[0];
+  if (bound instanceof TypeVariable)   bound=resolveBound((TypeVariable<?>)bound);
+  return bound == Object.class ? Unknown.class : bound;
+}
+","Resolves the first bound for the typeVariable, returning Unknown.class if none can be resolved.","Resolve the class of the first bound for the typeVariable recursively, return Unknown.class if it can't be resolved.",yes,yes
+6367675f1a6d9265ec0180cf,"private static <V,E>boolean isClique(Graph<V,E> graph,Set<V> vertices){
+  for (  V v1 : vertices) {
+    for (    V v2 : vertices) {
+      if (!v1.equals(v2) && (graph.getEdge(v1,v2) == null)) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+","Check whether the subgraph of graph induced by the given vertices is complete, i.e. a clique.","Return true if the subgraph of the given graph induced by the given vertices is a clique, otherwise return false.",yes,yes
+636767431a6d9265ec017c88,"private List<Integer> computeLowerBounds(List<K> keys){
+  List<Integer> keyLowerBounds=new ArrayList<>(keys.size());
+  for (  K key : keys) {
+    int lowerBound=0;
+    for (    Function<K,Integer> lowerBoundFunction : lowerBounds) {
+      lowerBound=Math.max(lowerBound,lowerBoundFunction.apply(key));
+    }
+    keyLowerBounds.add(lowerBound);
+  }
+  return keyLowerBounds;
+}
+",Finds a maximum lower bound for every key.,"The type of key has several lower bounds conducted by different function, this function will return a list of the maximum lower bound of each key in the given list.",yes,yes
+636766a91a6d9265ec0175c4,"private void pop(final String descriptor){
+  char firstDescriptorChar=descriptor.charAt(0);
+  if (firstDescriptorChar == '(') {
+    pop((Type.getArgumentsAndReturnSizes(descriptor) >> 2) - 1);
+  }
+ else   if (firstDescriptorChar == 'J' || firstDescriptorChar == 'D') {
+    pop(2);
+  }
+ else {
+    pop(1);
+  }
+}
+",Pops as many abstract types from the output frame stack as described by the given descriptor.,Pop different value of type based on the first character of the given descriptor.,yes,yes
+636766fb1a6d9265ec0177c3,"public static boolean isAscii(final char ch){
+  return ch < 128;
+}
+",Checks whether the character is ASCII 7 bit. ,"Return true if the given character is a ASCII seven bit character, otherwise return false.",yes,yes
+636767581a6d9265ec017fb4,"private List<Integer> computeUpperBounds(List<K> keys){
+  List<Integer> keyUpperBounds=new ArrayList<>(keys.size());
+  for (  K key : keys) {
+    int upperBound=Integer.MAX_VALUE;
+    for (    Function<K,Integer> upperBoundFunction : upperBounds) {
+      upperBound=Math.min(upperBound,upperBoundFunction.apply(key));
+    }
+    keyUpperBounds.add(upperBound);
+  }
+  return keyUpperBounds;
+}
+",Finds a minimum lower bound for every key.,"The type of key has several upper bounds conducted by different function, this function will return a list of the minimum upper bound of each key in the given list.",yes,yes
+636766801a6d9265ec017487,"public static String encodeTemplateNames(String s){
+  int i=s.indexOf('{');
+  if (i != -1)   s=s.replace(""{"",""%7B"");
+  i=s.indexOf('}');
+  if (i != -1)   s=s.replace(""}"",""%7D"");
+  return s;
+}
+","Encodes a string with template parameters names present, specifically the characters '{' and '}' will be percent-encoded.","Encoding the given string by changing '{' and '}' to the specified character for each,return the string after encoding.",yes,yes
+636767531a6d9265ec017ef1,"public static boolean equals(Point2D p1,Point2D p2){
+  int xEquals=TOLERANCE_DOUBLE_COMPARATOR.compare(p1.getX(),p2.getX());
+  if (xEquals != 0) {
+    return false;
+  }
+  return TOLERANCE_DOUBLE_COMPARATOR.compare(p1.getY(),p2.getY()) == 0;
+}
+",Compare two points for equality using tolerance 1e-9.,"Using TOLERANCE_DOUBLE_COMPARATOR to compare two points for equality, return true the point p1 is equal to another point p2, otherwise return false.",yes,yes
+6367667c1a6d9265ec0173fb,"@Override public AtmosphereResource addEventListener(AtmosphereResourceEventListener e){
+  if (listeners.contains(e))   return this;
+  listeners.add(e);
+  return this;
+}
+",Add a AtmosphereResourceEventListener.,Adding an instance of AtmosphereResourceEventListener e into a list and return the AtmosphereResource object which call the function.,yes,yes
+636767691a6d9265ec0181ac,"public static String applyRelativePath(String path,String relativePath){
+  int separatorIndex=path.lastIndexOf(FOLDER_SEPARATOR);
+  if (separatorIndex != -1) {
+    String newPath=path.substring(0,separatorIndex);
+    if (!relativePath.startsWith(FOLDER_SEPARATOR)) {
+      newPath+=FOLDER_SEPARATOR;
+    }
+    return newPath + relativePath;
+  }
+ else {
+    return relativePath;
+  }
+}
+","Apply the given relative path to the given path, assuming standard Java folder separation (i.e. ""/"" separators).","Combine the substring before FOLDER_SEPARATOR of the given path with the given relative path to construct a new full file path, and return the full file path.",yes,no
+636767021a6d9265ec0178bc,"public static int indexOf(String str,String searchStr){
+  if (str == null || searchStr == null) {
+    return StringUtils.INDEX_NOT_FOUND;
+  }
+  return str.indexOf(searchStr);
+}
+","Finds the first index within a String, handling null. ",Return the first index of the searchStr in the given string.,yes,yes
+636766fc1a6d9265ec0177ef,"static String[] toNoNullStringArray(Object[] array){
+  ArrayList<String> list=new ArrayList<String>(array.length);
+  for (int i=0; i < array.length; i++) {
+    Object e=array[i];
+    if (e != null) {
+      list.add(e.toString());
+    }
+  }
+  return (String[])list.toArray(ArrayUtils.EMPTY_STRING_ARRAY);
+}
+",Returns a new array of Strings without null elements. ,"Return a new array of strings converted from the elements which are not null of the given array, if the size of the array is zero, it will throw an exception.",yes,yes
+636767061a6d9265ec01794a,"public static int indexOfExtension(String filename){
+  if (filename == null) {
+    return -1;
+  }
+  int extensionPos=filename.lastIndexOf(EXTENSION_SEPARATOR);
+  int lastSeparator=indexOfLastSeparator(filename);
+  return lastSeparator > extensionPos ? -1 : extensionPos;
+}
+","Returns the index of the last extension separator character, which is a dot. ","Return the last index of the extension separator in the given filename, it will return -1 if the filename doesn't have the separator or there is a directory separator after it.",yes,yes
+636767dd1a6d9265ec0186de,"public boolean isExpired(long timestamp,long expiredThreshold){
+  return timestamp - lastUpdateTimestamp > expiredThreshold;
+}
+",@param timestamp        of current time,"Return true if the timestamp minus the lastUpdateTimestamp is greater than expiredThreshold, otherwise return false.",no,yes
+6367675d1a6d9265ec018082,"Edge edgeToNext(){
+  Edge edge=prev.embedded.getFirst();
+  Node target=toExistingNode(current);
+  Node source=toExistingNode(prev);
+  if (edge.getOpposite(source) == target) {
+    return edge;
+  }
+ else {
+    return prev.embedded.getLast();
+  }
+}
+","Returns an edge connecting previously returned node with node, which will be returned next. ",Return the edge connecting the previously returned node with the current node.,yes,yes
+6367676b1a6d9265ec0181e9,"public static boolean substringMatch(CharSequence str,int index,CharSequence substring){
+  for (int j=0; j < substring.length(); j++) {
+    int i=index + j;
+    if (i >= str.length() || str.charAt(i) != substring.charAt(j)) {
+      return false;
+    }
+  }
+  return true;
+}
+","Returns true if the given string matches the given substring at the given index, false otherwise.","Return true if starting at the given index, the given string matches the given substring.",yes,no
+636767781a6d9265ec01823e,"protected void append(LoggingEvent event){
+  if (sh != null) {
+    sh.send(layout.format(event));
+    if (layout.ignoresThrowable()) {
+      String[] s=event.getThrowableStrRep();
+      if (s != null) {
+        StringBuffer buf=new StringBuffer();
+        for (int i=0; i < s.length; i++) {
+          buf.append(s[i]);
+          buf.append(""\r\n"");
+        }
+        sh.send(buf.toString());
+      }
+    }
+  }
+}
+",Handles a log event. ,"Handling a logging event by using layout.format(), and if layout.ignoresThrowable() is true, it will continue to send the StrRep of the event.",yes,yes
+6367670b1a6d9265ec017a05,"public static String toString(final char ch){
+  if (ch < 128) {
+    return CharUtils.CHAR_STRING_ARRAY[ch];
+  }
+  return new String(new char[]{ch});
+}
+",Converts the character to a String that contains the one character. ,Return the String object that contains the given character.,yes,yes
+636767a31a6d9265ec01854f,"private void checkIfPackedField() throws IOException {
+  if (packedLimit == 0 && WireFormat.getTagWireType(lastTag) == WIRETYPE_LENGTH_DELIMITED) {
+    final int length=readRawVarint32();
+    if (length < 0)     throw ProtobufException.negativeSize();
+    this.packedLimit=getTotalBytesRead() + length;
+  }
+}
+",Check if this field have been packed into a length-delimited field. ,"Check if the field should be packed,if so,read the field and update the internal state. ",yes,yes
+636767a81a6d9265ec0185fc,"public int readTag() throws IOException {
+  if (!buffer.hasRemaining()) {
+    lastTag=0;
+    return 0;
+  }
+  final int tag=readRawVarint32();
+  if (tag >>> TAG_TYPE_BITS == 0) {
+    throw ProtobufException.invalidTag();
+  }
+  lastTag=tag;
+  return tag;
+}
+","Attempt to read a field tag, returning zero if we have reached EOF. ","Return a field tag, and if reach the EOF the tag will be zero.",yes,yes
+636766a81a6d9265ec017595,"final ByteVector put11(final int byteValue1,final int byteValue2){
+  int currentLength=length;
+  if (currentLength + 2 > data.length) {
+    enlarge(2);
+  }
+  byte[] currentData=data;
+  currentData[currentLength++]=(byte)byteValue1;
+  currentData[currentLength++]=(byte)byteValue2;
+  length=currentLength;
+  return this;
+}
+",Puts two bytes into this byte vector. ,Put two bytes into a byte vector called data.,yes,yes
+636766ae1a6d9265ec0175d8,"private String buildContentRange(){
+  Integer limit=drc.getLimit() == null ? getDefaultNumberPagination() - 1 : drc.getLimit();
+  Integer offset=drc.getOffset() == null ? 0 : drc.getOffset();
+  Long count=drc.getCount() == null ? 0 : drc.getCount();
+  return offset + ""-"" + (limit.equals(0) ? count - 1 : limit)+ ""/""+ count;
+}
+",Build the 'Content-Range' HTTP Header value.,"Return the string that contains the content range from offset to limit (when limit is zero,the upper bound will be count-1) and count.",yes,yes
+636767e11a6d9265ec018790,"public static List<ThreadSnapshot> parseFromFileWithTimeRange(File file,List<ProfileAnalyzeTimeRange> timeRanges) throws IOException {
+  try (final FileInputStream fileInputStream=new FileInputStream(file)){
+    ThreadSnapshot snapshot;
+    final ArrayList<ThreadSnapshot> data=new ArrayList<>();
+    while ((snapshot=ThreadSnapshot.parseDelimitedFrom(fileInputStream)) != null) {
+      ThreadSnapshot finalSnapshot=snapshot;
+      if (timeRanges.stream().filter(t -> finalSnapshot.getTime() >= t.getStart() && finalSnapshot.getTime() <= t.getEnd()).findFirst().isPresent()) {
+        data.add(snapshot);
+      }
+    }
+    return data;
+  }
+ }
+",Load thread snapshots in appointing time range,"Load the thread snapshots from the given file in the specified time range, and return the list of those thread snapshots.",yes,yes

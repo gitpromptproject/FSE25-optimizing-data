@@ -1,0 +1,231 @@
+target,raw_predictions,correctly_predicted
+<s>Trim each element in the given string array and return the resulting array.,<s>Trim the given array of elements.,0
+<s>Check whether the length of the given two byte arrays is the same.,<s>Returns true if the given array is equal to this array.,0
+<s>Pop an abstract type from the output frame stack and return its value.,<s>Removes the first occurrence of the specified element from this set if it is present (optional operation).,0
+<s>Convert the given Boolean array to primitives.,<s>Converts a boolean array to a primitive boolean array.,0
+"<s>If the message does not exist in the dict messages, or it exists but the timestamp (seconds) difference is bigger than 10, put the message and timestamp into messages and return true, otherwise return false.",<s>Returns true if the user has selected the right menu item.,0
+"<s>Return the string representation of the given object, return an empty string if the object is null.",<s>Returns a string representation of this object.,0
+"<s>Decode octets to characters with UTF-8, append them to the given StringBuilder, and return the index to the next unchecked character.",<s>Decodes the given byte array into a byte array.,0
+"<s>Init a currentFrame with the given offset, numLocal and numStack, return 3 finally.",<s>Visits a frame start.,0
+"<s>Enlarge the byte vector data, by increasing it by the given size.",<s>Creates a new instance of this class.,0
+<s>Delete the given file if it exists,<s>Deletes the given file from the database.,0
+"<s>Compute the hash code of the whole array, by accumulating the multiplication of each element hash code and the MULTIPLIER.",<s>Returns a hash code value for the given array.,0
+<s>Perform a right node rotation on the AVL tree.,<s>Rotates the given node.,0
+<s>Add all the jar files in the given dir to the classpath.,<s>Adds the given URL to the classpath.,0
+"<s>Format the buffered string with the pattern converter, and return the result.",<s>Formats the given event.,0
+"<s>Compute and return the length of the request content header, return the content length if NumberFormatException happens.",<s>Returns the content length of the file.,0
+"<s>Return the index of the last directory separator character, under Unix or Windows.",<s>Returns the index of the last occurrence of the specified element in this list.,0
+<s>Parse the header part starting from the given end position and return the index of the enter sequence.,<s>Parses the given header and returns the index of the header.,0
+"<s>Find the last index of the searchStr in str, and return INDEX_NOT_FOUND if str is empty.",<s>Returns the index of the last occurrence of the specified element in this list.,0
+<s>Write the given byte array b into the output stream that this class represents.,<s>Writes the given byte array to the output stream.,0
+<s>Return the id by concatenating the point and the entity id with id connector.,<s>Returns the id of the entity.,0
+<s>Convert a Boolean to a boolean handling null by returning false.,<s>Returns true if the user has entered a valid password.,0
+<s>Compute and return an identity automorphism for the given graph.,<s>Creates a new IsomorphicGraphMapping object.,0
+<s>Delete the file or the whole directory when exiting.,<s>Deletes the given file from the database.,0
+"<s>Add a log record message to be displayed in the LogTable, with the SwingUtilities.",<s>Adds a new message to the list of messages.,0
+<s>Construct a complete bipartite graph from partitions A and B.,<s>Generate a new graph from the data.,0
+"<s>Searches for a byte of the specified value in the buffer, starting at the specified position.",<s>Returns the index of the specified item in the list.,0
+"<s>Use ProtobufOutput and the LinkedBuffer to write the message into the given OutputStream out, and return the message size.",<s>Writes the message to the stream.,0
+<s>Return the string built by this string builder.,<s>Returns a string representation of this object.,0
+<s>Write the message in the event into a temp file.,<s>Creates a new instance of this class.,0
+<s>Add a new type entry of the given value into the type table of this symbol table.,<s>Adds a new type to the list of types.,0
+<s>Resolve and return the arguments for the genericType using the type variable information for the targetType.,<s>Resolves the arguments of a generic type.,0
+<s>Accept the data into the buffer if its id does not exist in the buffer.,"<s>This method is called when the user presses the ""OK"" button.",0
+<s>Insert this bucket in the data structure before the given bucket.,<s>Insert a new bucket at the end of the list.,0
+<s>Check the available space of this InputStream according to the index.,<s>Returns the size of the buffer.,0
+<s>Return mappings with fields that do not exist in the input mappings.,<s>Returns a copy of this map.,0
+<s>Add the given target channels to the consumeTargets.,<s>Adds a new group to the group list.,0
+"<s>Create the ""lf5"" directory in the Documents and Settings directory on Windows machines, or the user.home variable points on all other platforms.",<s>Creates a new instance of the class.,0
+<s>Read a signed long value.,<s>Reads a single line of text from the input stream.,0
+<s>Return true if the contents of the internal array bytes and the provided array data match.,<s>Returns true if the given byte array is equal to this byte array.,0
+<s>Return an EMPTY_BYTE_OBJECT_ARRAY array for a null or empty input array.,<s>Returns a copy of the current state of this object.,0
+<s>Send a message to each of the connections in telnet-friendly output.,<s>Sends a message to the server.,0
+<s>Return an EMPTY_BOOLEAN_OBJECT_ARRAY array for a null or empty input array.,<s>Returns true if the given array contains at least one element.,0
+<s>Place a LoggingEvent in the buffer buf.,<s>Adds a new event to the list of events.,0
+<s>Split time ranges to insure the start time and end time is small than FETCH_DATA_DURATION.,<s>Builds a list of time ranges.,0
+"<s>Convert an array of object Bytes to primitives, return null for a null input array.",<s>Converts a byte array into a byte array.,0
+<s>Follow the dayStep to reformat the time bucket with TIME_BUCKET_FORMATTER.,<s>Compresses the given file.,0
+<s>Compute the size of the utf8 string beginning at the specified index with the specified length.,<s>Compute the size of the file.,0
+"<s>Convert an array to list, return empty list for null array.",<s>Returns a copy of this list of items.,0
+<s>Remove a value from the values if the map keys contains the val.,<s>Removes the specified element from this set if it is present (optional operation).,0
+"<s>Return true if the given string starts with the specified case-insensitive prefix, false otherwise.",<s>Returns true if the given string starts with the given prefix.,0
+<s>Compute all vertices by iterating over the edges of this graph.,<s>Returns a set of vertices that are visible to the user.,0
+<s>Reverse the given String as per.,<s>Returns a copy of this object.,0
+<s>Get a substring from the specified String avoiding exceptions.,<s>Returns a copy of this object.,0
+"<s>Put an array of bytes into this byte vector, enlarge the byte vector automatically if necessary.",<s>Adds a byte array to the list.,0
+<s>Wrap an HttpServletRequest with the Builder.,<s>Creates a new instance of AtmosphereRequest.,0
+<s>Write the utf8-encoded bytes from the string into the LinkedBuffer.,<s>Write a string to the stream.,0
+<s>Remove this edge from both doubly linked lists of the tree edges.,<s>Removes the node from the tree.,0
+"<s>Find the value corresponding to key in props, then perform variable substitution on the found value.",<s>Returns the value of the specified property as a String.,0
+"<s>Append the detail of an int array to the buffer, starting with arrayStart and ending with arrayEnd, and separating with arraySeparator.",<s>Append a new line to the end of the file.,0
+<s>Return the servlet session id.,<s>Returns the session id of the current user.,0
+<s>Check whether a character string is a dight.,<s>Returns true if the given string is a valid token.,0
+<s>Check whether a character is a parameter separator.,<s>Returns true if the specified character is a valid character.,0
+<s>Determines whether a character string ends with a specified suffix.,<s>Returns true if the given string is a valid URL.,0
+<s>Decode the raw path.,<s>Decode a URI into a list of segments.,0
+"<s>If array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY.",<s>Returns a copy of the specified character array.,0
+<s>Check whether there is a thrown.,<s>Returns true if the user has selected the right menu item.,0
+<s>Return the value at the top of the stack.,<s>Returns the name of the file.,0
+<s>Add the value to the original value of the key.,<s>Adds a new value to the list.,0
+"<s>If the stack is not empty, the last element of the stack is returned.",<s>Returns the next token in the stream.,0
+<s>Check if the named logger exists.,<s>Returns the logger associated with this context.,0
+<s>Check whether the specified converter exists in converters.,<s>Returns the converter for the given type.,0
+<s>Read raw varint.,<s>Reads a 64 bit integer from the input stream.,0
+"<s>If the double type array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY.",<s>Returns a new instance of this class with the given values.,0
+<s>Pop the various value according to the first character of the descriptor.,<s>Removes the specified item from the list.,0
+<s>Write bytes of length len from a byte array.,<s>Writes the specified byte array to the output stream.,0
+<s>Swap values at indexes i and j in arr.,<s>Swaps the given element with the current element.,0
+<s>Determine whether the actual response is a Partial Content,<s>Returns true if the user has entered a valid password.,0
+<s>Check whether the array of the double type is empty.,<s>Returns true if the given array is empty.,0
+<s>Check whether lastwrite is - 1.,<s>Returns the last write time of the file.,0
+<s>Add an edge whose start point is sourceVertex and end point is targetVertex to touchingVerticesToEdgeMap.,<s>Adds a new edge to the graph.,0
+<s>Creates an array of the file type based on all file names in java.class.path and returns the array.,<s>Returns the path to the class file.,0
+<s>Copy the source string and transfer each character to lowercase.,<s>Copies a list of strings into the database.,0
+<s>Divide a box into two equal boxes on the x axis.,<s>Split the given box into two parts.,0
+<s>Convert the original data array to a longer array.,<s>Creates a new instance of this class.,0
+<s>Check whether appender elements exist in appenderList.,<s>Returns true if the specified appender is attached to this container.,0
+<s>Compares two values.,<s>Returns the index of the first occurrence of the specified element in this list.,0
+"<s>If the key whose value is val does not exist in the map, add (val, val) to the map and return true.",<s>Insert a new item into the list.,0
+<s>Check whether all fields exist in properties.,<s>Returns true if the given fields are contained in this list.,0
+<s>Converts a name of the string type to a character array and converts the first letter to an uppercase letter.,<s>Capitalize the given name.,0
+<s>Write the content into the LinkedBuffer.,<s>Writes the contents of the node to the output stream.,0
+<s>Check whether the parameter bool is not true.,<s>Returns true if the given boolean is true.,0
+<s>Convert a value in a vs array to a string.,<s>Returns a string representation of this object.,0
+<s>Create a string supplier which returns unique integer strings starting from the given start.,<unk>.get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get(0).get,0
+<s>Formats LoggingEvent as a fixed-format string.,<s>Returns a string representation of this object.,0
+"<s>If the length of the array is 0, return EMPTY_DOUBLE_ARRAY.",<s>Converts a double array to a double array.,0
+<s>Add abstractType to the initializations variable.,<s>Adds a new abstract type to the list of abstract types.,0
+<s>Add the elements indexed from start to end in currentFrame to Frame.,<s>Adds a new type to the list of types.,0
+<s>Read from the buffer.,<s>Reads the contents of the file into an array of bytes.,0
+<s>Write the byte array b to the buffer based on the encoding.,<s>Writes the specified byte array to the output stream.,0
+<s>Converts the content in JSONWriter to a string.,<s>Returns a string representation of this object.,0
+"<s>If the length of the value string is 0, the default type is returned.",<s>This method is used to convert the data to a string.,0
+<s>Check whether str contains elements in searchStrArray.,<s>Returns true if the given string is a valid string.,0
+<s>Returns the element at the location specified by desiredCapacity in primeCapacities.,<s>Returns the next prime number.,0
+<s>Obtains the character value of ch.,<s>Converts a character to a character in the text area.,0
+<s>Returns the first element in candidates that matches the source.,"<s>Returns the first occurrence of the specified element in this list, or null if the list does not contain this element.",0
+<s>Trim the end space of the str.,<s>Returns the string representation of this object.,0
+<s>Initializes a directory.,<s>Initialize the object.,0
+<s>Read string from a buffer.,<s>Reads a string from the stream.,0
+<s>Obtains the number corresponding to the character c.,<s>Returns the value of the value property.,0
+"<s>Put the ""content"" from the jsonObject to the content.",<s>Builds the content of the message.,0
+<s>Remove the mapping from atmosphereHandlers.,<s>Removes the specified item from the list.,0
+<s>Copy bytes from LinkedBuffer and return.,<s>Returns a byte array representation of this object.,0
+<s>Unescapes Java that found in the String.,<s>This method is used to convert the given string to a Java object.,0
+<s>Translate a MIME standard charset name into the Java equivalent.,<s>Returns the charset of the file.,0
+<s>Check whether an obj variable is of the String type.,<s>This method is used to create a new instance of the class.,0
+<s>Returns the previous ListNode.,<s>Returns the previous node.,0
+<s>Read a short value from classFileBuffer,<s>Reads a single line of text from the input stream.,0
+<s>Copy the given array and add a default value at the end.,<s>Copies the contents of the given array to the clipboard.,0
+<s>Calculate the floor of the logarithmic value of the given value in base 2.,<s>Compute the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the logarithm of the,0
+<s>Return the intersection between two sets.,<s>Returns the intersection of two sets.,0
+"<s>If collection is null, convert collection to EMPTY_STRING_ARRAY.",<s>Returns a string representation of the object.,0
+<s>Check whether a character string is all consist of zero.,<s>Returns true if the given string is all zeros.,0
+"<s>Filter and return null for the null and abort message in BroadcastAction, return the action message otherwise.",<s>This method is used to filter out the items in the list.,0
+<s>Convert process properties to the JsonObject.,<s>Converts a list of properties into a map.,0
+<s>Remove any inactive nodes from the Category tree and return the number of removed nodes.,<s>Removes all nodes from the graph.,0
+<s>Return the label by the given bytecode offset if it has been created.,<s>Reads a label from the file.,0
+<s>Check whether a string is true or false after ignore cases and trim the whitespaces at both ends.,<s>Returns true if the given value is a valid value for this type.,0
+<s>Trim the leading whitespaces in a string.,<s>Returns the name of the file.,0
+<s>Read a CONSTANT_Utf8 constant pool entry in the classFileBuffer.,<s>Reads a UTF-8 string from the input stream.,0
+<s>Convert a hexadecimal number to binary and return its character type.,<s>Decode a hex string into a byte array.,0
+<s>Convert object to string if the object is not null.,<s>Returns a string representation of the object.,0
+<s>Calculate the factorial of the given number.,<s>Returns the factorial of the given number.,0
+<s>Find a circulator to the node that satisfies the Interface predicate.,<s>Returns the outer face of the graph.,0
+<s>Add an event as the last event in the buffer.,<s>Adds a new event to the list of events.,0
+<s>Compare two numbers.,<s>Returns true if the given object is a member of this group.,0
+<s>Convert an enumeration to a string array.,<s>Returns a string representation of the current state of this state machine.,0
+<s>Add a byte array into the byte vector.,<s>Adds a byte array to the list.,0
+<s>Return an unmodifiable list that contains all methods in the BeanMap.,<s>Returns a list of all the items in the list.,0
+<s>Compute a hash code according to the type.,<s>Returns a hash code value for this object.,0
+<s>Delete characters that exists in the intersection between two character strings of the first character string and return the first character string that is modified.,<s>Deletes the specified item from the list.,0
+"<s>If the match between the url and the pattern occurs, return the match result.",<s>Returns a new instance of this class.,0
+<s>Convert an ASCII encoded character to hex.,<s>Converts a byte array to a hex string.,0
+<s>Add files in the stack in reverse order.,<s>Adds the given files to the list of files to be processed.,0
+<s>Check whether the key contains null.,<s>Checks if the current user is allowed to access the database.,0
+<s>Read the next buffer in the buffer.,<s>Reads a byte from the input stream.,0
+<s>Suspend the AtmosphereResource based on its transport value.,"<s>This method is called when the user clicks on the ""Save"" button.",0
+<s>Return the sum of the weights entering a vertex.,<s>Returns the weight of the given vertex.,0
+<s>Compare two events by their timeStamp.,<s>Compares the specified object with this set of objects.,0
+<s>Remove the appender by the given name from the list of appenders.,<s>Removes the specified appender from the list of appender to which this appender belongs.,0
+<s>Call the doAppend method on all attached appenders.,<s>Appends the given event to the end of the list.,0
+<s>Convert the given Integer array to primitives.,<s>Converts an array of integers into a primitive integer.,0
+<s>Register the value in REGISTRY if the value is not null.,<s>Registers a new value for the given key.,0
+<s>Return the number of non-zero entries of a row.,<s>Returns the number of elements in the list.,0
+<s>Check whether the element exists in the collection.,<s>Returns true if the specified element is contained in this list.,0
+<s>Check whether the character is ASCII 7 bit control.,<s>Returns true if the given character is a valid character.,0
+<s>Check whether a map contains a mapping for the specified key.,<s>Returns true if the given key is in the map.,0
+<s>Convert an array of primitive booleans to objects.,<s>Converts a boolean array to a boolean object.,0
+<s>Copy bytes to a byte array.,<s>Returns a copy of this object.,0
+<s>Convert a set representation to a graph path.,<s>Creates a new instance of this class.,0
+<s>Convert an array of primitive shorts to objects.,<s>Converts a short array to a short array.,0
+<s>Add constant information generated by its name and type to the constant pool and return the index of the constant.,<s>Adds a new entry to the list of entries.,0
+<s>Unescape a dot identifier string.,<s>Unescape the given string.,0
+<s>Concatenate two string arrays into one.,<s>Concatenates two strings into one string.,0
+<s>Move all vertices from the minimum label bucket to the bucket with label 0 and clear the minimum label bucket.,<s>Reloads the map.,0
+<s>Append a string to a string array.,<s>Adds a new entry to the list of entries.,0
+<s>Return the frequencies that the substring appears in the string.,<s>Returns the number of occurrences of the given substring.,0
+<s>Check whether there is at least one instance of the implementation class in the lists.,<s>Returns true if the given object is a member of this group.,0
+<s>Append a byte array to a buffer.,<s>Appends the given byte array to the end of the list.,0
+<s>Check whether there are unvisited vertices.,<s>Returns true if the user has selected the right menu item.,0
+<s>Pop the given number of elements from the stack.,<s>Pops the next element from the stack.,0
+<s>Check whether the existed buckets are the same as the buckets.,<s>Returns true if the given dataset is compatible with this dataset.,0
+<s>Find class by the given class name.,<s>Returns the class that represents the given class name.,0
+<s>Get next vertext from a graph.,<s>Returns the next vertex in the graph.,0
+<s>Add the number of lines.,<s>Adds a new line number to the list.,0
+<s>Remove the doubly linked list node that call the function.,<s>Removes the selected item from the list.,0
+<s>Change the elements whose values are oldName to newName in column.,<s>Sets the value of the value property.,0
+"<s>Remove the doubly circular linked list node.If success return true,otherwise return false.",<s>Removes a node from the list.,0
+"<s>Return a list whose nodes are sequences, and the sequences' lower bound are all minSequence, and the length increases sequentially with SEQUENCE_RANGE_BATCH_SIZE but the upper bound is maxSequence.",<s>Creates a new instance of the class.,0
+"<s>If dataBytes is equal to null, return false, otherwise return true.",<s>Returns true if this is the first time a user clicks on the button.,0
+<s>Return the path without the extension.,<s>Returns the name of the file.,0
+<s>Return a string which is consist of the values of elements in the given array.,<s>Converts a character array into a primitive character array.,0
+<s>Parses out a token until any of the given terminators is encountered and then return the token.,<s>Parses a token.,0
+"<s>Trim all the characters which are equal to the given character and appear at the beginning of the given string,and return the trimmed string.",<s>Removes the given character from the list of characters.,0
+<s>Return an array of Integer objects which are converted from an array of primitive ints.,<s>Converts an array of integers into a single integer.,0
+<s>Return an array of Double objects which are converted from an array of primitive doubles.,<s>Converts a double array to a double array of doubles.,0
+<s>Return a pair of the list of suffix sum and the sum of all elements of bounds.,<s>Computes the sum of the values of the given list of integers.,0
+<s>Reverse the order of the given elements in the specified range.,<s>Reverses the order of the items in the list.,0
+<s>Move the nodes of the given doubly linked list to a new list sequentially.,<s>Moves all nodes in the list to the top of the list.,0
+"<s>Return true if the given string has the specified prefix with optional cases which can be ignored, or both string and prefix are null.Otherwise return false.",<s>Returns true if the given string starts with the given prefix.,0
+<s>Return the Character object converted from the given character.,<s>Returns a new instance of this class with the given name.,0
+<s>Return true if the character is ASCII alphabetic upper case.Otherwise return false.,<s>Returns true if the specified character is a valid character in the text.,0
+<s>Return a decision based on the message generated by the event and whether the given string is matched.,<s>This method is used to determine whether or not the user is allowed to access the file.,0
+"<s>Return true if the given name is a member variable of this template,otherwise return false.",<s>Returns true if the specified variable is present in the variable list.,0
+<s>Put all of the both readable and writable methods from the given map to this map.,<s>Adds a new entry to the list of entries.,0
+<s>Return the given string's length.,<s>Returns the length of the given string.,0
+"<s>Return true if the given character is a hex digit, otherwise return false.",<s>Returns true if the specified character is a valid character in the text.,0
+"<s>Decoding a string follow the Base64 regular to an array,and return a string constructed from the array according to UTF_8.",<s>This method is used to get the current state of the game.,0
+"<s>Return true if the length of array1 is the same as the length of array2 or both them are null, otherwise return false.",<s>Returns true if the two arrays are equal.,0
+<s>Return a Meteor object based on the HttpServletRequest r.,<s>Returns the Meteor Meteor instance.,0
+"<s>Split the given string toSplit at the first occurrence of the given delimiter,and return two substrings that don't include the delimiter.",<s>Split a string into a list of strings.,0
+"<s>Select an edge which isn't a circle in the graph,compute the list of the minimal separators in the neighborhood of the edge and put the pair of list and edge into the return list.",<s>Returns a list of all the edges in the graph.,0
+<s>Return a clone of the given array.,<s>Clones the object.,0
+<s>Put the given array of files into a stack in reverse order.,<s>Adds the given files to the list of files to be processed.,0
+<s>Select the specified row in the given JTable and scroll the given JScrollPane to the row.,<s>Selects a row from the table.,0
+<s>Divide an int into four bytes and put the bytes into a byte vector called data in big endian order.,<s>Put an integer into the vector.,0
+"<s>Given two arrays with the given length count,return true if the array a is equal to array b,otherwise return false.",<s>Returns true if the specified element is contained in this list.,0
+"<s>The given name can be split into several substrings by ""."", and abbreviate the name in the buf by deleting the first count substrings.",<s>Abbreviates the name of the current thread.,0
+"<s>Resolve the class of the first bound for the typeVariable recursively, return Unknown.class if it can't be resolved.",<s>Returns the bound value of the specified type variable.,0
+"<s>Return true if the subgraph of the given graph induced by the given vertices is a clique, otherwise return false.",<s>Returns true if the given vertex is in the list of vertices.,0
+"<s>The type of key has several lower bounds conducted by different function, this function will return a list of the maximum lower bound of each key in the given list.",<s>Compute the lower bound of the list of keys.,0
+<s>Pop different value of type based on the first character of the given descriptor.,<s>Removes the specified item from the list.,0
+"<s>Return true if the given character is a ASCII seven bit character, otherwise return false.",<s>Returns true if the given character is a valid character.,0
+"<s>The type of key has several upper bounds conducted by different function, this function will return a list of the minimum upper bound of each key in the given list.",<s>Compute the upper bound of the map.,0
+"<s>Encoding the given string by changing '{' and '}' to the specified character for each,return the string after encoding.",<s>Encode the template names.,0
+"<s>Using TOLERANCE_DOUBLE_COMPARATOR to compare two points for equality, return true the point p1 is equal to another point p2, otherwise return false.",<s>Returns true if the given point is in the list of points.,0
+<s>Adding an instance of AtmosphereResourceEventListener e into a list and return the AtmosphereResource object which call the function.,<s>Adds an event listener to the collection of listeners who will be notified when a property changes.,0
+"<s>Combine the substring before FOLDER_SEPARATOR of the given path with the given relative path to construct a new full file path, and return the full file path.",<s>Applies the given file to the current file system.,0
+<s>Return the first index of the searchStr in the given string.,"<s>Returns the index of the first occurrence of the specified element in this list, or -1 if the list does not contain this element.",0
+"<s>Return a new array of strings converted from the elements which are not null of the given array, if the size of the array is zero, it will throw an exception.",<s>Returns a string representation of the object.,0
+"<s>Return the last index of the extension separator in the given filename, it will return -1 if the filename doesn't have the separator or there is a directory separator after it.",<s>Returns the index of the specified file.,0
+"<s>Return true if the timestamp minus the lastUpdateTimestamp is greater than expiredThreshold, otherwise return false.",<s>Returns true if the given timestamp is within the range of the current time range.,0
+<s>Return the edge connecting the previously returned node with the current node.,<s>Returns the next edge in the graph.,0
+"<s>Return true if starting at the given index, the given string matches the given substring.",<s>Returns true if the specified substring is contained in this substring list.,0
+"<s>Handling a logging event by using layout.format(), and if layout.ignoresThrowable() is true, it will continue to send the StrRep of the event.",<s>Appends the given event to the end of the list of events.,0
+<s>Return the String object that contains the given character.,<s>Returns a string representation of this object.,0
+"<s>Check if the field should be packed,if so,read the field and update the internal state.",<s>Check if the current user has permission to access the file.,0
+"<s>Return a field tag, and if reach the EOF the tag will be zero.",<s>Reads the next tag from the stream.,0
+<s>Put two bytes into a byte vector called data.,<s>Adds a byte array to the end of the list.,0
+"<s>Return the string that contains the content range from offset to limit (when limit is zero,the upper bound will be count-1) and count.",<s>Returns the name of the file.,0
+"<s>Load the thread snapshots from the given file in the specified time range, and return the list of those thread snapshots.",<s>Parses the given file and returns a list of thread snapshots.,0

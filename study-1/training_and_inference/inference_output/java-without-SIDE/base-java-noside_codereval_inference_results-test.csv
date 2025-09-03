@@ -1,0 +1,231 @@
+target,raw_predictions,correctly_predicted,SIDE_score
+<s>Trim each element in the given string array and return the resulting array.,<s>Returns the value of the field.,0,0.5012118220329285
+<s>Check whether the length of the given two byte arrays is the same.,<s>Returns true if the given element is contained in this list.,0,0.7486526370048523
+<s>Pop an abstract type from the output frame stack and return its value.,<s>Returns the value of the property.,0,-0.07343116402626038
+<s>Convert the given Boolean array to primitives.,<s>Returns the value of the property.,0,0.5956656336784363
+"<s>If the message does not exist in the dict messages, or it exists but the timestamp (seconds) difference is bigger than 10, put the message and timestamp into messages and return true, otherwise return false.",<s>Returns true if the message should be printed.,0,0.30725473165512085
+"<s>Return the string representation of the given object, return an empty string if the object is null.",<s>Returns the value of the field.,0,0.3018139600753784
+"<s>Decode octets to characters with UTF-8, append them to the given StringBuilder, and return the index to the next unchecked character.",<s>Returns the index of the element in the list.,0,0.3458794057369232
+"<s>Init a currentFrame with the given offset, numLocal and numStack, return 3 finally.",<s>This method is used to determine if the user has been granted permission to access the specified resource.,0,-0.047802720218896866
+"<s>Enlarge the byte vector data, by increasing it by the given size.",<s>This method is used to set the value of the field.,0,0.49308058619499207
+<s>Delete the given file if it exists,<s>Delete the file with the given name.,0,0.9961491823196411
+"<s>Compute the hash code of the whole array, by accumulating the multiplication of each element hash code and the MULTIPLIER.",<s>Returns the hash code of the given object.,0,0.06584974378347397
+<s>Perform a right node rotation on the AVL tree.,<s>This method is used to determine if the given object is a valid object of the class.,0,-0.005229860544204712
+<s>Add all the jar files in the given dir to the classpath.,<s>Adds the given file to the classpath.,0,0.9203240275382996
+"<s>Format the buffered string with the pattern converter, and return the result.",<s>Returns the value of the property.,0,0.21724598109722137
+"<s>Compute and return the length of the request content header, return the content length if NumberFormatException happens.",<s>Returns the value of the property.,0,0.2178758829832077
+"<s>Return the index of the last directory separator character, under Unix or Windows.",<s>Returns the index of the first occurrence of the specified element in this list.,0,0.4477745592594147
+<s>Parse the header part starting from the given end position and return the index of the enter sequence.,<s>Returns the index of the first occurrence of the specified element in this list.,0,0.5431838631629944
+"<s>Find the last index of the searchStr in str, and return INDEX_NOT_FOUND if str is empty.",<s>Returns the index of the first occurrence of the specified element in this list.,0,0.44672060012817383
+<s>Write the given byte array b into the output stream that this class represents.,<s>This method is used to set the value of the property.,0,-0.33001741766929626
+<s>Return the id by concatenating the point and the entity id with id connector.,<s>Returns the value of the property.,0,0.8327276706695557
+<s>Convert a Boolean to a boolean handling null by returning false.,<s>Returns true if the file was successfully created.,0,0.011518888175487518
+<s>Compute and return an identity automorphism for the given graph.,<s>Returns the value of the property.,0,0.394092321395874
+<s>Delete the file or the whole directory when exiting.,<s>This method is used to set the value of the field.,0,-0.13722124695777893
+"<s>Add a log record message to be displayed in the LogTable, with the SwingUtilities.",<s>Adds a new entry to the table.,0,-0.11765474081039429
+<s>Construct a complete bipartite graph from partitions A and B.,<s>This method is used to generate the XML document for the given type of object.,0,0.18303796648979187
+"<s>Searches for a byte of the specified value in the buffer, starting at the specified position.",<s>Returns the value of the field.,0,0.2970791161060333
+"<s>Use ProtobufOutput and the LinkedBuffer to write the message into the given OutputStream out, and return the message size.",<s>Write the message to the stream.,0,0.20283138751983643
+<s>Return the string built by this string builder.,<s>Returns the name of the class that is associated with this object.,0,0.6657510995864868
+<s>Write the message in the event into a temp file.,<s>This method is used to create a new instance of the class.,0,-0.3488466441631317
+<s>Add a new type entry of the given value into the type table of this symbol table.,<s>Adds a new entry to the table.,0,0.5240592360496521
+<s>Resolve and return the arguments for the genericType using the type variable information for the targetType.,<s>Returns the value of the field.,0,0.7834900617599487
+<s>Accept the data into the buffer if its id does not exist in the buffer.,<s>This method is used to set the value of the field.,0,0.14100241661071777
+<s>Insert this bucket in the data structure before the given bucket.,<s>Adds a new entry to the table.,0,0.7518463134765625
+<s>Check the available space of this InputStream according to the index.,<s>Returns the value of the property.,0,-0.2798141837120056
+<s>Return mappings with fields that do not exist in the input mappings.,<s>Returns the value of the property.,0,0.5623646378517151
+<s>Add the given target channels to the consumeTargets.,<s>Adds a new entry to the list.,0,0.6012914776802063
+"<s>Create the ""lf5"" directory in the Documents and Settings directory on Windows machines, or the user.home variable points on all other platforms.",<s>Creates a new instance of the class.,0,-0.735048770904541
+<s>Read a signed long value.,<s>Returns the value of the property.,0,0.2267051786184311
+<s>Return true if the contents of the internal array bytes and the provided array data match.,<s>Returns true if the given file is a file in the current directory.,0,0.35121214389801025
+<s>Return an EMPTY_BYTE_OBJECT_ARRAY array for a null or empty input array.,<s>Returns the value of the property.,0,0.2200087159872055
+<s>Send a message to each of the connections in telnet-friendly output.,<s>Send a message to all registered listeners.,0,0.9914965629577637
+<s>Return an EMPTY_BOOLEAN_OBJECT_ARRAY array for a null or empty input array.,<s>Returns the value of the property.,0,0.6710503101348877
+<s>Place a LoggingEvent in the buffer buf.,<s>Adds a new entry to the table.,0,0.13213764131069183
+<s>Split time ranges to insure the start time and end time is small than FETCH_DATA_DURATION.,<s>Returns the list of all the elements in the list.,0,0.057842765003442764
+"<s>Convert an array of object Bytes to primitives, return null for a null input array.",<s>Returns the value of the property.,0,0.2222755253314972
+<s>Follow the dayStep to reformat the time bucket with TIME_BUCKET_FORMATTER.,<s>Returns the value of the field.,0,-0.08837863057851791
+<s>Compute the size of the utf8 string beginning at the specified index with the specified length.,<s>Returns the number of bytes that have been written to the file.,0,0.8268170356750488
+"<s>Convert an array to list, return empty list for null array.",<s>Returns the value of the property.,0,0.2320888787508011
+<s>Remove a value from the values if the map keys contains the val.,<s>Removes the specified element from this list (optional operation).,0,0.41324809193611145
+"<s>Return true if the given string starts with the specified case-insensitive prefix, false otherwise.",<s>Returns true if the given string is a valid string for this type of object.,0,0.5981928110122681
+<s>Compute all vertices by iterating over the edges of this graph.,<s>Returns the list of all the nodes in the tree.,0,0.7351862192153931
+<s>Reverse the given String as per.,<s>Returns the value of the property.,0,0.06745897233486176
+<s>Get a substring from the specified String avoiding exceptions.,<s>Returns the value of the field.,0,0.7158889174461365
+"<s>Put an array of bytes into this byte vector, enlarge the byte vector automatically if necessary.",<s>Adds a new entry to the list.,0,0.03440685570240021
+<s>Wrap an HttpServletRequest with the Builder.,<s>Returns the value of the property.,0,0.0025820177979767323
+<s>Write the utf8-encoded bytes from the string into the LinkedBuffer.,<s>This method is used to create a new instance of the class.,0,-0.3628208637237549
+<s>Remove this edge from both doubly linked lists of the tree edges.,<s>Removes all the elements from this list.,0,0.9426669478416443
+"<s>Find the value corresponding to key in props, then perform variable substitution on the found value.",<s>Returns the value of the property.,0,0.22466935217380524
+"<s>Append the detail of an int array to the buffer, starting with arrayStart and ending with arrayEnd, and separating with arraySeparator.",<s>Adds a new entry to the table.,0,-0.11054578423500061
+<s>Return the servlet session id.,<s>Returns the value of the field.,0,0.22531582415103912
+<s>Check whether a character string is a dight.,<s>Returns true if the given string is a valid string for this type of object.,0,0.9827092885971069
+<s>Check whether a character is a parameter separator.,<s>Returns true if the given character is a valid character in the current character set.,0,0.9771745800971985
+<s>Determines whether a character string ends with a specified suffix.,<s>Returns true if the given file is a file in the current directory.,0,0.5287536978721619
+<s>Decode the raw path.,<s>Returns the value of the property.,0,-0.08677686005830765
+"<s>If array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY.",<s>Returns the value of the property.,0,0.21417012810707092
+<s>Check whether there is a thrown.,<s>Returns true if the message was successfully sent to the server.,0,0.7920308113098145
+<s>Return the value at the top of the stack.,<s>Returns the value of the property.,0,0.39683419466018677
+<s>Add the value to the original value of the key.,<s>Adds a new entry to the table.,0,0.3784353733062744
+"<s>If the stack is not empty, the last element of the stack is returned.",<s>Returns the value of the property.,0,0.22093410789966583
+<s>Check if the named logger exists.,<s>Returns true if the file exists.,0,0.7701184749603271
+<s>Check whether the specified converter exists in converters.,<s>Returns the value of the property.,0,0.5461273193359375
+<s>Read raw varint.,<s>Read a value from the stream.,0,0.8960279822349548
+"<s>If the double type array is null or its length is 0, convert array to EMPTY_CHARACTER_OBJECT_ARRAY.",<s>Returns the value of the property.,0,0.21400295197963715
+<s>Pop the various value according to the first character of the descriptor.,<s>Pop the next element from the queue.,0,0.3315040171146393
+<s>Write bytes of length len from a byte array.,<s>Write the given byte array to the stream.,0,0.9204227924346924
+<s>Swap values at indexes i and j in arr.,<s>This method is used to set the value of the field.,0,0.6754469871520996
+<s>Determine whether the actual response is a Partial Content,<s>Returns true if the message was successfully sent to the server.,0,0.6366411447525024
+<s>Check whether the array of the double type is empty.,<s>Returns true if the file was successfully created.,0,-0.23899921774864197
+<s>Check whether lastwrite is - 1.,<s>Returns the value of the property.,0,0.14374186098575592
+<s>Add an edge whose start point is sourceVertex and end point is targetVertex to touchingVerticesToEdgeMap.,<s>Adds the specified element to the end of this list (optional operation).,0,0.213508740067482
+<s>Creates an array of the file type based on all file names in java.class.path and returns the array.,<s>Returns the list of all the items in the list.,0,0.24685409665107727
+<s>Copy the source string and transfer each character to lowercase.,<s>Returns the value of the field.,0,0.2958294749259949
+<s>Divide a box into two equal boxes on the x axis.,<s>Returns the value of the property.,0,-0.181634783744812
+<s>Convert the original data array to a longer array.,<s>This method is used to set the value of the field.,0,0.16343893110752106
+<s>Check whether appender elements exist in appenderList.,<s>Returns true if the given appender is attached to this container.,0,0.911674439907074
+<s>Compares two values.,<s>Returns true if the given element is contained in this list.,0,0.9392184615135193
+"<s>If the key whose value is val does not exist in the map, add (val, val) to the map and return true.",<s>Adds a new entry to the table.,0,-0.11690488457679749
+<s>Check whether all fields exist in properties.,<s>Returns true if the given field is contained in this field.,0,0.6767343282699585
+<s>Converts a name of the string type to a character array and converts the first letter to an uppercase letter.,<s>Returns the value of the property.,0,0.41762402653694153
+<s>Write the content into the LinkedBuffer.,<s>Write the contents of the given file to the given file.,0,0.8034580945968628
+<s>Check whether the parameter bool is not true.,<s>Returns the value of the field.,0,0.5470403432846069
+<s>Convert a value in a vs array to a string.,<s>Returns the value of the property.,0,0.48271122574806213
+<s>Create a string supplier which returns unique integer strings starting from the given start.,<s>Returns the value of the property.,0,0.45051977038383484
+<s>Formats LoggingEvent as a fixed-format string.,<s>Returns the value of the property.,0,-0.29280439019203186
+"<s>If the length of the array is 0, return EMPTY_DOUBLE_ARRAY.",<s>Returns the value of the property.,0,0.21861869096755981
+<s>Add abstractType to the initializations variable.,<s>Adds a new entry to the table.,0,0.617626965045929
+<s>Add the elements indexed from start to end in currentFrame to Frame.,<s>Adds a new entry to the table.,0,0.902289867401123
+<s>Read from the buffer.,<s>Read the contents of the file.,0,0.6127434968948364
+<s>Write the byte array b to the buffer based on the encoding.,<s>This method is used to set the value of the field.,0,0.06111925095319748
+<s>Converts the content in JSONWriter to a string.,<s>Returns the string representation of the object.,0,0.9502489566802979
+"<s>If the length of the value string is 0, the default type is returned.",<s>Returns the value of the field.,0,0.29975661635398865
+<s>Check whether str contains elements in searchStrArray.,<s>Returns true if the given string is a valid string for this type of object.,0,0.8299068808555603
+<s>Returns the element at the location specified by desiredCapacity in primeCapacities.,<s>Returns the next available element in the queue.,0,0.7429587244987488
+<s>Obtains the character value of ch.,<s>Returns the value of the field.,0,0.824510395526886
+<s>Returns the first element in candidates that matches the source.,"<s>Returns the first occurrence of the specified element in this list, or null if this list does not contain the element.",0,-0.34099552035331726
+<s>Trim the end space of the str.,<s>Returns the value of the property.,0,-0.1032896488904953
+<s>Initializes a directory.,<s>Sets the value of the field.,0,-0.5416619181632996
+<s>Read string from a buffer.,<s>Read the next token from the stream.,0,0.9274525046348572
+<s>Obtains the number corresponding to the character c.,<s>Returns the value of the field.,0,0.7785196304321289
+"<s>Put the ""content"" from the jsonObject to the content.",<s>Builds the content of the message.,0,-0.43908432126045227
+<s>Remove the mapping from atmosphereHandlers.,<s>Removes the specified element from this list (optional operation).,0,0.2373630404472351
+<s>Copy bytes from LinkedBuffer and return.,<s>Returns the value of the property.,0,-0.4943653643131256
+<s>Unescapes Java that found in the String.,<s>Returns the value of the field.,0,0.39316654205322266
+<s>Translate a MIME standard charset name into the Java equivalent.,<s>Returns the value of the field.,0,0.6689218282699585
+<s>Check whether an obj variable is of the String type.,<s>Returns the value of the field.,0,0.6779467463493347
+<s>Returns the previous ListNode.,<s>Returns the value of the field.,0,-0.03706464543938637
+<s>Read a short value from classFileBuffer,<s>Returns the value of the property.,0,0.2602204978466034
+<s>Copy the given array and add a default value at the end.,<s>Returns the value of the property.,0,-0.024477511644363403
+<s>Calculate the floor of the logarithmic value of the given value in base 2.,<s>Returns the value of the property.,0,0.20220978558063507
+<s>Return the intersection between two sets.,<s>Returns the intersection of the two sets.,0,0.9803917407989502
+"<s>If collection is null, convert collection to EMPTY_STRING_ARRAY.",<s>Returns the value of the property.,0,0.22154249250888824
+<s>Check whether a character string is all consist of zero.,<s>Returns true if the given string is a valid string for this type of object.,0,0.9684691429138184
+"<s>Filter and return null for the null and abort message in BroadcastAction, return the action message otherwise.",<s>Returns the value of the property.,0,0.2169373333454132
+<s>Convert process properties to the JsonObject.,<s>Returns the value of the property.,0,0.303280234336853
+<s>Remove any inactive nodes from the Category tree and return the number of removed nodes.,<s>Removes all the elements from the list.,0,0.8851020932197571
+<s>Return the label by the given bytecode offset if it has been created.,<s>Returns the value of the property.,0,0.3957054018974304
+<s>Check whether a string is true or false after ignore cases and trim the whitespaces at both ends.,<s>Returns true if the file was successfully created.,0,0.024129491299390793
+<s>Trim the leading whitespaces in a string.,<s>Returns the value of the property.,0,0.0509018711745739
+<s>Read a CONSTANT_Utf8 constant pool entry in the classFileBuffer.,<s>Read the value of the field.,0,0.8838052749633789
+<s>Convert a hexadecimal number to binary and return its character type.,<s>Returns the value of the field.,0,0.7417425513267517
+<s>Convert object to string if the object is not null.,<s>Returns the value of the field.,0,0.7696733474731445
+<s>Calculate the factorial of the given number.,<s>Returns the value of the property.,0,0.25399482250213623
+<s>Find a circulator to the node that satisfies the Interface predicate.,<s>Returns the value of the property.,0,0.2315848022699356
+<s>Add an event as the last event in the buffer.,<s>Adds a new entry to the list.,0,0.7186734080314636
+<s>Compare two numbers.,<s>Returns the value of the property.,0,0.3642757534980774
+<s>Convert an enumeration to a string array.,<s>Returns the value of the property.,0,0.4205893874168396
+<s>Add a byte array into the byte vector.,<s>Adds a new entry to the list.,0,0.5726794004440308
+<s>Return an unmodifiable list that contains all methods in the BeanMap.,<s>Returns the value of the property.,0,0.3983059525489807
+<s>Compute a hash code according to the type.,<s>Returns the hash code of the object.,0,0.9301307201385498
+<s>Delete characters that exists in the intersection between two character strings of the first character string and return the first character string that is modified.,<s>Returns the value of the property.,0,0.0869775265455246
+"<s>If the match between the url and the pattern occurs, return the match result.",<s>Returns the value of the property.,0,0.22380764782428741
+<s>Convert an ASCII encoded character to hex.,<s>Returns the value of the field.,0,0.6243707537651062
+<s>Add files in the stack in reverse order.,<s>Adds a new entry to the list.,0,0.5456609129905701
+<s>Check whether the key contains null.,<s>Checks if the current user is allowed to access the specified resource.,0,0.3066837191581726
+<s>Read the next buffer in the buffer.,<s>Returns the value of the property.,0,-0.22116224467754364
+<s>Suspend the AtmosphereResource based on its transport value.,<s>Returns the value of the property.,0,-0.7226205468177795
+<s>Return the sum of the weights entering a vertex.,<s>Returns the value of the property.,0,0.23861075937747955
+<s>Compare two events by their timeStamp.,<s>Compares the given object with this object.,0,0.47790783643722534
+<s>Remove the appender by the given name from the list of appenders.,<s>Removes the specified element from this list (optional operation).,0,0.35181424021720886
+<s>Call the doAppend method on all attached appenders.,<s>This method is used to determine whether the given object is a valid object of the class.,0,-0.3584369421005249
+<s>Convert the given Integer array to primitives.,<s>Returns the value of the property.,0,0.4433152377605438
+<s>Register the value in REGISTRY if the value is not null.,<s>Adds a new entry to the table.,0,0.5356254577636719
+<s>Return the number of non-zero entries of a row.,<s>Returns the value of the property.,0,0.35645243525505066
+<s>Check whether the element exists in the collection.,<s>Returns true if the given element is contained in the list.,0,0.9580851793289185
+<s>Check whether the character is ASCII 7 bit control.,<s>Returns true if the given element is contained in this list.,0,0.5531958341598511
+<s>Check whether a map contains a mapping for the specified key.,<s>Returns true if the given key is in the map.,0,0.9729726314544678
+<s>Convert an array of primitive booleans to objects.,<s>Returns the value of the property.,0,0.5233915448188782
+<s>Copy bytes to a byte array.,<s>Returns the value of the property.,0,-0.3823632001876831
+<s>Convert a set representation to a graph path.,<s>Returns the path to the file that contains the data.,0,0.5458136796951294
+<s>Convert an array of primitive shorts to objects.,<s>Returns the value of the property.,0,0.05783750116825104
+<s>Add constant information generated by its name and type to the constant pool and return the index of the constant.,<s>Adds a new entry to the table.,0,0.2949848175048828
+<s>Unescape a dot identifier string.,<s>Returns the value of the property.,0,0.007206144277006388
+<s>Concatenate two string arrays into one.,<s>Returns the list of all the items in the list.,0,0.06343913078308105
+<s>Move all vertices from the minimum label bucket to the bucket with label 0 and clear the minimum label bucket.,<s>This method is used to set the value of the field.,0,0.04891565442085266
+<s>Append a string to a string array.,<s>Adds a new entry to the list.,0,0.44437336921691895
+<s>Return the frequencies that the substring appears in the string.,<s>Returns the number of occurrences of the specified character in this string.,0,0.9208391308784485
+<s>Check whether there is at least one instance of the implementation class in the lists.,<s>Checks if the given object is a valid object of the given type.,0,0.8632798790931702
+<s>Append a byte array to a buffer.,<s>Adds a new entry to the table.,0,0.4326598048210144
+<s>Check whether there are unvisited vertices.,<s>Returns true if the current element is contained in the list.,0,0.8609405755996704
+<s>Pop the given number of elements from the stack.,<s>Removes the specified element from this list (optional operation).,0,0.21699081361293793
+<s>Check whether the existed buckets are the same as the buckets.,<s>Returns true if the given table is compatible with this table.,0,0.9157350063323975
+<s>Find class by the given class name.,<s>Returns the value of the property.,0,0.7645039558410645
+<s>Get next vertext from a graph.,<s>Returns the next element in the queue.,0,0.8062595725059509
+<s>Add the number of lines.,<s>Adds a new line to the end of the file.,0,0.7985007762908936
+<s>Remove the doubly linked list node that call the function.,<s>This method is used to determine if the current user is allowed to access the specified resource.,0,-0.08096164464950562
+<s>Change the elements whose values are oldName to newName in column.,<s>Sets the value of the field.,0,0.5581939220428467
+"<s>Remove the doubly circular linked list node.If success return true,otherwise return false.",<s>Removes the specified element from this list (optional operation).,0,0.9998523592948914
+"<s>Return a list whose nodes are sequences, and the sequences' lower bound are all minSequence, and the length increases sequentially with SEQUENCE_RANGE_BATCH_SIZE but the upper bound is maxSequence.",<s>Returns the list of all the items in the list.,0,-0.00043555721640586853
+"<s>If dataBytes is equal to null, return false, otherwise return true.",<s>Returns true if the user has been granted permission to access this resource.,0,0.1461949348449707
+<s>Return the path without the extension.,<s>Returns the value of the field.,0,0.0017802231013774872
+<s>Return a string which is consist of the values of elements in the given array.,<s>Returns the value of the property.,0,0.34577956795692444
+<s>Parses out a token until any of the given terminators is encountered and then return the token.,<s>Returns the value of the field.,0,0.6516721248626709
+"<s>Trim all the characters which are equal to the given character and appear at the beginning of the given string,and return the trimmed string.",<s>Returns the value of the property.,0,0.21378803253173828
+<s>Return an array of Integer objects which are converted from an array of primitive ints.,<s>Returns the value of the property.,0,0.4959397614002228
+<s>Return an array of Double objects which are converted from an array of primitive doubles.,<s>Returns the value of the property.,0,0.3645317554473877
+<s>Return a pair of the list of suffix sum and the sum of all elements of bounds.,<s>Returns the value of the field.,0,0.5465254783630371
+<s>Reverse the order of the given elements in the specified range.,<s>This method is used to set the value of the field.,0,0.2419520616531372
+<s>Move the nodes of the given doubly linked list to a new list sequentially.,<s>Moves all the elements in the list to the beginning.,0,0.794860303401947
+"<s>Return true if the given string has the specified prefix with optional cases which can be ignored, or both string and prefix are null.Otherwise return false.",<s>Returns true if the given element is contained in this list.,0,0.4756380021572113
+<s>Return the Character object converted from the given character.,<s>Returns the value of the field.,0,0.6087380051612854
+<s>Return true if the character is ASCII alphabetic upper case.Otherwise return false.,<s>Returns true if the given element is contained in this list.,0,0.5137109160423279
+<s>Return a decision based on the message generated by the event and whether the given string is matched.,<s>Returns true if the message is valid.,0,0.8028824329376221
+"<s>Return true if the given name is a member variable of this template,otherwise return false.",<s>Returns true if the given element is contained in this set.,0,0.4952322840690613
+<s>Put all of the both readable and writable methods from the given map to this map.,<s>Adds a new entry to the table.,0,0.5725031495094299
+<s>Return the given string's length.,<s>Returns the value of the property.,0,0.2302333563566208
+"<s>Return true if the given character is a hex digit, otherwise return false.",<s>Returns true if the given character is a valid character in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in the range of characters in,0,0.6115684509277344
+"<s>Decoding a string follow the Base64 regular to an array,and return a string constructed from the array according to UTF_8.",<s>Returns the value of the property.,0,0.21332424879074097
+"<s>Return true if the length of array1 is the same as the length of array2 or both them are null, otherwise return false.",<s>Returns true if the given element is contained in this list.,0,0.46843668818473816
+<s>Return a Meteor object based on the HttpServletRequest r.,<s>Returns the value of the property.,0,0.09342847764492035
+"<s>Split the given string toSplit at the first occurrence of the given delimiter,and return two substrings that don't include the delimiter.",<s>Returns the value of the property.,0,0.21318745613098145
+"<s>Select an edge which isn't a circle in the graph,compute the list of the minimal separators in the neighborhood of the edge and put the pair of list and edge into the return list.",<s>Returns the list of all the elements in the list.,0,-0.03926338255405426
+<s>Return a clone of the given array.,<s>Returns the value of the property.,0,0.08367151021957397
+<s>Put the given array of files into a stack in reverse order.,<s>Adds a new entry to the list.,0,0.4184643626213074
+<s>Select the specified row in the given JTable and scroll the given JScrollPane to the row.,<s>Selects the item with the given index.,0,0.5807861685752869
+<s>Divide an int into four bytes and put the bytes into a byte vector called data in big endian order.,<s>Adds a new entry to the list.,0,0.2805945873260498
+"<s>Given two arrays with the given length count,return true if the array a is equal to array b,otherwise return false.",<s>Returns true if the given element is contained in this list.,0,0.4681634306907654
+"<s>The given name can be split into several substrings by ""."", and abbreviate the name in the buf by deleting the first count substrings.",<s>This method is used to set the value of the field.,0,0.49350637197494507
+"<s>Resolve the class of the first bound for the typeVariable recursively, return Unknown.class if it can't be resolved.",<s>Returns the value of the field.,0,0.30015093088150024
+"<s>Return true if the subgraph of the given graph induced by the given vertices is a clique, otherwise return false.",<s>Returns true if the given node is a leaf node.,0,0.19435444474220276
+"<s>The type of key has several lower bounds conducted by different function, this function will return a list of the maximum lower bound of each key in the given list.",<s>Returns the list of all the elements in the list.,0,-0.04163656383752823
+<s>Pop different value of type based on the first character of the given descriptor.,<s>Pop the next element from the queue.,0,0.07524842768907547
+"<s>Return true if the given character is a ASCII seven bit character, otherwise return false.",<s>Returns true if the file was successfully created.,0,-0.15496395528316498
+"<s>The type of key has several upper bounds conducted by different function, this function will return a list of the minimum upper bound of each key in the given list.",<s>Returns the upper bound of the specified element.,0,0.41177892684936523
+"<s>Encoding the given string by changing '{' and '}' to the specified character for each,return the string after encoding.",<s>Returns the value of the property.,0,0.2098187506198883
+"<s>Using TOLERANCE_DOUBLE_COMPARATOR to compare two points for equality, return true the point p1 is equal to another point p2, otherwise return false.",<s>Returns true if the given element is contained in this list.,0,0.46308693289756775
+<s>Adding an instance of AtmosphereResourceEventListener e into a list and return the AtmosphereResource object which call the function.,<s>Adds a new entry to the table.,0,0.5643941164016724
+"<s>Combine the substring before FOLDER_SEPARATOR of the given path with the given relative path to construct a new full file path, and return the full file path.",<s>Returns the value of the property.,0,0.21198154985904694
+<s>Return the first index of the searchStr in the given string.,<s>Returns the index of the first occurrence of the specified element in this list.,0,0.9066011905670166
+"<s>Return a new array of strings converted from the elements which are not null of the given array, if the size of the array is zero, it will throw an exception.",<s>Returns the list of all the items in the list.,0,0.004338890314102173
+"<s>Return the last index of the extension separator in the given filename, it will return -1 if the filename doesn't have the separator or there is a directory separator after it.",<s>Returns the index of the first occurrence of the specified element in this list.,0,0.44449958205223083
+"<s>Return true if the timestamp minus the lastUpdateTimestamp is greater than expiredThreshold, otherwise return false.",<s>Returns true if the file was successfully created.,0,-0.14211736619472504
+<s>Return the edge connecting the previously returned node with the current node.,<s>Returns the value of the property.,0,0.07570279389619827
+"<s>Return true if starting at the given index, the given string matches the given substring.",<s>Returns true if the given string is a valid string for this type of object.,0,0.5828817486763
+"<s>Handling a logging event by using layout.format(), and if layout.ignoresThrowable() is true, it will continue to send the StrRep of the event.",<s>Append the given event to the end of the list.,0,0.08224447071552277
+<s>Return the String object that contains the given character.,<s>Returns the value of the property.,0,0.2960718274116516
+"<s>Check if the field should be packed,if so,read the field and update the internal state.",<s>Checks if the current user is allowed to access the specified resource.,0,-0.017899900674819946
+"<s>Return a field tag, and if reach the EOF the tag will be zero.",<s>Read the next tag from the stream.,0,-0.05289924144744873
+<s>Put two bytes into a byte vector called data.,<s>Adds a new entry to the list.,0,0.38060012459754944
+"<s>Return the string that contains the content range from offset to limit (when limit is zero,the upper bound will be count-1) and count.",<s>Returns the value of the property.,0,0.21396908164024353
+"<s>Load the thread snapshots from the given file in the specified time range, and return the list of those thread snapshots.",<s>Parses the given file and returns the result.,0,-0.5234122276306152
