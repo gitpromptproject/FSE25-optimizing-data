@@ -1,4 +1,4 @@
-# 📦 FSE'25 Replication Package: Data-Centric Optimization in Code Summarization Dataset
+# 📦 Replication Package: Data-Centric Optimization in Code Summarization Dataset
 
 This repository contains the complete replication package for the ```Data-Centric Optimization in Code Summarization Dataset``` paper:
 
@@ -33,13 +33,13 @@ This replication package includes:
 |------|-------------|
 | `data-files/` | Triplet data for SIDE-py training |
 | `training-sidep/` | MPNet-based training scripts for SIDE-py |
-| `scripts_for_benchmark/` | Scripts for logistic regression and plotting |
+| `scripts_for_benchmark/` | Scripts for curating benchmark |
 
 ### 🔹 `study-3/` – Python Generalization Evaluation
 
 | Path | Description |
 |------|-------------|
-| `evaluation-benchmark-data/` | Annotated benchmark data (Cupri et al.) |
+| `evaluation-benchmark-data/` | Annotated benchmark data |
 | `inference-results/` | Predictions from all optimization variants |
 | `scripts/` | SIDE-py filtering and model evaluation |
 | `statistical-tests/Python/` | Regression and correlation R scripts |
