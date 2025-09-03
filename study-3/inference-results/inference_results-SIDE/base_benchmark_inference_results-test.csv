@@ -1,0 +1,501 @@
+target,raw_predictions,correctly_predicted,SIDE_score
+"<s>Register a component producer if the atom is recognized , logging the process .",<s>Register a component producer,0,0.905849814414978
+<s>Execute database queries in specified data batches,<s>Process a batch of data,0,0.7678768634796143
+<s>Check if a property identifier exists in a cached properties list .,<s>Filter out properties that are not part of a,0,0.6591403484344482
+<s>Save ontology data to a database if not already present .,<s>Save the ontology to the database,0,0.9828630685806274
+<s>Create a function to add trace timestamps to control messages if configured .,<s>Build a function that will merge the messages into one,0,0.6282336711883545
+<s>Filter OpenAPI schema paths to include specific HTTP methods .,<s>Filter the openapi schema by path and operation,0,0.909525454044342
+"<s>Handle task completion by logging cancellation , exceptions , or successful cleanup",<s>Handle the completion of a task,0,0.9824812412261963
+<s>Determine the MIME type of an image based on its format or file extension .,<s>Returns the mime type of the file,0,0.9174544811248779
+"<s>Initialize proxy configuration with server details , title , and security settings .",<s>Initialize the plugin,0,0.8564920425415039
+"<s>Ensure required software packages are installed , installing if necessary .",<s>Check if the packages are installed and installed,0,0.8590015769004822
+<s>Retrieve or raise error for a specific tagger based on name matching,<s>Get a tagger by name,0,0.6958924531936646
+"<s>Determine parameter type from schema , defaulting to `` string '' if unspecified",<s>Returns the type of the first parameter in the schema,0,0.9213111996650696
+<s>Initialize and start a tracing process with error handling and periodic saving .,<s>Start tracing of the module,0,0.9691810607910156
+<s>Convert phonetic input into audio using specified voice settings .,<s>Generate audio from phonemes,0,0.736274242401123
+<s>Constructs a conversation context string from recent non-system messages .,<s>Build the conversation context,0,0.7760046124458313
+<s>Convert object attributes into a dictionary of API query parameters .,<s>Convert the object to a dictionary,0,0.816440224647522
+<s>Function checks for empty output and raises an error if none is found .,<s>Return the feedback for the given feedback,0,0.3738108277320862
+"<s>Load or install and initialize an adaptive complexity classifier model , with error handling .",<s>Load the model from the given path,0,0.4933793246746063
+<s>Load and return the test split of the OptiLLM benchmark dataset for evaluation .,<s>Load and return the current test data,0,0.77567458152771
+<s>Initialize a swarm agent with context variables and log the setup details .,<s>Initialize the swarm with the given agent and context,0,0.9525440335273743
+<s>Automatically discover and import processor modules from a specified directory path .,<s>Discover all processors in the directory,0,0.7605763077735901
+<s>Initialize asynchronous API call tracker with rate limit monitoring .,<s>Initialize the client,0,0.75026535987854
+<s>Process test messages in batches using a model on a single GPU and store results .,<s>Infer messages from multiple GPU,0,0.6099452972412109
+<s>Download YouTube video to specified path using yt-dlp command .,<s>Download a video and save it to output path,0,0.9618473052978516
+"<s>Subscribe to device state updates , raising error if device ID is invalid .",<s>Set the state of a device,0,0.8547654151916504
+<s>Convert phonemes to audio using a specified voice and return the audio data .,<s>Generate audio from phonemes,0,0.9002600908279419
+<s>Ensure user data directory is set for browser options,<s>Sets up a temporary directory for testing,0,0.6182758808135986
+<s>Validate security configuration based on type and location constraints .,<s>Initializes the security object,0,0.3712434768676758
+<s>Convert object attributes and overrides into an MCPPrompt instance .,<s>Convert this object to a MCP prompt,0,0.6669507026672363
+<s>Retrieve value from data dictionary or raise key error if missing,<s>Get the value of a variable,0,0.8273043632507324
+<s>Validate polymer type and return empty MSA for a query sequence .,<s>Return an instance of the given class,0,0.1425715833902359
+<s>The function evaluates execution success and formats web search feedback .,<s>Return the result of the query,0,0.7345356941223145
+"<s>Map and preprocess entity network data , updating progress status accordingly .",<s>Maps the network to the entity,0,0.5961306095123291
+"<s>Initialize cache with specified GPU and CPU blocks , logging memory usage .",<s>Initialize the cache for the given number of GPU and CPU,0,0.9096903800964355
+<s>Constructs a dictionary detailing Amazon Keyspaces service characteristics and response guidelines .,<s>Build the service characteristics,0,0.7612559795379639
+<s>Generate a formatted string summarizing tokenizer and chunk parameters .,<s>Return a string representation of the task,0,0.7539159059524536
+<s>Configure browser options for privacy and customization settings .,<s>Returns the configuration for the application,0,0.7219142913818359
+"<s>Ensure dimension is a positive multiple of 64 , else raise error .",<s>Validate that the dimension is a valid value,0,0.8880497217178345
+<s>Initialize a code execution context with session data and input files .,<s>Create a context for the given file,0,0.9250885248184204
+<s>Formats GitHub PR comment with optional code and suggestion snippets .,<s>Format the comment body,0,0.9268865585327148
+"<s>Safely store user credentials to a file , logging success or failure .",<s>Save credentials to disk,0,0.9510019421577454
+<s>Extract JSON data from a string response containing markdown code blocks .,<s>Extract JSON from response,0,0.9178420305252075
+<s>Extracts the target URI from an S3 object using WARC headers .,<s>Extract the target URI from the request,0,0.8841366171836853
+<s>Simulate random weather conditions for a specified city .,<s>Get the weather data from the database,0,0.7419285774230957
+<s>Simulate benchmark evaluation and return performance metrics .,<s>Evaluate the benchmark,0,0.9746454954147339
+<s>Configure logging levels and file naming for application logs .,<s>Define a logger for the test,0,0.9411224722862244
+<s>Convert pandas objects to native Python data structures,<s>Normalize a pandas DataFrame to a pandas DataFrame,0,0.4845362603664398
+<s>Formats a solution string using a chat service with specific strategies for consistent output .,<s>Format a solution using the provided string as input,0,0.8149775266647339
+"<s>Determine client and project ID , handling development mode and errors",<s>Returns a client and project for the current environment,0,0.982796311378479
+"<s>Provide metadata for a custom benchmark dataset including ID , name , description , and URL .",<s>Returns a dictionary with the following attributes,0,0.3266412913799286
+<s>Aggregate multiple data sources into a unified dictionary representation .,<s>Return the dictionary representation of the object,0,0.5027217268943787
+<s>Determine fast track eligibility based on context URL and previous queries .,<s>Check if the fast path is eligible for the given event,0,0.7330031394958496
+<s>Determine token price based on specified AI model type .,<s>Returns the price of the given model,0,0.8587952852249146
+<s>Create and return a list and dictionary of research tools based on configuration .,<s>Get the list of search tools,0,0.7505775094032288
+<s>Generate sub-queries from a query using a question generator with error handling .,<s>Generate subqueries for given query,0,0.8938331007957458
+<s>Load and parse MCP server configurations from a JSON file into a dictionary .,<s>Load the configuration file for the server,0,0.8869394063949585
+"<s>Retrieve and return setting types as JSON , handling errors gracefully .",<s>Returns a dictionary of all the types of the,0,0.8437201380729675
+<s>Configure default attention processor based on current processor types .,<s>Sets up the attention processors,0,0.8585069179534912
+"<s>Enforces valid state transitions for a job , logging errors on invalid attempts .",<s>Set the state of the,0,0.7320449352264404
+<s>Generate a unique hash for a given string identifier .,<s>Generate a hash for the given identifier,0,0.9664879441261292
+<s>Function removes instructional text to isolate the question from a task string .,<s>Extract the question only from the task,0,0.8083396553993225
+<s>Check if a dictionary represents a valid tool call item .,<s>Check if the given call item is valid,0,0.8277873992919922
+<s>Update dispatch mode registry with new dispatch and collect functions,<s>Set the dispatch mode for the given function and,0,0.7933254837989807
+<s>Process content to log text messages unless marked as done,<s>Handle the incoming request,0,0.6942309141159058
+<s>Add or log existing prompt in collection with optional warning,<s>Add a prompt to the database,0,0.9569920301437378
+<s>Generate and save visualizations if conditions are met and dependencies are available .,<s>Create visualizations for the given dataset,0,0.856458306312561
+<s>Calculate cosine similarity between two vector embeddings .,<s>Compute similarity scores for two sets of data,0,0.9302293062210083
+"<s>Remove all audio files from the specified output directory , handling errors .",<s>Deletes all the output files,0,0.9432799220085144
+<s>Initialize a session-specific logger with JSONL file output .,<s>Sets up a logger for the given session,0,0.9080705642700195
+<s>Convert Python prompt modules to JSON files in a directory .,<s>Run the prompts module to get the data,0,0.48454099893569946
+<s>Create a text component with markdown content and optional size and ID .,<s>Converts a markdown string into a component,0,0.8090513944625854
+<s>Set up test environment by mocking environment variables and FirecrawlApp instance .,<s>Set up mocked application,0,0.8284674286842346
+<s>Enforces API rate limits by delaying requests if needed .,<s>Wait for a rate limit to be reached,0,0.9403454065322876
+<s>Remove existing Alembic configuration by deleting directory and configuration file .,<s>Removes all the configuration files from the database,0,0.966675877571106
+<s>Create a personalized calendar with specified name and description .,<s>Creates a custom calendar,0,0.9353775978088379
+<s>Split configuration into main settings and additional parameters .,<s>Separate the configuration from the create config function,0,0.6616500616073608
+<s>Format server details into a descriptive string output,<s>Format and return the server info as a string,0,0.9576234221458435
+<s>Generate a structured question-answer dictionary with metadata validation .,<s>Converts a question into a dictionary,0,0.9030780792236328
+<s>Retrieve a tool by key or raise an error if not found .,<s>Get the tool by its name,0,0.872615396976471
+"<s>Recursively serialize data structures into a stable , sorted format .",<s>Convert Python objects to a stable Python object,0,0.6848044991493225
+<s>Register and log MCP tools in the action registry if the MCP client is active .,<s>Register all the MCP tools,0,0.9103877544403076
+"<s>Convert milliseconds to formatted timestamp string in hours , minutes , seconds .",<s>Convert a number of milliseconds to a string,0,0.9408748149871826
+"<s>Retrieve configuration for specified model version , raising error if unsupported .",<s>Returns a dictionary mapping model names to their corresponding,0,0.5099554657936096
+<s>Validate and parse configuration for Snowflake Cortex Search Service details .,<s>Determine the index to use for the search,0,0.05721990764141083
+"<s>Persist FAISS index and metadata to files , converting keys for JSON compatibility .",<s>Save the index into the file,0,0.804444432258606
+<s>Convert JSONL data to CSV format and save to file,<s>Convert a JSON file into a CSV file,0,0.9414533376693726
+"<s>Recursively mask string values in nested structures , excluding specified keys .",<s>Recursively mask values of a object,0,0.9051306843757629
+"<s>Decorator issues deprecation warnings for outdated functions , suggesting replacements .",<s>Decorator to mark functions as deprecated,0,0.9626851081848145
+<s>Initialize a virtual client manager with dummy branding and JavaScript handlers .,<s>Initialize the application,0,0.9062117338180542
+<s>Convert a string timestamp into a formatted datetime string if valid,<s>Convert a timestamp into a string,0,0.9667126536369324
+<s>Retrieve and cache skill states from a module based on a given category .,<s>Get the skill states for a skill,0,0.8380246162414551
+<s>Logs progress updates and invokes a custom callback if available .,<s>Called when the task is completed,0,0.9105967879295349
+<s>Retrieve and configure a language model for evaluation using specified or default settings .,<s>Get the evaluation LM,0,0.2976920008659363
+<s>Convert object attributes to a dictionary representation with optional fields .,<s>Convert this object to a dictionary,0,0.971214771270752
+<s>Decorator function to register metadata attributes to another function .,<s>Decorator to register a tool,0,0.8052393794059753
+<s>Convert a 32-character trace ID into a UUID format .,<s>Convert a trace ID to a UUID,0,0.9563522338867188
+<s>Validate and retrieve Azure AI Search endpoint configuration,<s>Returns the endpoint configuration for this service,0,0.8897438049316406
+<s>Serialize and save processed results to a JSON file in the specified directory .,<s>Saves results to a file,0,0.7717933058738708
+<s>Create a mock asynchronous HTTP client with predefined response behavior .,<s>Mock out the AsyncClient,0,0.6530420184135437
+<s>Log a workflow step with details using a debug logger .,<s>Log a workflow step,0,0.9428797364234924
+<s>Generate app-specific embeddings using OpenAI model based on app metadata .,<s>Generates an embedding for an app,0,0.9158583283424377
+<s>Determine operating system name and return standardized identifier .,<s>Returns the OS version of the current process,0,0.8322337865829468
+<s>Log execution time if debugging is enabled in environment settings .,<s>Called when the thread s context is destroyed,0,0.5527275800704956
+"<s>Create a new directory for each turn in a sequence , logging the process .",<s>Creates the directory for the current turn,0,0.8477271795272827
+<s>Create a new StreamInfo by merging attributes from instances and keyword arguments,<s>Copy the stream info into the new instance,0,0.5440707802772522
+<s>Save processed model results and optional terms of use to specified directory .,<s>Write the output to the given directory,0,0.6471277475357056
+<s>Convert functional pseudo-element to XPath expression with attribute handling .,<s>Convert an XPath expression into a function that returns a,0,0.9091187715530396
+"<s>Determine and return the appropriate PyTorch device , defaulting to CUDA if unavailable .",<s>Return the current torch device,0,0.9614337682723999
+"<s>Initialize cache with specified GPU and CPU blocks , logging memory usage and configuration .",<s>Initialize the cache for the given number of GPU and CPU,0,0.9114123582839966
+<s>Generate a string representation of filter task attributes for display .,<s>Return a string representation of the task,0,0.6236893534660339
+<s>Convert object attributes into a structured dictionary format for serialization .,<s>Convert this object to a dictionary,0,0.9858106374740601
+<s>Extract unique URLs and associated metadata from a JSONL file,<s>Extract the urls from the json file,0,0.965928852558136
+<s>Generate HTML status message with color based on availability,<s>Returns a string representation of the current state,0,0.5750657916069031
+<s>Determine the appropriate server port based on environment variables or configuration .,<s>Returns the port number of the server,0,0.9190508723258972
+<s>Parse a file to extract and organize PDF-related rules into a dictionary .,<s>Parse the rules file,0,0.7494761347770691
+<s>Download and save a file from a URL to a specified cache directory .,<s>Download a file from a remote server,0,0.9603719115257263
+<s>Map execution modes to corresponding function names for execution .,<s>Returns the appropriate Execute function for the given,0,0.7740265130996704
+"<s>Initialize authentication settings with domain , algorithms , and user model .",<s>Initialize the mocked object,0,0.41286903619766235
+<s>Recreate a vector collection by deleting and then creating it anew .,<s>Recreate a collection if it doesn t already exist,0,0.4916737675666809
+<s>Convert object attributes to a structured dictionary format .,<s>Convert this task to a dictionary,0,0.7465169429779053
+<s>Fetches and returns a random fact or error message from an API .,<s>Get the random fact from the database,0,0.47825461626052856
+<s>Retrieve and cache the maximum batch size for a given model using gRPC client,<s>Returns the maximum batch size that should be used for this model,0,0.7749412059783936
+"<s>Generate a structured response object with text , stop reason , and token usage .",<s>Convert text to a list of dictionaries,0,0.09930285066366196
+<s>Convert dictionary data into an L1GenerationResult object instance .,<s>Create a L1GenerationResult from a dictionary,0,0.9720810651779175
+<s>Extracts and parses JSON object from a given string using regex .,<s>Extract a JSON object from a string,0,0.9877154231071472
+<s>Create and monitor a vector store for file processing using OpenAI client,<s>Creates a new vector store,0,0.5649247765541077
+<s>Retrieve model configuration or default settings based on model identifier .,<s>Get the configuration for a given model,0,0.9536391496658325
+<s>Validate if a resolution string matches the `` widthxheight '' format .,<s>Validate the resolution string,0,0.7090888619422913
+<s>Create a dictionary representing an item with optional state handling .,<s>Create a new entry in the database,0,0.3040061891078949
+<s>Selects and returns a schedule sampler based on the given name .,<s>Create a new scheduler with the given name and options,0,0.6846685409545898
+<s>Validate if actual window size is within tolerance of configured dimensions .,<s>Validate that the window size is within the configured,0,0.9657897353172302
+<s>Release GPU resources and collect garbage to optimize memory usage .,<s>Removes all the memory used by the GPU,0,0.742709219455719
+"<s>Copy a source file or directory to a shared memory location , ensuring uniqueness .",<s>Copy a file from the source to the destination,0,0.937964677810669
+"<s>Safely parse JSON from hedge fund API response , handling errors gracefully .",<s>Parses the response into a dictionary,0,0.9274705648422241
+<s>Load and initialize a pre-trained Vocos model from a specified repository .,<s>Load the model from the pretrained file,0,0.9458841681480408
+<s>Appends legal disclaimer to a given text content .,<s>Adds a legal comment to the model,0,0.9138318300247192
+<s>Parse and convert a datetime string with timezone handling from a dictionary .,<s>Parses a datetime field into a datetime object,0,0.9360926151275635
+<s>Generate HTTP headers for authentication using credentials .,<s>Returns a dictionary of authentication headers for the API,0,0.9728842973709106
+<s>Configure a logger with custom formatting and error level settings .,<s>Configure and configure the logger,0,0.9632433652877808
+<s>Create a dictionary for infographic data extraction task properties .,<s>Convert the task to a dictionary,0,0.6684772968292236
+<s>Map topic identifiers to descriptive summaries for documentation .,<s>Returns a dictionary mapping topic names to the corresponding,0,0.4291791319847107
+<s>Formats key inputs for PyAutoGUI hotkey automation script .,<s>Convert a list of keys to a hot key,0,0.6436355113983154
+<s>Close and remove idle database connections exceeding timeout threshold .,<s>Close all idle documents,0,0.8435850739479065
+<s>Constructs a hierarchical tree structure for agents and their managed sub-agents .,<s>Build the agent tree,0,0.8386646509170532
+<s>Extracts metadata of weights from a neural network module .,<s>Get the weight buffer meta data from the module,0,0.5116028189659119
+"<s>Safely read file content , handling errors and non-existent paths .",<s>Read the contents of a file,0,0.9644802212715149
+<s>Initialize resource management with optional exit stack and component hook,<s>Initialize the plugin,0,0.9437370300292969
+"<s>Adjusts macOS Chrome directory permissions for the current user , handling exceptions .",<s>Fixes the permissions of the chrome directory,0,0.9658154845237732
+<s>Progressively initialize model layers with noise based on pretrained state,<s>Initialize the progressive model,0,0.9112247824668884
+"<s>Constructs a refinement prompt using request , response , feedback , and iteration .",<s>Build a prompt for the user to use,0,0.3839972913265228
+<s>Extracts and logs Python code blocks from a given text input .,<s>Extract all the code blocks from the given string,0,0.8190939426422119
+"<s>Ensure required packages are installed , installing if necessary .",<s>Check if the packages are installed and installed,0,0.8362242579460144
+<s>Evaluate contrarian sentiment in news articles to identify potential investment opportunities .,<s>Analyze the contrarian sentiment,0,0.7816420793533325
+<s>Generate optional repetition patterns with customizable separators .,<s>Return a string representation of the optimal repetition of a,0,0.8047219514846802
+<s>Transform script lines by commenting out shell or magic commands .,<s>Remove magic commands from the command line,0,0.7909169793128967
+"<s>Convert complex objects to native Python types , handling dataclasses and configurations .",<s>Convert object to native types,0,0.9387774467468262
+<s>Fetch deployment configurations using authorization token and project ID,<s>List all the configurations that are not in the database,0,0.8213717937469482
+<s>Detects and categorizes SQL mutating keywords into predefined groups .,<s>Detect mutating keywords,0,0.8350757956504822
+<s>Generate a trace filename using a pattern with a session ID or timestamp,<s>Returns the trace filename for this request,0,0.9233956336975098
+"<s>Load a system prompt template from a file , handling exceptions .",<s>Load the prompt template,0,0.911645770072937
+<s>Converts object history into a dictionary format using specified parameters .,<s>Pretty print the data structure,0,0.5230987668037415
+<s>Determine if a directory name should be ignored based on a predefined list .,<s>Returns True if the given directory should be ignored,0,0.9555086493492126
+<s>This function attempts to load an audio file and returns the audio data or an error message .,<s>Read an audio file and return its data,0,0.9269262552261353
+<s>Generate and display a curl command for HTTP requests with optional JSON data .,<s>Prints the contents of the HTTP request,0,0.9463251233100891
+<s>Log initialized image processing capabilities based on available tools,<s>Log the available capabilities,0,0.7307677268981934
+"<s>Load OpenAI configuration from JSON file , handle errors gracefully .",<s>Load OpenAI mappings from the file,0,0.744284987449646
+<s>Generate a formatted Python docstring from operation details and parameters .,<s>Return a string representation of the operation,0,0.83875972032547
+<s>Check if an MCP server is active and return its status message .,<s>Returns the current user s data,0,0.4026672840118408
+<s>Load and return valid images from a specified directory as a dictionary .,<s>Loads images from a directory,0,0.9249588847160339
+<s>Generate document chunks with embeddings and metadata for testing purposes .,<s>Get a list of chunks for a given dataset,0,0.3631950616836548
+"<s>Safely update component states , logging changes and handling NaN values .",<s>Updates the states of the given component,0,0.8782108426094055
+<s>Initialize and execute an AI agent to summarize top daily papers using a specified language model .,<s>Runs the analysis on the given model,0,0.826294481754303
+"<s>Safely save a model using a trainer , handling deepspeed and CPU state .",<s>Save the model to the given directory,0,0.7155373692512512
+<s>Load a text inference model based on specified device configuration,<s>Load the pretrained model,0,0.8876758217811584
+<s>Generate platform-specific scripts to switch applications using automation tools .,<s>Switch between applications,0,0.4882618486881256
+<s>Merge new data into existing list by unique key field,<s>Merge existing data into new data,0,0.9277980923652649
+<s>Check if a specific model revision exists on the hub and validate its README presence .,<s>Check if a revision exists in the repository,0,0.9581168293952942
+"<s>Update session state with event-driven changes , ignoring temporary keys .",<s>Update the state of the given event,0,0.8866729140281677
+"<s>Restart a container and verify its running status , raising an error if unsuccessful .",<s>Restart the container,0,0.905150294303894
+<s>Compute and save statistical data from a specified path using a neural model .,<s>Saves statistics for a given path,0,0.522077202796936
+<s>Reorder batch and non-tensor data using specified indices .,<s>Reorder the indices of the tensors in the batch,0,0.974888801574707
+<s>Update macOS platform UUID using a new telemetry ID with error handling .,<s>Update the UUID of the machine,0,0.9671247601509094
+"<s>Converts model data to query parameters , excluding None values , and sets stream mode .",<s>Convert this object to a QueryParam object,0,0.4538014531135559
+"<s>Validate and extract audio file duration , handling errors gracefully .",<s>Process an audio file,0,0.5057700276374817
+<s>Create or replace a BigQuery dataset in the US location .,<s>Creates a new dataset,0,0.8799187541007996
+<s>Map node types to specific color codes for visualization .,<s>Return the color of the node,0,0.7970636487007141
+"<s>Generate a list of mock data chunks with content , metadata , and scores",<s>Returns a list of dummy chunks,0,0.5236706733703613
+<s>Retrieve and log data from a collection by matching a given URL .,<s>Searches for a specific URL and returns the URL,0,0.7826816439628601
+"<s>Load and parse document files from S3 , storing structured information for each line .",<s>Load all documents from the given files and return them as a,0,0.9128313660621643
+<s>Decrypts base64-encoded text using a password-derived key .,<s>Decrypts the given ciphertext and returns the decrypted,0,0.9714458584785461
+<s>Store and update conversation history and metadata for user interactions .,<s>Store the conversation turn,0,0.6713120937347412
+<s>Create a vocabulary dictionary mapping symbols to unique indices .,<s>Returns a dictionary of vocabulary,0,0.8046717643737793
+<s>Remove sensitive data before saving configuration to a file .,<s>Saves the configuration data to the file,0,0.9217125177383423
+<s>Create a new invocation context with updated branch information for a sub-agent .,<s>Create an invocation context for the given agent and sub agent,0,0.7032639980316162
+<s>Generate a markdown context for Cassandra and Amazon Keyspaces table guidance .,<s>Build the context for a list of tables,0,0.8018853664398193
+<s>Calculate and return performance metrics from results data .,<s>Generate a summary for the given dataset,0,0.47372743487358093
+<s>Execute shell command with options for success assertion and output capture,<s>Run a command and return its output,0,0.990470290184021
+<s>Resolve JSON reference paths within a document to retrieve nested values .,<s>Try to resolve a reference to a document,0,0.9277225732803345
+<s>Toggle a smart light 's state and handle potential errors,<s>Toggle the state of a light,0,0.9526380300521851
+"<s>Function lists directory contents , ensuring path security and validity .",<s>List files in the directory,0,0.9441505670547485
+<s>Process named entity recognition queries and map unique entities .,<s>Process the query and return the result,0,0.5627474188804626
+"<s>Create a unique project entity with ID , key , name , and description .",<s>Creates a JiraProjectEntity for the given project data,0,0.7965096235275269
+"<s>Generate a formatted string detailing intents with descriptions , examples , and metadata .",<s>Generate the context for the intent,0,0.7862095236778259
+<s>Convert ORM object to validated model dictionary with collection mapping .,<s>Convert an ORM instance to a dictionary with the,0,0.7837971448898315
+<s>Replace placeholder in string with agent list identifier,<s>Replace the agent s agent s agent s agent s,0,0.5352448225021362
+<s>Load and initialize a model with filtered pretrained weights from specified paths .,<s>Build a model from a pretrained model,0,0.9404755234718323
+<s>Convert tool result into structured content with error handling .,<s>Convert a call tool result into a Python object,0,0.7762094736099243
+<s>Load and transform user configuration from a YAML file if it exists,<s>Load user config file and return a dictionary,0,0.9586622714996338
+<s>Retrieve the latest review author 's name for a product SKU from an API .,<s>Get the latest review by its sku,0,0.4687246084213257
+<s>Initialize OCR processor with optimal device selection for execution .,<s>Initialize the processor,0,0.9434609413146973
+<s>Generate PKCE code verifier and challenge for secure OAuth2 authentication .,<s>Generate a code challenge from the current user s,0,0.4196728765964508
+"<s>Add a new tool to a collection , checking for duplicates and logging warnings .",<s>Add a tool to the database,0,0.9495255351066589
+<s>Clean up temporary directories and log any errors encountered,<s>Removes all temporary files and all files that are,0,0.9157688617706299
+"<s>Display audio validation results , highlighting errors , metrics , and potential issues .",<s>Prints out the validation result,0,0.8838078379631042
+<s>Retrieve API key from agent or system configuration for a specific skill,<s>Returns the API key for the skill,0,0.982420802116394
+<s>Constructs a message for text analysis based on user instructions and processes it .,<s>Analyzes text and returns the analysis result,0,0.7357754111289978
+<s>Generate a timestamped file path for saving results based on a description .,<s>Returns the path to the file to save,0,0.7601478695869446
+<s>Update migration script IDs with timestamps in revision directives .,<s>Process the directives of a revision,0,0.8970960378646851
+<s>Extracts profile and deletion mean features from sequence alignment data .,<s>Get the profile features for the given,0,0.38193708658218384
+<s>Remove subscription from database using Stripe ID if it exists,<s>Deletes the subscription with the given id from the database,0,0.9882299304008484
+<s>Safely save model state to specified directory if saving is enabled .,<s>Save the model to the given output directory,0,0.934136152267456
+<s>Generate a formatted error message from HTTP response details .,<s>Returns a string representation of the error,0,0.9493157863616943
+"<s>Decode base64 image data , save as PNG , and return file path .",<s>Saves an image to the output directory,0,0.7387380599975586
+<s>Set up test environment with mocked modules for deepsearcher components .,<s>Set up mocked modules,0,0.9338253736495972
+<s>Execute a method with logging for specific conditions and delegate execution,<s>Execute the given method on the given object,0,0.9351488351821899
+<s>Visualize and save scroll action using base64 image data if conditions are met .,<s>Visualize scroll view,0,0.9126981496810913
+<s>Convert retrieved documents into formatted string summaries .,<s>Convert retrieval results to a string,0,0.6842647790908813
+<s>Format and display top search results with tool details and usage instructions .,<s>Format the results of a search,0,0.8075708746910095
+"<s>Initialize session data with voice , modalities , and detection settings",<s>Initialize the data structure,0,0.5937677025794983
+"<s>Check if a file 's extension is within supported types , logging warnings otherwise .",<s>Check if the file is supported,0,0.9104390144348145
+<s>Generate HTML highlighting differences between two text sequences .,<s>Generates HTML for a sequence diff,0,0.914567232131958
+<s>Returns metadata for a SimpleQA question-answering dataset .,<s>Returns a dictionary of the form,0,0.31610435247421265
+"<s>Builds a Docker image from a specified path , logging progress and errors .",<s>Builds the Docker image,0,0.9674438834190369
+<s>Constructs a node dictionary with relevance metadata and optional fields .,<s>Convert a node into a relevant node,0,0.6781547665596008
+<s>Determine speaker selection in group chat based on agent name or method,<s>Return the speaker s selection result,0,0.7777984142303467
+<s>Convert file URI to local file path and network location .,<s>Convert a file uri into a tuple of components,0,0.7509105801582336
+<s>Determine if a file is a video based on its MIME type .,<s>Check if the file is a video,0,0.8609731793403625
+"<s>Retrieve instance or global context , raising error if unavailable .",<s>Return the current context,0,0.8461636900901794
+<s>Define a function to return a dictionary with system role and content keys .,<s>Returns a dictionary with the following keys,0,0.5183800458908081
+<s>Format step results into a structured string using a template .,<s>Format a step result,0,0.8527969121932983
+<s>Update presigned URL 's domain to match base URL if it 's localhost or IP .,<s>Update the URL with the new URL,0,0.8877108097076416
+<s>Generate audio file paths based on data frame content,<s>Get the audio files from the database,0,0.6689737439155579
+<s>Merge default settings with overrides to produce updated configuration .,<s>Resolve the given entity to its corresponding configuration,0,0.3331019878387451
+<s>Generate unique identifiers for telemetry and storage purposes .,<s>Generate a new ID for the storage backend,0,0.7189297676086426
+<s>Formats child blocks as either a page or database based on type .,<s>Format a block of data into a string,0,0.5602543950080872
+<s>Load and organize IOI test cases by year into a structured dictionary .,<s>Load tests for a given year,0,0.8460780382156372
+<s>Retrieve and log the DeepSeek Azure API version from configuration settings .,<s>Retrieve the API version that the user has access to,0,0.9550714492797852
+<s>Update document status to FAILED in database and log the outcome,<s>Update analyze status for document,0,0.8232226371765137
+<s>Extracts parameters from a URI using a template-based regex pattern .,<s>Find and return the matching entry in the database,0,0.2786424160003662
+<s>Determine retry eligibility based on operation failure and exception type,<s>Retry if operation was cancelled,0,0.8499221205711365
+<s>Ensure configuration values are not dictionaries at the top level .,<s>Validate that the configuration is valid,0,0.7012168169021606
+<s>Create a document object with task details and solution choices .,<s>Prompt user for input,0,0.38964763283729553
+<s>Generates Gradio app code using the class name and tool module .,<s>Returns the code for the given tool,0,0.8311270475387573
+<s>Convert object attributes to a dictionary representation with formatted timestamps .,<s>Convert this object to a JSON representation,0,0.743676483631134
+<s>Create a configuration object from environment variables and optional settings .,<s>Construct a new instance of the runnable config class,0,0.9611358642578125
+<s>Generate a unique hash for an equation with customizable display settings .,<s>Generate a hash for the given equation,0,0.8848876953125
+<s>Calculate posterior mean and variance for a given time step in a sequence .,<s>Computes the posterior mean and variance of a tensor,0,0.9406278729438782
+"<s>Convert time intervals to SRT subtitle format with hours , minutes , seconds , and milliseconds .",<s>Convert a time value into a string representation of a,0,0.870125412940979
+<s>Automatically save a report to a timestamped text file if no filename is provided .,<s>Write a report to a file,0,0.9591999650001526
+<s>Initialize and log cache configuration for GPU and CPU blocks in a distributed system .,<s>Initialize the cache for the given number of GPU and CPU,0,0.8798577189445496
+<s>Ensure database manager is initialized and handle operation errors,<s>Returns a context manager that will handle the database operations,0,0.8488645553588867
+"<s>Retrieve appropriate file processor based on file type , initializing if necessary .",<s>Get the processor for the given file type,0,0.9270384311676025
+<s>Simulate agent interactions in environment using configuration file,<s>Run a roll out algorithm,0,0.4243650436401367
+<s>Display a permission dialog for executing actions on macOS and Linux,<s>Show the permission dialog box,0,0.911259651184082
+<s>Configure browser launch settings based on user preferences and stealth mode .,<s>Returns a dictionary of launch options for this command,0,0.7651258707046509
+"<s>Extract and parse JSON from a string , handling errors if parsing fails .",<s>Removes all the information from the database,0,-0.3189035654067993
+<s>Send input data to API and print streaming response .,<s>Make a request to the API,0,0.7869008779525757
+<s>Merge multiple audio files with silence into a single WAV output .,<s>Merges the audio files into a single file,0,0.8876822590827942
+"<s>Remove the top context from the stack , logging actions and warnings .",<s>Removes the current context and all its associated data,0,0.9526574611663818
+<s>Remove outdated checkpoints based on step threshold and retention limit .,<s>Removes all obsolete checkpoint files,0,0.889185905456543
+<s>Retrieve and validate Qdrant endpoint configuration by name,<s>Returns the endpoint configuration for this service,0,0.9371214509010315
+"<s>Safely save model state to directory , handling GPU synchronization .",<s>Save the model to the given output directory,0,0.8807472586631775
+<s>Validate presence of MSA and templates in protein and RNA chains,<s>Validate the input for a fold,0,0.3132336735725403
+<s>Retrieve or cache text-to-speech skill from UnrealSpeech tool repository .,<s>Get a skill by its name,0,0.6613945364952087
+"<s>Converts currency amounts from symbols to words , handling dollars and pounds .",<s>Handle a money number,0,0.6357100009918213
+<s>Generate a PyAutoGUI hotkey command with normalized key inputs .,<s>Add hot key support to the module,0,0.773572564125061
+<s>Display neural network model size if on primary process,<s>Print the size of a model,0,0.7909058332443237
+<s>Extracts text from the first few pages of a PDF file for quick processing .,<s>Reads a PDF file and returns the contents,0,0.8815121650695801
+<s>Sanitize and convert input arguments to standard data types,<s>Sanitizes and returns a dictionary of values for the given,0,0.7777730822563171
+<s>Parallelly cache S3 files locally from a dataset using specified processors .,<s>Cache a dataset for multiple requests,0,0.7221423387527466
+<s>Returns a mock list of dictionaries with test data for response simulation .,<s>Returns a list of tuples containing the result of the,0,0.7637653350830078
+<s>Write a FASTA file with a sequence split by line width .,<s>Creates a FASTQ file containing the given sequence,0,0.8672385811805725
+<s>Initialize session logging and return session identifier,<s>Start a new session,0,0.9054166674613953
+<s>Extracts and parses environment variables with a specified prefix into a configuration dictionary .,<s>Load the configuration from the environment,0,0.7388569712638855
+<s>This function saves specified text to a file and confirms success .,<s>Write a new value to the database,0,0.34961628913879395
+<s>Extracts and returns token usage and cost details from a response object .,<s>Returns the current user s information as a dictionary,0,0.7794813513755798
+<s>Delete integration credentials using session or direct connection based on context .,<s>Deletes the integration credential with the given id,0,0.9522565007209778
+"<s>Analyze and count JSON schema types from a file , handling parsing errors .",<s>Analyze the schema file and return a dictionary of,0,0.9362872838973999
+"<s>Initialize default configuration file if it does n't exist , logging success or errors .",<s>Creates the default configuration file,0,0.9719970226287842
+<s>The code logs and handles errors while stopping services without removing volumes .,<s>Stops and stops the docker daemon,0,0.9508282542228699
+<s>Compute and save statistical data from a specified path using a neural model .,<s>Saves statistics for a given path,0,0.522077202796936
+<s>Finalize test session by merging coverage data if tests pass .,<s>Called when the test suite is finished,0,0.8331248164176941
+<s>Constructs memory buffers for model parameters based on rank and data type assumptions .,<s>Build memory buffer for a single parameter,0,0.7964702844619751
+<s>Refine dataset by converting open-ended questions to multiple-choice format,<s>Preprocesses the dataset,0,0.515613317489624
+"<s>Convert string input to JSON , logging errors if parsing fails .",<s>Parses the expected output from the command line and returns the,0,0.7234715223312378
+<s>Retrieve the most recent files of specified types from a directory .,<s>Get the latest files in a directory,0,0.9495354294776917
+<s>Execute code in a secure environment and return the output text .,<s>Run the code in a sandbox,0,0.7412140369415283
+<s>Converts agent trajectory data into a formatted text report .,<s>Convert a trajectory into a text representation,0,0.749541699886322
+<s>Return metadata for a web browsing comprehension evaluation dataset .,<s>Returns a dictionary of the form,0,0.3578949570655823
+"<s>Disconnects from active server , handling errors and preserving session cache .",<s>Called when the client is connected to the server,0,0.7938642501831055
+<s>Decorator registers async or sync signal handlers with error logging .,<s>Decorator to register a signal handler for a given,0,0.9343475103378296
+<s>Download and load a pretrained model from a specified source if not locally available .,<s>Download a pretrained model from the HF,0,0.9410306811332703
+"<s>Save search results as a JSON file in the specified directory , logging success or failure .",<s>Saves the results of the search to a JSON file,0,0.949813961982727
+<s>Add a knowledge base entry and return a success message with its ID .,<s>Add a new KnobCtrl to the KnobCtrl stack,0,0.41933026909828186
+<s>Convert branding assets to data URLs and log final configuration,<s>Returns a dictionary with the branding information,0,0.6447427272796631
+<s>Analyzes audio file statistics and logs tensor details or errors .,<s>Analyze a voice file,0,0.9120299220085144
+<s>Check if a PDF file exists and skip test if not found,<s>Returns the path of the file to be used for testing,0,0.6573472619056702
+<s>Download and save dataset to specified directory using pandas .,<s>Download and save the dataset,0,0.9611717462539673
+<s>Simulate task processing and return modified input data .,<s>Process a task by its name,0,0.7478396892547607
+<s>Retrieve existing rate limit middleware from FastAPI app 's middleware stack .,<s>Return the middleware instance for the given,0,0.6379059553146362
+<s>Store and format tool details for shared access and decision-making .,<s>Post process of building a tool,0,0.88954758644104
+<s>Visualize and save a boxplot of conversation times by provider from given data .,<s>Plot the total conversation time for each provider,0,0.8393016457557678
+<s>Extracts and returns assistant tool call details from a message trajectory .,<s>Extract all tool calls from trajectory,0,0.574183464050293
+"<s>Safely release Milvus collection resources , logging errors if encountered .",<s>Close the connection to the database,0,0.8479182124137878
+<s>Log sample data to MLflow as JSON artifacts for each step,<s>Write validation results to mlflow format,0,0.7743520140647888
+<s>Configure application to handle 404 and 500 errors with JSON responses .,<s>Register an error handler for the given,0,0.7267516255378723
+<s>Generate and display a detailed execution time summary for various components .,<s>Prints the timing information for the given component,0,0.767004668712616
+<s>Generate a secure checksum by hashing and encoding a token with error handling .,<s>Generates a checksum for the given token,0,0.9923480749130249
+"<s>Retrieve screen dimensions using pyautogui , with fallback to default values .",<s>Get the screen size as a tuple width height,0,0.8908803462982178
+<s>Generate sub-questions for research topics using a language model .,<s>Prompt for sub questions,0,0.19769546389579773
+<s>Check Hue Bridge connection status and return success or warning message .,<s>Return the status of the sensor,0,0.9093148112297058
+<s>Generate a structured message based on tool execution outcome and status .,<s>Creates a message for a tool,0,0.8050756454467773
+"<s>Merge tensors based on placement type , handling replication and sharding .",<s>Merge tensors from a given placement,0,0.9680930376052856
+<s>Determine sentiment analysis necessity for given news items list,<s>Analyze the given file and return its contents,0,-0.019302554428577423
+<s>Convert image file to Base64 string with error handling,<s>Encodes an image into a base64 encoded string,0,0.9044579863548279
+"<s>Store timestamped problem responses in a JSON file , ensuring directory creation .",<s>Saves the raw response data to the file,0,0.9119831919670105
+<s>Map execution mode to corresponding function name .,<s>Returns a callable that will execute the given command,0,0.734287679195404
+<s>Function interfaces with Deepseek API to generate chat responses from message history .,<s>Run the completion function,0,0.30097001791000366
+<s>Update window size configuration with default values if necessary .,<s>Copy the old config names to the new one,0,0.05025436356663704
+<s>Constructs a document retrieval request with optional folder and user identifiers .,<s>Prepares the request for a batch get,0,0.5322375893592834
+<s>Initialize an asynchronous task to periodically clean up idle resources .,<s>Starts the cleanup task,0,0.7859731912612915
+"<s>Initialize a file agent with tools , memory , and configuration settings .",<s>Initialize the agent with the given prompt and provider,0,0.7212692499160767
+<s>Download and save a PDF file from a specified URL to a local path .,<s>Download a PDF file from a given URL,0,0.9791324138641357
+"<s>Load and list JSONL files from a specified directory , handling absence gracefully .",<s>Load all files from the given directory,0,0.9413811564445496
+<s>Define a server with resources tagged for data retrieval and templates .,<s>Creates a tagged resource server,0,0.8285368084907532
+<s>Load environment variables from a .env file if it exists .,<s>Load environment variables and initialize,0,0.9006623029708862
+<s>Add a tool to the collection if it does n't already exist,<s>Add a tool to the collection,0,0.9307516813278198
+"<s>Attempt to generate a batch response using a specified provider , retrying on failure up to three times .",<s>Generate a response for a batch of requests,0,0.9362194538116455
+<s>Retrieve and validate the inference URL for text-to-vector conversion .,<s>Returns a dictionary of parameters for the model,0,-0.02191580832004547
+<s>Checks adapter configuration validity using a pre-trained model and logs errors .,<s>Validate that the adapter is configured and valid,0,0.7988443374633789
+<s>Fetch AI-generated text using specified model parameters and handle errors .,<s>Get the response from the server,0,0.15890465676784515
+<s>Extracts Python code blocks from a given text using regex pattern matching .,<s>Extract the code from the given string,0,0.9210655689239502
+<s>Handle asynchronous client messages based on type and data .,<s>Handle a message from the server,0,0.9490832686424255
+<s>Rename dictionary keys by replacing old prefix with new prefix in a state dictionary .,<s>Rename the state dictionary,0,0.5980075001716614
+<s>Convert MIDI number to musical note with octave .,<s>Return the name of the note,0,0.5007916688919067
+"<s>Retrieve a specified number of documents from a collection , ensuring availability .",<s>Return a sample from the database,0,0.7571048736572266
+<s>Filter and sanitize messages for logging by replacing image data with placeholders .,<s>Convert a list of messages into a list of dicts,0,0.3313180208206177
+<s>Transform text chunks into structured document dictionaries with metadata and unique identifiers .,<s>Split a document into a list of dictionaries,0,0.8233556151390076
+<s>Extract variable names from a string pattern using regex,<s>Extract the variable names from the expression,0,0.803740382194519
+<s>Transforms repository data into a structured preview dictionary with key attributes .,<s>Convert a repository into a preview,0,0.8333020210266113
+<s>Save chat history to a JSON file named after the company .,<s>Saves the chat history to the file,0,0.9567488431930542
+<s>Create a logger to save task-specific logs in a designated directory .,<s>Saves the trajectory to the given directory,0,0.6855304837226868
+"<s>Iterate and yield lines from multiple JSONL files , handling errors .",<s>Read a JSON file and return a dictionary,0,0.7902809977531433
+<s>Add CUDA library paths to system environment if NVIDIA modules are available,<s>Add the Cuda library to the PATH,0,0.9073694944381714
+<s>Formats a markdown entry with title and link for a documentation page .,<s>Format a page entry into a string,0,0.8651871681213379
+"<s>Convert size string to bytes , supporting KB , MB , GB units .",<s>Parse a size into a number of bytes,0,0.9334155917167664
+<s>Handle termination signal to safely stop subprocess and exit .,<s>Handle signal received from the server,0,0.7536203861236572
+<s>Display formatted optimization results including score and parameters .,<s>Prints out the optimization results for the given,0,0.9398175477981567
+<s>Initialize and run a stateless HTTP server on a specified port using Uvicorn .,<s>Starts a stateless HTTP server,0,0.9500141143798828
+<s>Aggregate and stack selected polymer and ligand features from input data .,<s>Package features into a dictionary,0,0.6099902987480164
+<s>Convert various schema formats into a standardized SQLGlot schema type .,<s>Rewrite a schema to use the SQLAlchemy API,0,0.7222996950149536
+<s>Initialize default configuration settings with potential overrides from a preferred model provider .,<s>Returns a dictionary of configuration defaults,0,0.8298439383506775
+<s>Serialize folding input to JSON file in specified directory .,<s>Writes the model input to the given output directory,0,0.7868392467498779
+<s>Convert text into audio segments using a provider 's configuration and save them as files .,<s>Generate audio segments from text,0,0.868028461933136
+<s>Generate a formatted task list from ingestion and query data .,<s>Returns a string representation of the task,0,0.6310485005378723
+<s>Sorts signals based on predefined analyst priority order .,<s>Sort the signals in place,0,0.8287700414657593
+<s>Logs debug messages and optional data if debugging is enabled .,<s>Log a message to the server,0,0.9065675735473633
+"<s>Load , resize , normalize , and prepare image for model input processing .",<s>Loads an image and preprocess it,0,0.9734880328178406
+<s>Generate a deterministic text response using a language model with zero randomness .,<s>Generate a greedy sample from the model,0,0.20075127482414246
+<s>Initialize API toolset with specifications and authentication details .,<s>Prepares the OpenAPI toolset,0,0.8907949924468994
+<s>Add unique user-assistant message pairs to cache and save changes .,<s>Add a message pair to the database,0,0.7515242099761963
+"<s>Extract and parse JSON from a string , logging errors if parsing fails .",<s>Removes all the information from the database,0,-0.30790311098098755
+<s>Establishes a configured HTTP session with retry logic and custom headers .,<s>Creates a new requests session,0,0.9599902629852295
+<s>Convert Discord snowflake ID to ISO 8601 timestamp format .,<s>Convert a snowflake to an ISO 8601 formatted string,0,0.774690568447113
+<s>Check if a service is healthy within a specified timeout period .,<s>Wait for a service to be healthy,0,0.9424380660057068
+<s>Initialize and configure a remote agent with specified dependencies and tracing enabled .,<s>Creates a new agent and returns it,0,0.7435720562934875
+"<s>Configure class attributes using validated keyword arguments , raising errors for unknown keys .",<s>Configure a parser with the given options,0,0.692294716835022
+"<s>Initialize actor with configuration , module , optimizer , and entropy computation settings .",<s>Initialize the actor model,0,0.871606707572937
+<s>Retrieve and prioritize registered implementations for a class,<s>Return a list of all available configuration keys,0,0.7754124402999878
+<s>Create a mock asynchronous session connector for testing purposes .,<s>Create mocked connector with mocked values,0,0.5847094655036926
+"<s>Load JSON data from a file , handling errors gracefully .",<s>Load a JSON file and return a dictionary,0,0.9408649802207947
+<s>Formats and returns a string representation of a task plan with steps .,<s>Returns a string representation of the plan,0,0.7798773646354675
+<s>Returns a dictionary with the current date formatted as a string .,<s>Returns a dictionary of the current state of the,0,0.2278577983379364
+"<s>Fetch and return JSON data from a cleaned presigned URL , handling errors .",<s>Fetches the datastore from the URL,0,0.8778601884841919
+<s>Optimize system memory by clearing caches and logging status if forced,<s>Removes all memory information from the,0,0.6073716282844543
+"<s>Add unique prompt to collection , warn if duplicate exists",<s>Add a prompt to the database,0,0.7892394661903381
+<s>Save model configuration to a YAML file if a model is selected .,<s>Save the settings for a given model,0,0.8294540047645569
+<s>Defines a method to return default token usage statistics as a dictionary .,<s>Returns a new instance of the given class,0,0.18753832578659058
+<s>Generate audio from text using specified voice and model .,<s>Generates an audio file from the given parameters,0,0.7686141133308411
+<s>Determine the module name of an object using its fully qualified name .,<s>Returns the target module for the given event,0,0.35752445459365845
+<s>Ensure graph fields are valid by checking against allowed set,<s>Validate that the graph fields are set,0,0.9805430769920349
+<s>Log vectorization process start for entities with model details,<s>Log the start of the vectorization,0,0.7492742538452148
+<s>Truncate text content in a multimodal list to a specified token limit .,<s>Truncate text in a multi line document,0,0.8787396550178528
+<s>Format a list of validation errors into a structured string message .,<s>Format and return a string representation of the errors,0,0.9690299034118652
+<s>Check if a specific model revision exists on the hub and validate its README presence .,<s>Check if a revision exists in the repository,0,0.9581168293952942
+"<s>Save and log task completion results for agents , handling exceptions .",<s>Saves the results of a task to the output directory,0,0.9021705985069275
+"<s>Set text transformation matrix if values are valid floats , else log warning .",<s>Set up a matrix for the text,0,0.7003971934318542
+"<s>Retrieve tool metadata using name or schema , raising error if not found .",<s>Get the metadata for a tool,0,0.966269850730896
+"<s>Fetch GitHub repository branches , handling errors for access and existence .",<s>Fetches the branches for the given owner and repository,0,0.8995369672775269
+<s>Create a configuration object using environment variables and optional settings .,<s>Construct a new instance of the given runnable config,0,0.9431134462356567
+<s>Determine model class based on base ID or task type from registry,<s>Get the model class,0,0.880329430103302
+<s>Formats document sources into a structured string with indexed content .,<s>Format the sources of the documents,0,0.9406685829162598
+<s>Compile dataset index builder on the main process and log the duration .,<s>Compile all dependencies for the model,0,0.17315895855426788
+<s>Web crawler iteratively collects page content and discovers new links .,<s>Crawling of pages,0,0.9318501949310303
+<s>Extracts and parses JSON data from a formatted string response .,<s>Clean up after a test,0,-0.2719699442386627
+<s>Update message content with optional image in a message list,<s>Replace the message at the given index,0,0.6186954975128174
+<s>Format file content with line numbers and optional tab expansion,<s>Convert a file into a string,0,0.8518028259277344
+"<s>Transcribe video , handle errors , and return transcript object .",<s>Get the transcript object from the database,0,0.6141296625137329
+<s>Update agent status and notify handlers with timestamped changes,<s>Update the status of the agent,0,0.975314736366272
+<s>Reorder batch data using specified index mapping .,<s>Reorder the batch by the given indices,0,0.9640195369720459
+"<s>Validate and map mimetype to component type , defaulting to `` generic '' .",<s>Register a mimetype as a component for the,0,0.7772438526153564
+<s>Determine if a given URI is a valid Amazon ECR image URL .,<s>Check if the image is in the,0,0.6647061109542847
+<s>Extracts and converts pixel values from a CSS transform string into a coordinate tuple .,<s>Parse a transform style string and return a tuple,0,0.6368423104286194
+<s>Check if the Ollama service is active by querying its API endpoint .,<s>Check if the service is running,0,0.8622843027114868
+<s>Create a new integer variable representing the count of a given variable 's occurrences .,<s>Returns the number of occurrences of variable variable in the,0,0.8459810018539429
+"<s>Download and save Wikipedia article content to a text file , handling errors .",<s>Download an article from the wiki,0,0.8086521029472351
+<s>Determine if unsubscription is permitted based on subscription attributes and conditions .,<s>Check if a user has been subscribed to the topic,0,0.8809611201286316
+"<s>Remove all files and directory in specified temporary folder , logging errors if any occur .",<s>Removes all temporary files from the database,0,0.944643497467041
+<s>Extracts token usage and cost details from a chat response object .,<s>Get the current item and its usage,0,0.6463478207588196
+<s>Increment call count and enforce maximum limit for LLM usage,<s>Increment the number of calls to the,0,0.8016301989555359
+<s>Configure code execution tools for specific AI model requests or raise an error .,<s>Process the request and return the result,0,0.5684820413589478
+"<s>Calculate global rank based on tensor , data , and pipeline parallelism settings .",<s>Calculate the global rank of a tensor model,0,0.9767835140228271
+<s>Determine transport type from URL path for HTTP or SSE,<s>Given a URL return the corresponding transport,0,0.862572431564331
+<s>Load a local machine learning model and update configuration options,<s>Load a model from the given local path,0,0.7349242568016052
+"<s>Function returns server status with name , debug mode , and original name .",<s>Returns a dictionary of the form,0,-0.16239066421985626
+<s>Log the count and percentage of trainable parameters in a neural network model .,<s>Log the parameters of a model,0,0.8788866400718689
+<s>Map message types to corresponding emoji symbols for logging purposes .,<s>Returns the emoji for the given message type,0,0.8454973697662354
+"<s>Initialize environment , handle signals , and execute asynchronous agent with error handling .",<s>Run the example with the given parameters,0,0.7135187387466431
+<s>Extracts text content from message parts in task parameters if available,<s>Get the user query string,0,0.5977933406829834
+<s>Calculate total cost based on token usage and model pricing information .,<s>Calculate the cost of a given model,0,0.8261731863021851
+<s>Generate a formatted footnote summarizing step details including tokens and duration .,<s>Get the footnote content of a step,0,0.7823350429534912
+<s>Cancel interruptible asynchronous tasks based on predefined name patterns .,<s>Cancel all the tasks that have been interrupted,0,0.9790197610855103
+<s>Compares local and remote file hashes to determine if download is necessary .,<s>Compare the MD5 of the file with the local MD5 hash,0,0.8179704546928406
+<s>Configure logging for language model calls to a timestamped file in a specified directory .,<s>Configure the logging for the,0,0.9154793620109558
+<s>Calculate global rank in a distributed system using parallel dimensions .,<s>Calculate rank of a tensor in the parallel world,0,0.9596620202064514
+<s>Load tokenizer and model for sequence classification from local directory,<s>Load a model from disk,0,0.9098560810089111
+<s>Handle exporter shutdown with error management and property updates .,<s>Shutdown the exporter and return the result,0,0.9595792293548584
+<s>Generate a string summary of audio extraction task configuration,<s>Return a string representation of the task,0,0.6894485354423523
+<s>Creates a mock tool context with predefined state and credential responses .,<s>Mock tool context,0,0.9060394763946533
+<s>Trim a voice data tensor by removing the row with the least variance .,<s>Trim the voice content from the tensor,0,0.8280198574066162
+<s>Clear specified cache directory of OAuth client data files .,<s>Removes all the OAuth client data from the cache,0,0.9322724938392639
+<s>Execute a resumable SimpleQA benchmark and log the results .,<s>Wrapper around run resumable benchmark that uses the provided,0,0.9820509552955627
+<s>Generate a formatted string from evaluation input scenarios .,<s>Creates a template for an input,0,0.6671115756034851
+<s>Converts nested OmegaConf objects to standard Python data types recursively .,<s>Convert object to regular types,0,0.7910026907920837
+<s>Function logs account details to a file and handles success or error messages .,<s>Save the account information to the file,0,0.7817007899284363
+<s>Load a zero-shot classification pipeline using a BART model .,<s>Load the pipeline and return the result,0,0.7356365919113159
+<s>Load environment variables from a script file into the system environment .,<s>Load environment variables and print them to stdout,0,0.877353847026825
+"<s>List available servers and their tools , highlighting the active server .",<s>List all available tools for the given server,0,0.8875055313110352
+<s>Convert dictionary properties to Gremlin property string format .,<s>Convert a dictionary of properties to a string,0,0.9404858350753784
+<s>Update presigned URL 's domain if base URL is localhost or IP address .,<s>Update the URL with the new URL,0,0.8508026599884033
+<s>Retrieve and format current device memory statistics in specified units .,<s>Get the current memory usage information,0,0.9016987681388855
+<s>Generate a summary of given text using an inference model .,<s>Summarize the content of a text field,0,0.8150945901870728
+<s>Establish an AWS session using environment profile or default credentials .,<s>Get an AWS session,0,0.8885625600814819
+"<s>Handle errors in smart lighting operations , returning structured error details .",<s>Convert an error into a dictionary,0,0.7613946795463562
+<s>Define a server with a custom GET route returning a JSON message .,<s>Configure a server with a custom route,0,0.7946733832359314
+<s>Convert object attributes into a dictionary for a caption task configuration .,<s>Convert task to dict,0,0.7124130725860596
+<s>Check if a file exists locally or on HDFS based on its path .,<s>Check if the file exists and is readable,0,0.8506536483764648
+"<s>Defines an unimplemented method to process input , raising an error if called .",<s>Invoke the method to get the data for the given,0,-0.14414966106414795
+<s>Generate image chunks with metadata for a specified count .,<s>Creates a list of chunks for testing,0,0.6631348133087158
+<s>Generate combinations of images and filters for processing .,<s>Prepares the image data for the given image,0,0.8665576577186584
+<s>Determine language token ID from tokenizer configuration or raise error if absent .,<s>Returns the language token for this token,0,0.9488457441329956
+"<s>Format top search results into a structured context summary with titles , URLs , and snippets .",<s>Format the search results as a context,0,0.9063147306442261
+<s>Defines a function to return a dictionary of task objects for splitting and PDF extraction .,<s>Returns a dictionary of tasks that will run on the server,0,0.5379188060760498
+<s>Generate HTML redline markup to highlight text differences .,<s>Creates an HTML representation of the diff,0,0.8073064088821411
+"<s>Initialize actor module with configuration , optimizer , and optional performance settings .",<s>Initialize the actor model,0,0.8288738131523132
+<s>Generate and save audio file using specified voice model and output path,<s>Generates and saves audio for the given voice,0,0.8359671831130981
+<s>Generate a personalized greeting message repeated multiple times .,<s>A simple greyscale function that just returns the,0,0.07251192629337311
+<s>Aggregate and organize tensor and non-tensor data from a list of dictionaries .,<s>Convert a list of tensors into a dictionary,0,0.8348296880722046
+<s>Organize reasoning modules into predefined categories for structured retrieval .,<s>Get all modules that are in the given category,0,0.49874866008758545
+<s>Formats a category object into a string with optional index prefix .,<s>Format a category into a string,0,0.9908032417297363
+"<s>Create a dictionary with call ID , output , and type for function call results .",<s>Returns a new instance of the given,0,-0.06888605654239655
+"<s>Automates text input into a web element by ID , handling exceptions .",<s>Enter text into the given element,0,0.7116785645484924
+<s>Gracefully shutdown server and release resources on exit,<s>Called when the application is shutdown,0,0.9584094285964966
+"<s>Add a prompt to a collection , handling duplicates based on specified behavior .",<s>Add a prompt to the list of prompts,0,0.8131536245346069
+"<s>Ensure database tables exist , clear data before and after tests",<s>Setup and cleanup the database,0,0.8355552554130554
+"<s>Extract , log , and return JSON results from output data .",<s>Extract results from JSON,0,0.8001243472099304
+<s>Calculate global rank in distributed model using parallel dimensions .,<s>Calculate the global rank of a tensor model,0,0.9829083681106567
+"<s>Convert Unicode escape sequences in a string to UTF-8 format , handling errors gracefully .",<s>Decodes a string and returns a dictionary,0,0.6694707274436951
+<s>Determine and return prime numbers from a list of integers .,<s>Check if the given numbers are prime,0,0.7446503043174744
+"<s>Execute text-to-speech requests iteratively , logging failures for each thread .",<s>Worker task for generating test sentences,0,0.6287875771522522
+<s>Annotate trace span with message content if tracing is enabled .,<s>Annotate the given span with the given message,0,0.843703031539917
+<s>Load a local image inference model and update configuration options,<s>Load a model from the local file system,0,0.8559853434562683
+<s>Generate JSON schema prompt messages for validation .,<s>Build a list of messages for the given,0,0.46214306354522705
+<s>Formats and returns a descriptive string of an action with optional details and agent name .,<s>Return a string representation of the current state,0,0.5831015110015869
+"<s>Monitor and log process memory usage in megabytes , handling exceptions .",<s>Return the memory usage of the process,0,0.6753964424133301
+<s>Adjusts model layer identifiers based on rank offsets for distributed processing .,<s>Normalize a model name,0,0.0398726612329483
+<s>Determine execution success or failure and generate feedback message,<s>Return feedback for the given output,0,0.8705630302429199
+"<s>Generate a string representation of an object detailing its sub-question , chunks , spo , and summary .",<s>Return a string representation of the current state,0,0.7769305109977722
+<s>Ensure data directory exists within project structure and return its path .,<s>Sets up the data directory,0,0.6177461743354797
+<s>Play in-memory audio data with specified sample rate and handle errors,<s>Play an audio file into the audio buffer,0,0.8296222686767578
+<s>Generate a state dictionary excluding initialized agent states,<s>Create an empty state,0,0.5598709583282471
+<s>Display a quality summary using metrics with formatted output and warnings .,<s>Display the quality summary,0,0.9421871304512024
+"<s>Constructs a request context with validated database session , API key , agent , and project .",<s>Returns a context manager that will populate a request context for,0,0.9482252597808838
+<s>Initialize server transport with endpoint and logging setup,<s>Initialize the transport,0,0.8725005984306335
+"<s>Evaluate prediction similarity to gold standard , returning a default score .",<s>Computes the evolution of a given question and the golden question,0,0.8160440921783447
+<s>Retrieve and return a research report in Markdown format from a database by ID .,<s>Get markdown content of a research,0,0.7982562780380249
+<s>Initialize model with inference URL and log configuration details .,<s>Initialize the model and set up the variables,0,0.856344997882843
+"<s>Establishes a socket connection to a specified host and port , logging success or failure .",<s>Connect to the server,0,0.9500099420547485
+<s>Add extra dimensions to an array until it matches the target dimensions .,<s>Append the given dimensions to the end of the array,0,0.9257270097732544
+"<s>Handles resource deletion via API , returning success or error messages .",<s>Delete a resource from the database,0,0.9882119297981262

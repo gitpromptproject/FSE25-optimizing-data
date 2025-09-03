@@ -1,0 +1,19 @@
+Evaluation Metrics:
+BLEU: 0.1337
+ROUGE-L: 0.3189
+METEOR: 0.3621
+ChrF: 0.2294
+Computing SIDE scores for each instance...
+
+ Average SIDE score across all instances: 0.6692
+ Updated CSV saved to: /home/saima/projects/prompt-project/codet5+/dataset/funcom-python-final/inference-results-no-SIDE/Base_benchmark_inference_results-test.csv
+Instance-level BLEU-4 scores saved to /home/saima/projects/prompt-project/codet5+/dataset/statistical_tests/Python/no-side/Base/Base_bleu-4.csv
+Instance-level ROUGE-L scores saved to /home/saima/projects/prompt-project/codet5+/dataset/statistical_tests/Python/no-side/Base/Base_rouge-l.csv
+Instance-level METEOR scores saved to /home/saima/projects/prompt-project/codet5+/dataset/statistical_tests/Python/no-side/Base/Base_meteor.csv
+Instance-level ChrF scores saved to /home/saima/projects/prompt-project/codet5+/dataset/statistical_tests/Python/no-side/Base/Base_chrf.csv
+
+=== Overall Corpus-Level Scores (ICPC script) ===
+BLEU-4: 0.1339
+ROUGE-L: 0.3366
+METEOR: 0.3621
+ChrF: 0.2348
